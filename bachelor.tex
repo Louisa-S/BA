@@ -2,7 +2,8 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{chngcntr}
-\bibliography{bachelor}
+\usepackage{pdfpages}
+
 
 \begin{document}
 
@@ -17,7 +18,7 @@
 
 
 
-%\bibliographystyle{alpha}
+\bibliographystyle{plain}
 
 
 \section{Introduction}
@@ -25,7 +26,7 @@
 http://journals.plos.org/plosbiology/article?id=10.1371%2Fjournal.pbio.0030085
 
 
-miRNAs are small, non-coding RNAs that function in post-transcriptional regulation of gene expression, especially in terms of gene silencing. A miRNA consists of approximately 22 nucleotides which build a single strand RNA. It is mainly active in combination with a RNA-induced silencing complex (RISC). This complex targets a mRNA mainly at its 3' UTR by complementary binding to the sequence. This results in gene silencing either by repression of mRNA translation or degradation of the respective mRNA (\cite{Enright}). 
+miRNAs are small, non-coding RNAs that function in post-transcriptional regulation of gene expression, especially in terms of gene silencing. A miRNA consists of approximately 22 nucleotides which build a single strand RNA. It is mainly active in combination with a RNA-induced silencing complex (RISC). This complex targets a mRNA mainly at its 3' UTR by complementary binding to the sequence. This results in gene silencing either by repression of mRNA translation or degradation of the respective mRNA \cite{Enright}. 
 
 This regulation plays an important role for detection and treatment of diseases. To treat miRNAs as a starting point of treating diseases we have to understand their function and regulation mechanism. With these information it can be possible to predict targets of miRNAs and then specifically effect these target interactions. 
 
@@ -48,7 +49,7 @@ There are two additional databases that are useful as well: miRBase and UCSC Gen
 \subsection{Methods}
 The program for the analysis is implemented in Python. The data files are parsed and stored into dictionaries that allow fast searching. Then for every MTI in the miRTarBase file the respective miRNA sequence is searched in the miRBase file and combined with the gene sequence of the corresponding target in the UCSC file. Having theses two sequences, a local alignment is performed. An alignment is defined as the optimal positioning of the bases of one sequence, in this case the miRNA, to a region in the other sequence, the gene sequence. Because the miRNA can bind at any region in the gene, a local alignment is executed, not a global. The Biopython library provides a module, pairwise2, for pairwise local alignments of two sequences. This tool is based on a dynamic programming algorithm. This function can be used either with default parameter or different scores and costs can be defined. The default parameters are as following: +1 for matching character, 0 for not matching ones and there are no gap penalties. (http://biopython.org/DIST/docs/api/Bio.pairwise2-module.html). To get a better alignment own parameters can be selected. Table~\ref{table:parameter} shows the different parameters that I used to generate the data. Set no. 8 is similar to the parameters they used for the tool miRanda (Enright et al, 2003). The other parameters are just logically selected to test which influence they have on the results. 
 
-To be able to analyse the data statistically a set of negative controls is required. To produce this data, miRNAs were randomly assigned to genes and then aligned in the same way as for the true targets interactions. For these datasets the average and standard deviation were computed as well. Then with case and control alignment scores a statistical two-tailed t-test for two samples with equal variances was performed with LibreOffice. This provides a p-value as a result. The lower this p-value is, the more significant is the increase of the alignment score of the true targets.
+To be able to analyse the data statistically a set of negative controls is required. To produce this data, miRNAs were randomly assigned to genes and then aligned in the same way as for the true targets interactions. For these datasets the average and standard deviation were computed as well. Then with case and control alignment scores a statistical two-tailed t-test for two samples with equal variances was performed with LibreOffice. This provides a p-value as a result. The lower this p-value is, the more significant the increase of the alignment score of the true targets is.
 
 \begin{table}
 \label{table:parameter}
@@ -103,7 +104,7 @@ In the mentioned seed region there can be different types of matching patterns (
 
 \begin{figure}
 \centering
-\includegraphics[scale=2.3]{results/canonical_sites.png}
+\includegraphics[width=\textwidth]{results/canonical_sites.png}
 \caption{Canonical sites of seed region}
 \label{Fig:canonical}
 \end{figure}
@@ -334,6 +335,28 @@ Found number & 882 & 793 & 776 & 845  \\
 \hline
 \end{tabular}
 \end{table}
+
+
+\begin{figure}
+\label{table:ratios}
+\vspace{-3cm}
+\includegraphics[scale=0.8]{results/ratio_table.pdf}
+\vspace{-2.8cm}
+\caption{Table of ratios of complementarities}
+\end{figure}
+
+
+\bibliography{bachelor}
+
+
+\section{Abbildungen}
+Figure ~\ref{seed}: http://journal.frontiersin.org/article/10.3389/fgene.2014.00023/full
+
+Figure ~\ref{Fig:canonical}: http://www.targetscan.org/docs/7mer.html
+
+Figure sites: http://www.ncbi.nlm.nih.gov/pubmed/17612493
+
+Table ~\ref{fig:tools}: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3927079/
 
 
 
