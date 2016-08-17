@@ -1,8 +1,138 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{alignment}
+??
+\newblock Definition of sequence alignment.
+\newblock URL \url{https://en.wikipedia.org/wiki/Sequence_alignment}.
+
+\bibitem{pairwise}
+??
+\newblock Documentation of module pairwise2.
+\newblock URL
+  \url{http://biopython.org/DIST/docs/api/Bio.pairwise2-module.html}.
+
+\bibitem{ttest}
+??
+\newblock Documentation of ttest function of libreoffice.
+\newblock URL
+  \url{https://wiki.openoffice.org/wiki/Documentation/How_Tos/Calc:_TTEST_function}.
+
+\bibitem{Grunz}
+F.~Afonso-Grunz and S.~Muller.
+\newblock {{P}rinciples of mi{R}{N}{A}-m{R}{N}{A} interactions: beyond sequence
+  complementarity}.
+\newblock {\em Cell. Mol. Life Sci.}, 72(16):3127--3141, Aug 2015.
+
+\bibitem{Ardekani}
+A.~M. Ardekani and M.~M. Naeini.
+\newblock {{T}he {R}ole of {M}icro{R}{N}{A}s in {H}uman {D}iseases}.
+\newblock {\em Avicenna J Med Biotechnol}, 2(4):161--179, Oct 2010.
+
+\bibitem{Betel}
+D.~Betel, A.~Koppal, P.~Agius, C.~Sander, and C.~Leslie.
+\newblock {{C}omprehensive modeling of micro{R}{N}{A} targets predicts
+  functional non-conserved and non-canonical sites}.
+\newblock {\em Genome Biol.}, 11(8):R90, 2010.
+
+\bibitem{Brennecke}
+J.~Brennecke, A.~Stark, R.~B. Russell, and S.~M. Cohen.
+\newblock {{P}rinciples of micro{R}{N}{A}-target recognition}.
+\newblock {\em PLoS Biol.}, 3(3):e85, Mar 2005.
+
+\bibitem{Chou}
+C.~H. Chou, N.~W. Chang, S.~Shrestha, S.~D. Hsu, Y.~L. Lin, W.~H. Lee, C.~D.
+  Yang, H.~C. Hong, T.~Y. Wei, S.~J. Tu, T.~R. Tsai, S.~Y. Ho, T.~Y. Jian,
+  H.~Y. Wu, P.~R. Chen, N.~C. Lin, H.~T. Huang, T.~L. Yang, C.~Y. Pai, C.~S.
+  Tai, W.~L. Chen, C.~Y. Huang, C.~C. Liu, S.~L. Weng, K.~W. Liao, W.~L. Hsu,
+  and H.~D. Huang.
+\newblock {mi{R}{T}ar{B}ase 2016: updates to the experimentally validated
+  mi{R}{N}{A}-target interactions database}.
+\newblock {\em Nucleic Acids Res.}, 44(D1):D239--247, Jan 2016.
+
+\bibitem{Doench}
+J.~G. Doench and P.~A. Sharp.
+\newblock {{S}pecificity of micro{R}{N}{A} target selection in translational
+  repression}.
+\newblock {\em Genes Dev.}, 18(5):504--511, Mar 2004.
 
 \bibitem{Enright}
 A.~J. Enright, B.~John, U.~Gaul, T.~Tuschl, C.~Sander, and D.~S. Marks.
 \newblock {{M}icro{R}{N}{A} targets in {D}rosophila}.
 \newblock {\em Genome Biol.}, 5(1):R1, 2003.
+
+\bibitem{Griffiths-Jones}
+S.~Griffiths-Jones, R.~J. Grocock, S.~van Dongen, A.~Bateman, and A.~J.
+  Enright.
+\newblock {mi{R}{B}ase: micro{R}{N}{A} sequences, targets and gene
+  nomenclature}.
+\newblock {\em Nucleic Acids Res.}, 34(Database issue):D140--144, Jan 2006.
+
+\bibitem{Grimson}
+A.~Grimson, K.~K. Farh, W.~K. Johnston, P.~Garrett-Engele, L.~P. Lim, and D.~P.
+  Bartel.
+\newblock {{M}icro{R}{N}{A} targeting specificity in mammals: determinants
+  beyond seed pairing}.
+\newblock {\em Mol. Cell}, 27(1):91--105, Jul 2007.
+
+\bibitem{Ha}
+M.~Ha and V.~N. Kim.
+\newblock {{R}egulation of micro{R}{N}{A} biogenesis}.
+\newblock {\em Nat. Rev. Mol. Cell Biol.}, 15(8):509--524, Aug 2014.
+
+\bibitem{Hsu}
+S.~D. Hsu, F.~M. Lin, W.~Y. Wu, C.~Liang, W.~C. Huang, W.~L. Chan, W.~T. Tsai,
+  G.~Z. Chen, C.~J. Lee, C.~M. Chiu, C.~H. Chien, M.~C. Wu, C.~Y. Huang, A.~P.
+  Tsou, and H.~D. Huang.
+\newblock {mi{R}{T}ar{B}ase: a database curates experimentally validated
+  micro{R}{N}{A}-target interactions}.
+\newblock {\em Nucleic Acids Res.}, 39(Database issue):D163--169, Jan 2011.
+\newblock URL \url{http://mirtarbase.mbc.nctu.edu.tw/}.
+
+\bibitem{ucsc}
+D.~Karolchik, A.S. Hinrichs, T.S. Furey, K.M. Roskin, C.W. Sugnet, D.~Haussler,
+  and W.J. Kent.
+\newblock The ucsc table browser data retrieval tool, Jun 2004.
+\newblock URl \url{https://genome.ucsc.edu/}.
+
+\bibitem{Kertesz}
+M.~Kertesz, N.~Iovino, U.~Unnerstall, U.~Gaul, and E.~Segal.
+\newblock {{T}he role of site accessibility in micro{R}{N}{A} target
+  recognition}.
+\newblock {\em Nat. Genet.}, 39(10):1278--1284, Oct 2007.
+
+\bibitem{mirbase}
+A.~Kozomara and S.~Griffiths-Jones.
+\newblock {mi{R}{B}ase: integrating micro{R}{N}{A} annotation and
+  deep-sequencing data}.
+\newblock {\em Nucleic Acids Res.}, 39(Database issue):D152--157, Jan 2011.
+\newblock URL \url{http://mirbase.org/}.
+
+\bibitem{Krek}
+A.~Krek, D.~Grun, M.~N. Poy, R.~Wolf, L.~Rosenberg, E.~J. Epstein,
+  P.~MacMenamin, I.~da~Piedade, K.~C. Gunsalus, M.~Stoffel, and N.~Rajewsky.
+\newblock {{C}ombinatorial micro{R}{N}{A} target predictions}.
+\newblock {\em Nat. Genet.}, 37(5):495--500, May 2005.
+
+\bibitem{Lewis}
+B.~P. Lewis, C.~B. Burge, and D.~P. Bartel.
+\newblock {{C}onserved seed pairing, often flanked by adenosines, indicates
+  that thousands of human genes are micro{R}{N}{A} targets}.
+\newblock {\em Cell}, 120(1):15--20, Jan 2005.
+
+\bibitem{biodb}
+U.~Mudunuri, A.~Che, M.~Yi, and R.M. Stephens.
+\newblock biodbnet: the biological database network, 2009.
+\newblock URL \url{https://biodbnet-abcc.ncifcrf.gov/db/db2db.php}.
+
+\bibitem{Peterson}
+S.~M. Peterson, J.~A. Thompson, M.~L. Ufkin, P.~Sathyanarayana, L.~Liaw, and
+  C.~B. Congdon.
+\newblock {{C}ommon features of micro{R}{N}{A} target prediction tools}.
+\newblock {\em Front Genet}, 5:23, 2014.
+
+\bibitem{Rehmsmeier}
+M.~Rehmsmeier, P.~Steffen, M.~Hochsmann, and R.~Giegerich.
+\newblock {{F}ast and effective prediction of micro{R}{N}{A}/target duplexes}.
+\newblock {\em RNA}, 10(10):1507--1517, Oct 2004.
 
 \end{thebibliography}

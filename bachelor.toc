@@ -1,16 +1,17 @@
 \contentsline {section}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {2}Methods and Data}{2}
-\contentsline {subsection}{\numberline {2.1}Methods}{2}
-\contentsline {subsection}{\numberline {2.2}Data}{4}
-\contentsline {subsubsection}{\numberline {2.2.1}miRTarBase}{4}
-\contentsline {subsubsection}{\numberline {2.2.2}miRBase}{4}
-\contentsline {subsubsection}{\numberline {2.2.3}UCSC Genome Bioinformatics Site}{5}
-\contentsline {subsection}{\numberline {2.3}Prediction features}{5}
-\contentsline {subsubsection}{\numberline {2.3.1}Seed matching}{5}
-\contentsline {subsubsection}{\numberline {2.3.2}Free energy}{7}
-\contentsline {subsubsection}{\numberline {2.3.3}Conservation}{7}
-\contentsline {subsubsection}{\numberline {2.3.4}Site accessibility}{7}
-\contentsline {subsubsection}{\numberline {2.3.5}Addtional Watson-Crick pairing}{8}
-\contentsline {subsubsection}{\numberline {2.3.6}Other features}{8}
+\contentsline {subsection}{\numberline {1.1}Background}{1}
+\contentsline {subsection}{\numberline {1.2}Prediction features}{3}
+\contentsline {subsubsection}{\numberline {1.2.1}Seed matching}{3}
+\contentsline {subsubsection}{\numberline {1.2.2}Free energy}{3}
+\contentsline {subsubsection}{\numberline {1.2.3}Conservation}{5}
+\contentsline {subsubsection}{\numberline {1.2.4}Site accessibility}{5}
+\contentsline {subsubsection}{\numberline {1.2.5}Addtional Watson-Crick pairing}{5}
+\contentsline {subsubsection}{\numberline {1.2.6}Other features}{6}
+\contentsline {section}{\numberline {2}Methods and Data}{10}
+\contentsline {subsection}{\numberline {2.1}Methods}{10}
+\contentsline {subsection}{\numberline {2.2}Data}{12}
+\contentsline {subsubsection}{\numberline {2.2.1}miRTarBase}{12}
+\contentsline {subsubsection}{\numberline {2.2.2}miRBase}{12}
+\contentsline {subsubsection}{\numberline {2.2.3}UCSC Genome Bioinformatics Site}{13}
 \contentsline {section}{\numberline {3}Results}{13}
-\contentsline {section}{\numberline {4}Abbildungen}{19}
+\contentsline {section}{\numberline {4}Abbildungen}{22}
