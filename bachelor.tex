@@ -3,6 +3,7 @@
 \usepackage{booktabs}
 \usepackage{chngcntr}
 \usepackage{pdfpages}
+\usepackage{url}
 
 
 \begin{document}
@@ -20,7 +21,7 @@
 
 \bibliographystyle{plain}
 
-
+ 
 \section{Introduction}
 
 miRNAs are small, non-coding RNAs that function in post-transcriptional regulation of gene expression, especially in terms of gene silencing. A miRNA consists of approximately 22 nucleotides which build a single strand RNA and are processed by Drosha and Dicer. After the processing the initial double stranded miRNA-duplex the guide strand will be further used in association with other molecules \cite{Grunz}. The miRNA is therefore mainly active in combination with a protein of the AGO protein family and with this it builds an RNA-induced silencing complex \cite{Ha}. This complex targets a mRNA mainly at its 3' untranslated region (UTR) by complementary binding to the sequence. This binding results in gene silencing either by repression of mRNA translation or degradation of the respective mRNA \cite{Enright}. 
@@ -33,14 +34,10 @@ The challenge of the prediction can be observed by considering the consensus of 
 
 Because the miRNA binds to the sequence of its target gene an obvious starting point can be the complementarity of the miRNA sequence to the gene sequence as almost each tool considers at first. The first thought could be that if the sequence complementarity is quite high this could be interpreted as a new target site. Considering the sequence alignment a high alignment score of miRNA and mRNA sequence can indicate a true target. Whether this is a reliable indication or not will be discussed below. For this assumption there already exist some problems beforehand. Because it is known that the main binding happens within the seed region, other regions are not necessarily complementary and this may lower the complementarity or alignmnet score. 
 
-One of the first features that were discovered was the occurrence of a so called 'seed region' close to the 5' end of the miRNA. This region consists of 7 or 8 nucleotides thath are complementary to the respective nucleotides in the mRNA sequence. Another characteristic is the bulge after the complementary region where the nucleotides do not fit together. After this part complementary bases towards the 3' end of the miRNA may occur again. Whether these rules apply and if they are strong evidence for a prediction will be discussed later. 
+Because of the early knowledge of base complementarity close to the 5'end of the miRNA, one of the first features that was used for the prediction, is the presence of the so called 'seed region' of the miRNA. This region consists of 7 or 8 nucleotides that are complementary to the respective nucleotides in the mRNA sequence. Another early characteristic is the bulge after the complementary region where the nucleotides do not fit together. After this part complementary bases towards the 3' end of the miRNA may occur again. Whether these rules apply and if they are present in validated data will be discussed later. 
 
-A collection of experimental validated miRNA-target interactions(MTIs) is essential. The database miRTarBase provides a big dataset of validated MTIs. 
-
-There are two additional databases that are useful as well: miRBase and UCSC Genome Bioinformatics Site. miRBase provides information about every single miRNA for different organisms. We will only consider miRNAs of \textit{Homo sapiens}. You can get the sequences of the precursor and all mature miRNAs. The UCSC Genome Bioinformatics Site provides information about gene sequences and untranslated regions and their sequences.
+For these miRNA analyses three main databases are useful and necessary. A collection of experimental validated miRNA-target interactions(MTIs) is essential. The database miRTarBase provides a big dataset of validated MTIs. To get information about every single miRNA for different organisms miRBase contains large datasets about the miRNAs. The most interesting information are sequences of the precursor and of all mature miRNAs. For further analyses I will only consider miRNAs of \textit{Homo sapiens}. The last used database is the UCSC Genome Bioinformatics Site. This one provides information about gene sequences and untranslated regions and their sequences \cite{biodb}.
  
-1. Quelle : Research; MicroRNA targets in Drosophila; Anton J Enright, Bino John, Ulrike Gaul, Thomas Tuschl, Chris Sander and Debora S Marks \\
-\\
 
 \section{Methods and Data}
 \subsection{Methods}
