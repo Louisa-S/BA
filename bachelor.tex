@@ -25,7 +25,7 @@
 \section{Introduction}
 \subsection{Background}
 
-miRNAs are small, non-coding RNAs that function in post-transcriptional regulation of gene expression, especially in terms of gene silencing. A miRNA consists of approximately 22 nucleotides which build a single strand RNA and are processed by Drosha and Dicer. After the processing the initial double stranded miRNA-duplex the guide strand will be further used in association with other molecules \cite{Grunz}. The miRNA is therefore mainly active in combination with a protein of the AGO protein family and with this it builds an RNA-induced silencing complex \cite{Ha}. This complex targets a mRNA mainly at its 3' untranslated region (UTR) by complementary binding to the sequence. This binding results in gene silencing either by repression of mRNA translation or degradation of the respective mRNA \cite{Enright}. 
+miRNAs are small, non-coding RNAs that function in post-transcriptional regulation of gene expression, especially in terms of gene silencing. A miRNA consists of approximately 22 nucleotides which build a single strand RNA and are processed by Drosha and Dicer. After processing of the initial double stranded miRNA-duplex, the guide strand will be further used in association with other molecules \cite{Grunz}. In detail, the miRNA is mainly active in combination with a catalytic protein of the AGO protein family. With it, the miRNA builds an RNA-induced silencing complex \cite{Ha}. This complex targets a mRNA mainly at its 3' untranslated region (UTR) by complementary binding to the sequence. It can also bind at the 5' UTR or even in the coding region. Either way, this binding results in gene silencing either by repression of mRNA translation or degradation of the respective mRNA \cite{Enright}. 
   
 This gene regulation by miRNAs plays an important role for many major cell functions like growth, differentiation or metabolism \cite{Ardekani} and is currently examined by many investigators. The importance can also be observed by the fact that more than 60\% of all human genes have a conserved miRNA-binding site \cite{Ha}. Therefore disregulation, either up- or downregulation, may result in different human diseases, especially cancer \cite{Ardekani}. This also leads to the assumption that miRNAs are a useful feature for the diagnosis and treatment of diseases. But the first step is to understand their function and regulation mechanism. With these information it can be possible to predict targets of miRNAs and then specifically effect these target interactions.  
 
@@ -38,15 +38,13 @@ Because the miRNA binds to the sequence of its target gene an obvious starting p
 Because of the early knowledge of base complementarity close to the 5'end of the miRNA, one of the first features that was used for the prediction, is the presence of the so called 'seed region' of the miRNA. This region consists of 7 or 8 nucleotides that are complementary to the respective nucleotides in the mRNA sequence. Another early characteristic is the bulge after the complementary region where the nucleotides do not fit together. After this part complementary bases towards the 3' end of the miRNA may occur again. Whether these rules apply and if they are present in validated data will be discussed later. 
 
 For these miRNA analyses three main databases are useful and necessary. A collection of experimental validated miRNA-target interactions(MTIs) is essential. The database miRTarBase provides a big dataset of validated MTIs \cite{Hsu}. To get information about every single miRNA for different organisms miRBase contains large datasets about the miRNAs. The most interesting information are sequences of the precursor and of all mature miRNAs \cite{mirbase}. For further analyses I will only consider miRNAs of \textit{Homo sapiens}. The last used database is the UCSC Genome Bioinformatics Site. In their table browser you can get data files about human gene sequences and untranslated regions and their respective sequences \cite{ucsc}.
- 
- 
- 
+  
 
 \subsection{Prediction features}
 \subsubsection{Seed matching}
-The main feature that is considered in this research is the sequence complementarity especially at a certain seed region. In contrast to miRNAs in plants which bind nearly perfectly complementary to their targets, miRNAs in animals bind less tightly and are not perfectly complementary. There can be regions were the nucleotides are unbound which results in complex secondary structures that are hard to predict \cite{Rehmsmeier} (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1370637/) The main complementary region or seed region includes nucleotides from position two to eight starting from the 5' end. Figure~\ref{seed} shows the scheme of the seed region (Peterson et al., 2014). This irregularity of the presence of non-complementarity makes the reliable prediction more difficult for animals than for plants and only concentrating on the seed region will lead to many false positives. How significant the consideration of the sequence complementarity of miRNA and mRNA sequeence is, will be further analysed in this research. 
+The main feature that is considered in this research is the sequence complementarity especially at a certain seed region. In contrast to miRNAs in plants which bind nearly perfectly complementary to their targets, miRNAs in animals bind less tightly and are not perfectly complementary. There can be regions were the nucleotides are unbound which results in complex secondary structures that are hard to predict \cite{Rehmsmeier}. The main complementary region or seed region includes nucleotides from position two to eight starting from the 5' end. Figure~\ref{seed} shows the scheme of the seed region \cite{Peterson}. This irregularity of the presence of non-complementarity regions makes the reliable prediction more difficult for animals than for plants. Because concentration on the seed region for a prediction will lead to many false positives. This small region of seven or eight nucleotides would be too unspecific because they can be present in the mRNA although there is no binding site at this position. It would be recommended to take more than the seed region into account to increase the complexity and specificity of the prediction. How significant the consideration of the sequence complementarity of miRNA and mRNA sequence is, will be further analysed with validated data in this research. 
 
-In the mentioned seed region there can be different types of matching patterns: perfect match between six nucleotides, seven nucleotides including the 8th position, seven nucleotides and an Adenine at position one to eight nucleotides and also an Adenine at position one  \cite{Lewis} \cite{Brennecke} \cite{Krek}. Figure~\ref{Fig:canonical} illustrates the different types of sites. (http://www.targetscan.org/docs/7mer.html) Grimson et al. \cite{Grimson} investigated the distribution of the different types. Figure~\ref{types} shows that the repression is the highest if an 8mer site is present. 
+In the mentioned seed region there can be different types of matching patterns: perfect matching between six nucleotides, seven nucleotides including the 8th position, seven nucleotides and an Adenine at position one or eight matching nucleotides from position one to eight and also an Adenine at position one  \cite{Lewis} \cite{Brennecke} \cite{Krek}. Figure~\ref{Fig:canonical} illustrates the different types of sites. Grimson et al. \cite{Grimson} investigated the different types of sites referring to the effectiveness of the gene repression. As shown in figure~\ref{types}, they found that the repression is the highest when an 8mer site is present and the lowest when only six nucleotides are perfectly matching.
 
 
 \begin{figure}
@@ -59,14 +57,15 @@ In the mentioned seed region there can be different types of matching patterns: 
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth]{results/canonical_sites.png}
+\includegraphics[scale=0.8]{results/canonical_sites.png}
 \caption{Canonical sites of seed region}
 \label{Fig:canonical}
 \end{figure}
 
 
 \begin{figure}
-\includegraphics[scale=1]{results/canonical_sites.png}
+\centering
+\includegraphics[scale=0.8]{results/site_3addi.png}
 \caption{Effectiveness of different sites}
 \label{types}
 \end{figure}
@@ -79,27 +78,42 @@ Another feature to take into account is the evolutionary conservation. If a sequ
 
 
 \subsubsection{Site accessibility}
-Kertesz et al. \cite{Kertesz} investigated the importance of site accessibility for the target prediction. (http://www.nature.com/ng/journal/v39/n10/full/ng2135.html) The mRNA generally folds into a secondary structure. Therefore the miRNA can not easily bind to its target because at first interactions within the mRNA have to be broken to make the target accessible. As a result miRNA will favourably bind to regions where the mRNA is more accessible. Kertesz et al. \cite{Kertesz} found that if the targets form higly stem structures the repression is reduced. If sites occur in open loop structures the repression is much higher. Summing up they found that site accessibilty is not less important than seed matching. \\
+Kertesz et al. \cite{Kertesz} investigated the importance of site accessibility for the target prediction. The mRNA generally folds into a secondary structure. Therefore the miRNA can not easily bind to its target because at first, interactions within the mRNA have to be broken to make the target accessible. As a result miRNA will favourably bind to regions where the mRNA is more accessible. Kertesz et al. \cite{Kertesz} found that if the targets form highly stem structures the repression is reduced. If sites occur in open loop structures the repression is much higher. Summing up they found that site accessibility is not less important than seed matching. \\
 
-Quelle: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3927079/\\
 
 \subsubsection{Addtional Watson-Crick pairing}
-http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3800283/
-Grimson et al. 2013
-In addition to the seed matching towards the 5' end, another complementary site towards the 3' end in the miRNA is present. Grimson et al. \cite{Grimson} investigated that the highest down regulation was found when the site started at position 13 and had four or five contiguous base pairings (Figure~\ref{siteregulation}). Considering again the conservation of the nucleotides they found that outside the seed region the contiguous nucleotides starting from nucleotide 12, 13 or 14 were the most conserved ones indicating / demonstrating their functional importance (Figure~\ref{conserved}. Putting the information of seed region and additional base pairing together it can be observed that if one 7mer-m8 site is present as well as a good 3' pairing that the efficacy is the highest. Even though the difference between the efficacy of the presence of one 8mer site and the one mentioned before is not very big. But the improvement of the presence of a good 3' pairing instead of a poor one is more significant.  
+In addition to the seed matching towards the 5' end, another complementary site towards the 3' end in the miRNA is present (Figure~\ref{addipairing}). Grimson et al. \cite{Grimson} investigated that the highest down regulation was found when the site started at position 13 and had four or five contiguous base pairings (Figure~\ref{siteregulation}). Considering again the conservation of the nucleotides they found that outside the seed region the contiguous nucleotides starting from nucleotide 12, 13 or 14 were the most conserved ones indicating / demonstrating their functional importance (Figure~\ref{conserved}). Putting the information of seed region and additional base pairing together, it can be observed that if one 7mer-m8 site is present as well as a good 3' pairing that the efficacy is the highest. Even though the difference between the efficacy of the presence of one 8mer site and the one mentioned before is not very big. But the improvement of the presence of a good 3' pairing instead of a poor one is more significant (Figure ~\ref{efficacy}).   
 
-In between the two complementary areas there is usually a part of non pairing nucleotides where bulges and mismatches are found.
+Between the two complementary areas there is usually a part of non pairing nucleotides where bulges and mismatches are found. These are important for the prevention of the AGO cleavage function \cite{Filipowicz}.
 
 \begin{figure}
+\centering
 \includegraphics[scale=0.3]{results/additional_pairing.PNG}
 \label{addipairing}
-\includegraphics[scale=0.5]{results/site_efficacy.PNG} 
-\label{efficacy}
-\includegraphics[scale=0.5]{results/sites_conserved.PNG} 
-\label{conserved}
+\caption{Addition 3'pairing}
+\end{figure}
+
+\begin{figure}
+\centering
 \includegraphics[scale=0.5]{results/sites_regulation.PNG} 
 \label{siteregulation}
+\caption{Relation between regulation and starting position of additional pairing}
 \end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{results/sites_conserved.PNG} 
+\label{conserved}
+\caption{Conservation of nucleotide positions}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{results/site_efficacy.PNG} 
+\label{efficacy}
+\caption{Efficacy of different combination of seed region and additional 3' pairing}
+\end{figure}
+
 
 
 \subsubsection{Other features}
