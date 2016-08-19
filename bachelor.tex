@@ -117,11 +117,11 @@ Between the two complementary areas there is usually a part of non pairing nucle
 
 
 \subsubsection{Other features}
-To get an even more reliable and precise prediction additional features can be considered. The presence of GU-wobbles is common in targeting. In this wobble positions Guanine(G) binds to Uracil(U) even though the pairing with Cytosine would be prevalent. This special pairing is thermodynamically favourable and occurs therefore in many target interactions but results in lower repression of the translation. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC374233/) As mentioned before miRanda uses different scores for matches in their alignment step. They score the usual base pairing A-U and G-C with +5 and they penalize the other mismatches with a score of -3, excluding the pairing of G and U. This pairing is rewarded with at least +2 and therefore the GU wobbles are not penalized as much as other mismatches because they are very common \cite{Enright}.
+To get an even more reliable and precise prediction additional features can be considered. The presence of GU-wobbles is common in targeting. In this wobble positions Guanine(G) binds to Uracil(U) even though the pairing with Cytosine would be prevalent. This special pairing is thermodynamically favourable and occurs therefore in many target interactions but results in lower repression of the translation \cite{Doench}. As mentioned before miRanda uses different scores for matches in their alignment step. They score the usual base pairing A-U and G-C with +5 and they penalize the other mismatches with a score of -3, excluding the pairing of G and U. This pairing is rewarded with at least +2 and therefore the GU wobbles are not penalized as much as other mismatches because they are very common \cite{Enright}.
  
 https://elifesciences.org/content/4/e05005
 
-Enright et al. \cite{Enright} and Doench et al. \cite{Doench} (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC374233/)  also found that the presence of multiple miRNA target sites results in a higher repression and destabilization of the mRNA. Grimson et al. \cite{Grimson} (http://www.cell.com/molecular-cell/fulltext/S1097-2765(07)00407-8) further investigated that the distance between two sites is also an important criterion. Generally the repression of two present site is the multiplication of the two single once because they act independently. The interesting thing now is that if the two sites are adjacent the repression is increased and not equal to the multiplication of the single ones. The increase in repression is however not very high (Figure~\ref{sitedistance}) To investigate the effect of cooperative miRNAs they analysed a mixture of miR-1 and miR-133 and simulated three different spacings. The results show that a spacing of 4 nt did not show a cooperative repression but 6 or 8 nt spacing showed an increase in repression (Figure~\ref{sitespacing}).\\
+Enright et al. \cite{Enright} and Doench et al. \cite{Doench} also found that the presence of multiple miRNA target sites results in a higher repression and destabilization of the mRNA. Grimson et al. \cite{Grimson} further investigated that the distance between two sites is also an important criterion. Generally the repression of two present site is the multiplication of the two single once because they act independently. The interesting thing now is that if the two sites are adjacent the repression is increased and not equal to the multiplication of the single ones. The increase in repression is however not very high (Figure~\ref{sitedistance}). To investigate the effect of cooperative miRNAs they analysed a mixture of miR-1 and miR-133 and simulated three different spacings. The results show that a spacing of four nucleotides did not show a cooperative repression but six or eight nucleotide spacing showed an increase in repression (Figure~\ref{sitespacing}).\\
 
 \begin{figure}
 \centering
@@ -132,32 +132,33 @@ Enright et al. \cite{Enright} and Doench et al. \cite{Doench} (http://www.ncbi.n
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.8]{results/sites_distance.PNG}
+\includegraphics[scale=0.7]{results/sites_distance.PNG}
 \caption{Effect of multiple sites}
 \label{sitedistance}
 \end{figure}
 
-Another indicator is the position of the binding site relatively to the stop codon and the center of the UTR. Generally sites in the 3'UTR are investigated but Grimson et al. detected that sites in the Open reading frame (ORF) are slightly effective, sites in the 5'UTR not at all \cite{Grimson}. Figure~\ref{siteorf} shows the different efficacies. Another characteristic concerning the site locations it the distance from the stop codon. Figure~\ref{sitestop} illustrates that in the first ~15 nt the efficacy is still very low like in the ORF but afterwards it increases much. 
-The sites were present at least 15 nucleotides from the stop codon and not present in the center of long UTRs but away from it. Grimson et al. also found that the AU nucleotide content is increased in the region of conserved sites \cite{Grimson}.
+Another indicator is the position of the binding site relatively to the stop codon and the center of the UTR. Generally sites in the 3'UTR are investigated but Grimson et al. detected that sites in the Open reading frame (ORF) are slightly effective, sites in the 5'UTR not at all \cite{Grimson}. Figure~\ref{siteorf} shows the different efficacies. Another characteristic concerning the site locations is the distance from the stop codon. Figure~\ref{sitestop} illustrates that approximately in the first 15 nucleotides the efficacy is still very low like in the ORF but afterwards it increases much. 
+The sites were present at least 15 nucleotides from the stop codon and not present in the center of long UTRs but away from it. 
+
+Grimson et al. also found that the AU nucleotide content is increased in the region of conserved sites \cite{Grimson}.
 
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.8]{results/sites_orf.PNG}
+\includegraphics[scale=0.7]{results/sites_orf.PNG}
 \caption{Efficacy of different site locations}
 \label{siteorf}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.7]{results/site_stop.PNG} 
+\includegraphics[scale=0.6]{results/site_stop.PNG} 
 \caption{Efficacy of sites located relative to the stop codon}
 \label{sitestop}
 \end{figure}
 
    
-
-Figure~\ref{fig:tools} shows known prediction tools and the features they consider. As mentioned above the most common feature that early all of them consider are seed matching, conservation and free energy. 
+Considering all these different common and less common features, new targets for miRNAs can be roughly reliably predicted. Figure~\ref{fig:tools} shows known prediction tools and the features they consider. As mentioned above the most common feature that nearly all of them consider are seed matching, conservation and free energy. 
 
 
 \begin{figure}
@@ -215,7 +216,7 @@ For the alignment of miRNA to the corresponding gene the respective miRNA sequen
 
 
 \section{Results}
-For each parameter set the alignment score for every MTI is stored in a table. Additionally the average alignment score, the standard deviation and the p-values are listed underneath. Table~\ref{table:results} shows only a summary of the table, excluding the single alignment scores. (whole table somewhere else) To draw a better comparison, the scores of the non targets are listed right under the scores of the true targets. The averages of both alignment score sets show that the scores of the true targets are in general slightly higher than the ones of the non targets. For the lower alignment scores of e.g. set 1 -2 -2 -1, resulting from really low match scores, the difference is only 0.3, so not significant. For the higher scores the difference amounts to 2. The standard deviation of the non targets is slightly higher than for the true targets but also not very significant. The p-value sheds light on whether the increase in the alignment score is significant when considering the whole set of scores. According to the listed values of the t-test this is a significant increase in the score because they are all really low. The parameters 5 -1 -8 -4 show the most significant difference with a p-value of 2.529E-61 whereas 2 -2 -5 -4 shows the least significant increase but also here the p-value is really low with 3.279E-36. So even though the average scores are not significantly different, the distribution of the score seem to be higher in the true targets than in the non targets.
+For each parameter set the alignment score for every MTI is stored in a table. Additionally the average alignment score, the standard deviation and the p-values are listed underneath. Table~\ref{table:results} shows only a summary of the table, excluding the single alignment scores. (whole table somewhere else) To draw a better comparison, the scores of the non targets are listed right under the scores of the true targets. The averages of both alignment score sets show that the scores of the true targets are in general slightly higher than the ones of the non targets. For the lower alignment scores of e.g. set 1 -2 -2 -1, resulting from really low match scores, the difference is only 0.3, so not significant. For the higher scores the difference amounts to 2. The standard deviation of the non targets is slightly higher than for the true targets but also not very significant. The p-value sheds light on whether the increase in the alignment score is significant when considering the whole set of scores. According to the listed values of the t-test this is a significant increase in the score because they are all really low. The parameters 5 -1 -8 -4 show the most significant difference with a p-value of 2.529E-61 whereas 2 -2 -5 -4 shows the least significant increase but also here the p-value is really low with 3.279E-36. So even though the average scores are not significantly different, the scores of the true targets seem to be distributed towards the higher scores and the ons of the non targets are lower.
 
 \begin{table}
 \label{table:results}
@@ -252,7 +253,7 @@ t-test p-value & 8.824E-50 & 1.131E-49 & 8.157E-42 & 3.279E-36 \\
 
 This increase in the alignment score can be also be observed when considering the distribution of the scores within the two groups of case and control. For two parameter sets such a distribution was plotted which is shown in Figure~\ref{fig:distribution}. On the x-axis the different scores are shown and on the y-axis the percentage of how many of the true targets had these scores. It can be observed that towards the higher alignment scores the percentage of true targets with this score increases. Although there are some scores that are exceptions because more non targets produced this scores than true targets. Assuming the score as the only prediction feature, the high score would classify this target as a true target. This causes therefore still many false positives. But in general the higher the score the higher the likelihood to observe a true target.
 
-For every parameter set the complementarity of the alignments of the miRNA and gene sequence were also plotted. These are shown in Figure~\ref{fig:plot1} to Figure~\ref{fig:plot9}.
+For every parameter set the complementarity of the alignments of the miRNA and gene sequence were also plotted. These are shown in figure~\ref{ratio}.
 
 \begin{figure}
 \includegraphics[scale=0.65]{results/combined_results.pdf}
@@ -299,6 +300,8 @@ Found number & 882 & 793 & 776 & 845  \\
 \end{tabular}
 \end{table}
 
+
+The table in figure ~\ref{table:ratios} shows that the average of the complementarity ratios are pretty similar comparing true targets with non-targets. Highlighted in yellow are the nucleotides of the seed region, in blue the nucleotides of the additional 3' pairing. Building the average ratios of these regions a possible increase could be observed. For the first parameter set, the true targets show a slight increase in the seed region but a decrease in the additional pairing. So the described feature from above can not be significantly observed. For the same set and the negative control, a constant average can be seen. For almost all true target an increase in the seed region and a decrease in the other region can be observed. For the non targets there are different patterns. E.g. for the third parameter set both regions are increased in contrast to the standard average. For the other sets either no big difference can be seen or both are enriched but never decreased. Going back to the plots, there the seed region in the true targets is slightly more visible than for the non targets. But all in all the differences in here are not very big and significant. Both regions can not be observed as clearly as expected.  
 
 \begin{figure}
 \label{table:ratios}

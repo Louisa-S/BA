@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.23)  18 AUG 2016 10:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.23)  19 AUG 2016 16:27
 entering extended mode
 **./bachelor.tex
 (bachelor.tex
@@ -285,26 +285,8 @@ File: results/site_efficacy.PNG Graphic file (type png)
 <use results/site_efficacy.PNG>
 Package pdftex.def Info: results/site_efficacy.PNG used on input line 112.
 (pdftex.def)             Requested size: 262.73091pt x 106.5227pt.
-
-Overfull \hbox (91.40149pt too wide) in paragraph at lines 120--121
-\OT1/cmr/m/n/12 lower re-pres-sion of the trans-la-tion. (http://www.ncbi.nlm.n
-ih.gov/pmc/articles/PMC374233/)
- []
-
-[6 <./results/additional_pairing.PNG> <./results/sites_regulation.PNG>]
-[7 <./results/sites_conserved.PNG> <./results/site_efficacy.PNG>]
-Overfull \hbox (130.58536pt too wide) in paragraph at lines 124--125
-[]\OT1/cmr/m/n/12 Enright et al. [[]] and Doench et al. [[]] (http://www.ncbi.n
-lm.nih.gov/pmc/articles/PMC374233/)
- []
-
-
-Overfull \hbox (6.88477pt too wide) in paragraph at lines 124--125
-\OT1/cmr/m/n/12 (http://www.cell.com/molecular-cell/fulltext/S1097-2765(07)0040
-7-8) fur-ther
- []
-
-
+ [6 <./results/additional_pairing.PNG> <./results/sites_regulation.PNG>] [7 <./
+results/sites_conserved.PNG> <./results/site_efficacy.PNG>]
 Underfull \hbox (badness 10000) in paragraph at lines 124--125
 
  []
@@ -321,86 +303,83 @@ File: results/sites_distance.PNG Graphic file (type png)
 
 <use results/sites_distance.PNG>
 Package pdftex.def Info: results/sites_distance.PNG used on input line 135.
-(pdftex.def)             Requested size: 331.23795pt x 130.08617pt.
+(pdftex.def)             Requested size: 289.83083pt x 113.82446pt.
 
 <results/sites_orf.PNG, id=46, 453.19313pt x 188.95593pt>
 File: results/sites_orf.PNG Graphic file (type png)
 
 <use results/sites_orf.PNG>
-Package pdftex.def Info: results/sites_orf.PNG used on input line 146.
-(pdftex.def)             Requested size: 362.555pt x 151.16493pt.
+Package pdftex.def Info: results/sites_orf.PNG used on input line 148.
+(pdftex.def)             Requested size: 317.23302pt x 132.26823pt.
 
 <results/site_stop.PNG, id=47, 264.99pt x 212.29312pt>
 File: results/site_stop.PNG Graphic file (type png)
 
 <use results/site_stop.PNG>
-Package pdftex.def Info: results/site_stop.PNG used on input line 153.
-(pdftex.def)             Requested size: 185.49173pt x 148.60417pt.
-
-<results/tools.PNG, id=48, 702.37407pt x 350.05782pt>
+Package pdftex.def Info: results/site_stop.PNG used on input line 155.
+(pdftex.def)             Requested size: 158.99522pt x 127.37685pt.
+ [8] [9 <./results/sites_8nt.PNG> <./results/sites_distance.PNG> <./results/sit
+es_orf.PNG>]
+<results/tools.PNG, id=57, 702.37407pt x 350.05782pt>
 File: results/tools.PNG Graphic file (type png)
  <use results/tools.PNG>
-Package pdftex.def Info: results/tools.PNG used on input line 165.
+Package pdftex.def Info: results/tools.PNG used on input line 166.
 (pdftex.def)             Requested size: 351.18617pt x 175.02847pt.
 
-[8] [9 <./results/sites_8nt.PNG> <./results/sites_distance.PNG>] [10 <./results
-/sites_orf.PNG> <./results/site_stop.PNG>] [11 <./results/tools.PNG>] [12]
-[13] [14]
+[10 <./results/site_stop.PNG> <./results/tools.PNG>] [11] [12] [13]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 225.
+(Font)              <7> on input line 226.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 225.
+(Font)              <5> on input line 226.
 
-Overfull \hbox (34.77864pt too wide) in paragraph at lines 225--236
+Overfull \hbox (34.77864pt too wide) in paragraph at lines 226--237
 [][] 
  []
 
+[14]
 
-LaTeX Warning: Reference `fig:plot1' on page 15 undefined on input line 255.
+LaTeX Warning: Reference `ratio' on page 15 undefined on input line 256.
 
-
-LaTeX Warning: Reference `fig:plot9' on page 15 undefined on input line 255.
-
-<results/combined_results.pdf, id=76, 597.23125pt x 845.1575pt>
+<results/combined_results.pdf, id=77, 597.23125pt x 845.1575pt>
 File: results/combined_results.pdf Graphic file (type pdf)
 
 <use results/combined_results.pdf>
-Package pdftex.def Info: results/combined_results.pdf used on input line 258.
+Package pdftex.def Info: results/combined_results.pdf used on input line 259.
 (pdftex.def)             Requested size: 388.19571pt x 549.34587pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--260
+Underfull \hbox (badness 10000) in paragraph at lines 259--261
 [][]
  []
 
 
-LaTeX Warning: Float too large for page by 56.67918pt on input line 261.
+LaTeX Warning: Float too large for page by 56.67918pt on input line 262.
 
-<results/combined_results2.pdf, id=77, 597.23125pt x 845.1575pt>
+<results/combined_results2.pdf, id=78, 597.23125pt x 845.1575pt>
 File: results/combined_results2.pdf Graphic file (type pdf)
 
 <use results/combined_results2.pdf>
-Package pdftex.def Info: results/combined_results2.pdf used on input line 264.
+Package pdftex.def Info: results/combined_results2.pdf used on input line 265.
 (pdftex.def)             Requested size: 388.19571pt x 549.34587pt.
 
 
-LaTeX Warning: Float too large for page by 0.84587pt on input line 265.
+LaTeX Warning: Float too large for page by 0.84587pt on input line 266.
 
-<results/plot_scores-4-4.png, id=78, 578.16pt x 433.62pt>
+<results/plot_scores-4-4.png, id=79, 578.16pt x 433.62pt>
 File: results/plot_scores-4-4.png Graphic file (type png)
 
 <use results/plot_scores-4-4.png>
-Package pdftex.def Info: results/plot_scores-4-4.png used on input line 270.
+Package pdftex.def Info: results/plot_scores-4-4.png used on input line 271.
 (pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
 
-<results/plot_scores5-3-8-2.png, id=79, 578.16pt x 433.62pt>
+<results/plot_scores5-3-8-2.png, id=80, 578.16pt x 433.62pt>
 File: results/plot_scores5-3-8-2.png Graphic file (type png)
 
 <use results/plot_scores5-3-8-2.png>
-Package pdftex.def Info: results/plot_scores5-3-8-2.png used on input line 271.
+Package pdftex.def Info: results/plot_scores5-3-8-2.png used on input line 272.
 
 (pdftex.def)             Requested size: 202.35902pt x 151.76927pt.
 
-Overfull \hbox (17.32913pt too wide) in paragraph at lines 270--272
+Overfull \hbox (17.32913pt too wide) in paragraph at lines 271--273
 [][] [] 
  []
 
@@ -410,15 +389,15 @@ Overfull \hbox (17.32913pt too wide) in paragraph at lines 270--272
 File: results/ratio_table.pdf Graphic file (type pdf)
 
 <use results/ratio_table.pdf>
-Package pdftex.def Info: results/ratio_table.pdf used on input line 306.
+Package pdftex.def Info: results/ratio_table.pdf used on input line 309.
 (pdftex.def)             Requested size: 477.78564pt x 676.12692pt.
 
-Overfull \hbox (87.78564pt too wide) in paragraph at lines 306--308
+Overfull \hbox (87.78564pt too wide) in paragraph at lines 309--311
 [][]
  []
 
 
-LaTeX Warning: Float too large for page by 3.93417pt on input line 309.
+LaTeX Warning: Float too large for page by 3.93417pt on input line 312.
 
 [19] [20 <./results/ratio_table.pdf>] (bachelor.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 15--19
@@ -427,7 +406,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--19
  []
 
 [21] [22])
-Overfull \hbox (15.92357pt too wide) in paragraph at lines 316--317
+Overfull \hbox (15.92357pt too wide) in paragraph at lines 319--320
 \OT1/cmr/m/n/12 Figure  1.1[]: http://journal.frontiersin.org/article/10.3389/f
 gene.2014.00023/full 
  []
@@ -436,21 +415,24 @@ gene.2014.00023/full
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 3075 strings out of 493335
- 44962 string characters out of 3136669
- 116193 words of memory out of 3000000
- 6539 multiletter control sequences out of 15000+200000
+ 3074 strings out of 493335
+ 44947 string characters out of 3136669
+ 116192 words of memory out of 3000000
+ 6538 multiletter control sequences out of 15000+200000
  8410 words of font info for 30 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,39p,1532b,260s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,8n,39p,1561b,260s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
 ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on bachelor.pdf (24 pages, 1600126 bytes).
+Output written on bachelor.pdf (24 pages, 1676139 bytes).
 PDF statistics:
  228 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
