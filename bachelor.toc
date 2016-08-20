@@ -1,17 +1,17 @@
 \contentsline {section}{\numberline {1}Introduction}{1}
 \contentsline {subsection}{\numberline {1.1}Background}{1}
-\contentsline {subsection}{\numberline {1.2}Prediction features}{3}
-\contentsline {subsubsection}{\numberline {1.2.1}Seed matching}{3}
-\contentsline {subsubsection}{\numberline {1.2.2}Free energy}{5}
-\contentsline {subsubsection}{\numberline {1.2.3}Conservation}{5}
-\contentsline {subsubsection}{\numberline {1.2.4}Site accessibility}{5}
-\contentsline {subsubsection}{\numberline {1.2.5}Addtional Watson-Crick pairing}{5}
-\contentsline {subsubsection}{\numberline {1.2.6}Other features}{6}
-\contentsline {section}{\numberline {2}Methods and Data}{10}
-\contentsline {subsection}{\numberline {2.1}Methods}{10}
-\contentsline {subsection}{\numberline {2.2}Data}{12}
-\contentsline {subsubsection}{\numberline {2.2.1}miRTarBase}{12}
-\contentsline {subsubsection}{\numberline {2.2.2}miRBase}{13}
-\contentsline {subsubsection}{\numberline {2.2.3}UCSC Genome Bioinformatics Site}{13}
-\contentsline {section}{\numberline {3}Results}{14}
-\contentsline {section}{\numberline {4}Abbildungen}{23}
+\contentsline {subsection}{\numberline {1.2}Prediction features}{4}
+\contentsline {subsubsection}{\numberline {1.2.1}Seed matching}{4}
+\contentsline {subsubsection}{\numberline {1.2.2}Free energy}{6}
+\contentsline {subsubsection}{\numberline {1.2.3}Conservation}{6}
+\contentsline {subsubsection}{\numberline {1.2.4}Site accessibility}{6}
+\contentsline {subsubsection}{\numberline {1.2.5}Addtional Watson-Crick pairing}{6}
+\contentsline {subsubsection}{\numberline {1.2.6}Other features}{7}
+\contentsline {section}{\numberline {2}Methods and Data}{11}
+\contentsline {subsection}{\numberline {2.1}Methods}{11}
+\contentsline {subsection}{\numberline {2.2}Data}{13}
+\contentsline {subsubsection}{\numberline {2.2.1}miRTarBase}{13}
+\contentsline {subsubsection}{\numberline {2.2.2}miRBase}{14}
+\contentsline {subsubsection}{\numberline {2.2.3}UCSC Genome Bioinformatics Site}{14}
+\contentsline {section}{\numberline {3}Results}{15}
+\contentsline {section}{\numberline {4}Abbildungen}{24}

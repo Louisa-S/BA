@@ -125,10 +125,22 @@ B.~P. Lewis, C.~B. Burge, and D.~P. Bartel.
   that thousands of human genes are micro{R}{N}{A} targets}.
 \newblock {\em Cell}, 120(1):15--20, Jan 2005.
 
+\bibitem{Macfarlane}
+L.~A. Macfarlane and P.~R. Murphy.
+\newblock {{M}icro{R}{N}{A}: {B}iogenesis, {F}unction and {R}ole in {C}ancer}.
+\newblock {\em Curr. Genomics}, 11(7):537--561, Nov 2010.
+
 \bibitem{biodb}
 U.~Mudunuri, A.~Che, M.~Yi, and R.M. Stephens.
 \newblock biodbnet: the biological database network, 2009.
 \newblock URL \url{https://biodbnet-abcc.ncifcrf.gov/db/db2db.php}.
+
+\bibitem{Kelly}
+F.~O'Kelly, L.~Marignol, A.~Meunier, T.~H. Lynch, A.~S. Perry, and
+  D.~Hollywood.
+\newblock {{M}icro{R}{N}{A}s as putative mediators of treatment response in
+  prostate cancer}.
+\newblock {\em Nat Rev Urol}, 9(7):397--407, Jul 2012.
 
 \bibitem{Peterson}
 S.~M. Peterson, J.~A. Thompson, M.~L. Ufkin, P.~Sathyanarayana, L.~Liaw, and

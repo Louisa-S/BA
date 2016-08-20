@@ -25,15 +25,22 @@
 \section{Introduction}
 \subsection{Background}
 
-miRNAs are small, non-coding RNAs that function in post-transcriptional regulation of gene expression, especially in terms of gene silencing. A miRNA consists of approximately 22 nucleotides which build a single strand RNA and are processed by Drosha and Dicer. After processing of the initial double stranded miRNA-duplex, the guide strand will be further used in association with other molecules \cite{Grunz}. In detail, the miRNA is mainly active in combination with a catalytic protein of the AGO protein family. With it, the miRNA builds an RNA-induced silencing complex \cite{Ha}. This complex targets a mRNA mainly at its 3' untranslated region (UTR) by complementary binding to the sequence. It can also bind at the 5' UTR or even in the coding region. Either way, this binding results in gene silencing either by repression of mRNA translation or degradation of the respective mRNA \cite{Enright}. 
-  
-This gene regulation by miRNAs plays an important role for many major cell functions like growth, differentiation or metabolism \cite{Ardekani} and is currently examined by many investigators. The importance can also be observed by the fact that more than 60\% of all human genes have a conserved miRNA-binding site \cite{Ha}. Therefore disregulation, either up- or downregulation, may result in different human diseases, especially cancer \cite{Ardekani}. This also leads to the assumption that miRNAs are a useful feature for the diagnosis and treatment of diseases. But the first step is to understand their function and regulation mechanism. With these information it can be possible to predict targets of miRNAs and then specifically effect these target interactions.  
+miRNAs are small, non-coding RNAs that function in post-transcriptional regulation of gene expression, especially in terms of gene silencing. A miRNA consists of approximately 22 nucleotides which build a single strand RNA. The maturation of the miRNA is shown in figure~\ref{biogenesis}. After transcription the miRNA folds into a hairpin structure and builds the primary miRNA \cite{Macfarlane}. First, this pri-miRNA is processed by Drosha which results in a precursor miRNA (pre-miRNA). This precursor is about 60 to 70 nucleotides long and contains two single stranded miRNAs. After the export into the cytoplasm another processing step is executed with Dicer to gain the actual form of miRNA. But they are still double stranded and need to be unwinded to be mature miRNAs \cite{Maxfarlane}. So after processing of the initial double stranded miRNA-duplex, the guide strand will be further used in association with other molecules \cite{Grunz}. In detail, the miRNA is mainly active in combination with a catalytic protein of the AGO protein family. With it, the miRNA builds an RNA-induced silencing complex \cite{Ha}. This complex targets a mRNA mainly at its 3' untranslated region (UTR) by complementary binding to the sequence. The miRNA functions in this case as a guide with their base pairing \cite{Macfarlane}. It can also bind at the 5' UTR or even in the coding region but these are the uncommon regions. Either way, this binding results in gene silencing either by repression of mRNA translation or degradation of the respective mRNA \cite{Enright}. Which of the two pathways is chosen depends on the degree of complementarity. As figure~\ref{biogenesis} illustrates, if the complementarity is nearly perfect then the target mRNA is degraded otherwise if the seed regions contains mismatches the translation is only repressed. Both ways have a huge impact on the expression and resulting genetic changes which can initiate cancer \cite{Macfarlane}.
 
-But especially this prediction of new targets of miRNAs is the main challenge in the whole field of miRNAs. There is still no perfect, reliable solution for it. There are a few tools that try to solve this problem. One of the first tools was miRanda. In their prediction algorithm they rely on three main features: sequence complementary, free energy and evolutionary conservation \cite{Enright}. Another tool is miRSVR that uses bit vectors and statistical learning approaches to predict targets. In this bit vector they store information like base complementarity, UTR length and distance, AU content and conservation \cite{Betel}. A third tool was developed called TargetScan. Their approach is based on seed matching and additional features like UTR positioning, AU content as well and base pairing of the 13nt to the 16nt miRNA nucleotide. They especially take the seed region into account by defining four different patterns of seed binding sites \cite{Lewis}.
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{results/biogenesis.png}
+\caption{Biogenesis of miRNAs}
+\label{biogenesis}
+\end{figure}
+  
+This gene regulation by miRNAs plays an important role for many major cell functions like growth, differentiation or metabolism and is currently examined by many investigators \cite{Ardekani}. The importance of miRNA and their regulation can also be observed by the fact that more than 60\% of all human genes have one conserved miRNA-binding site ore even more \cite{Ha}. Therefore disregulation, either up- or downregulation, may result in different human diseases, e.g. cancer or autoimmune diseases \cite{Ardekani}. Hence, this also leads to the assumption that miRNAs are a useful feature for the diagnosis and treatment of diseases. But they follow a very special and complicated targeting and this has to be elucidated. So the first step is to understand their function and regulation mechanism. With these information it can be possible to predict targets of miRNAs and then specifically effect these target interactions to diagnose or treat diseases.  
+
+But as already mentioned, especially this prediction of new targets of miRNAs is the main challenge in the whole field of miRNAs. There is still no perfect, reliable solution for it. There are a few tools that try to solve this problem. One of the first tools was miRanda. In their prediction algorithm they rely on three main features: sequence complementary, free energy and evolutionary conservation \cite{Enright}. Another tool is miRSVR that uses bit vectors and statistical learning approaches to predict targets. In this bit vector they store information like base complementarity, UTR length and distance, AU content and conservation \cite{Betel}. A third tool was developed called TargetScan. Their approach is based on seed matching and additional features like UTR positioning, AU content as well and base pairing of the 13nt to the 16nt miRNA nucleotide. They especially take the seed region into account by defining four different patterns of seed binding sites \cite{Lewis}.
 
 The challenge of the prediction can be observed by considering the consensus of all predicted targets of the different tools.  Just a really small subset of all targets are predicted by all tools. If you then compare validated target interactions with the results of all tools about 16\% of all interactions are predicted by at least one tool. But there is no interaction that is predicted by all tools. That shows that there are big differences between the different tools partly because of the variable features they consider. (Quelle Keller Vorlesung 4) 
 
-Because the miRNA binds to the sequence of its target gene an obvious starting point can be the complementarity of the miRNA sequence to the gene sequence as almost each tool considers at first. The first thought could be that if the sequence complementarity is quite high this could be interpreted as a new target site. Considering the sequence alignment a high alignment score of miRNA and mRNA sequence can indicate a true target. Whether this is a reliable indication or not will be discussed below. For this assumption there already exist some problems beforehand. Because it is known that the main binding happens within the seed region, other regions are not necessarily complementary and this may lower the complementarity or alignmnet score. 
+Because the miRNA binds to the sequence of its target gene an obvious starting point can be the complementarity of the miRNA sequence to the gene sequence as almost each tool considers at first. The first thought could be that if the sequence complementarity is quite high this could be interpreted as a new target site. Considering the sequence alignment a high alignment score of miRNA and mRNA sequence can indicate a true target. Whether this is a reliable indication or not will be discussed below. For this assumption there already exist some problems beforehand. Because it is known that the main binding happens within the seed region, other regions are not necessarily complementary and this may lower the complementarity or alignment score. 
 
 Because of the early knowledge of base complementarity close to the 5'end of the miRNA, one of the first features that was used for the prediction, is the presence of the so called 'seed region' of the miRNA. This region consists of 7 or 8 nucleotides that are complementary to the respective nucleotides in the mRNA sequence. Another early characteristic is the bulge after the complementary region where the nucleotides do not fit together. After this part complementary bases towards the 3' end of the miRNA may occur again. Whether these rules apply and if they are present in validated data will be discussed later. 
 
@@ -49,7 +56,7 @@ In the mentioned seed region there can be different types of matching patterns: 
 
 \begin{figure}
 \centering
-\includegraphics[scale=3]{results/seedmatching.png} 
+\includegraphics[scale=2.8]{results/seedmatching.png} 
 \caption{Scheme of seed matching}
 \label{seed}
 \end{figure}
@@ -57,7 +64,7 @@ In the mentioned seed region there can be different types of matching patterns: 
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.8]{results/canonical_sites.png}
+\includegraphics[scale=0.6]{results/canonical_sites.png}
 \caption{Canonical sites of seed region}
 \label{Fig:canonical}
 \end{figure}
@@ -65,7 +72,7 @@ In the mentioned seed region there can be different types of matching patterns: 
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.8]{results/site_3addi.png}
+\includegraphics[scale=0.6]{results/site_3addi.png}
 \caption{Effectiveness of different sites}
 \label{types}
 \end{figure}
@@ -74,7 +81,7 @@ In the mentioned seed region there can be different types of matching patterns: 
 The free energy of a system determines its stability and tightness of binding. If the free energy is lower than the binding between the miRNA and the mRNA sequence is tighter resulting in more evidence that this miRNA targets this mRNA. If the energy is high then the binding is not very favourable meaning the miRNA not favours to target this mRNA at this position. Some tools like RNAhybrid \cite{Rehmsmeier} rely mainly on this feature. (thermodynamics von miranda)
  
 \subsubsection{Conservation}
-Another feature to take into account is the evolutionary conservation. If a sequence occurs across species it is defined as conserved. This implicates that this part has been maintained by evolution because of a selected function \cite{Peterson}. Conservation near the miRNA binding site can indicate that this part of the sequence is necessary for some mechanisms. This includes convercation of the miRNA itself as well as the conservation of the respective site of the mRNA. These conservations can be analysed with phylogentic methods.
+Another feature to take into account is the evolutionary conservation. If a sequence occurs across species it is defined as conserved. This implicates that this part has been maintained by evolution because of a selected function \cite{Peterson}. Conservation near the miRNA binding site can indicate that this part of the sequence is necessary for some mechanisms. This includes conservation of the miRNA itself as well as the conservation of the respective site of the mRNA. These conservations can be analysed with phylogenetic methods. In terms of conservation, figure~\ref{conserved} shows how conserved the different nucleotides of a miRNA are implicating regions like the seed region and additional 3' pairing. 
 
 
 \subsubsection{Site accessibility}
@@ -89,29 +96,29 @@ Between the two complementary areas there is usually a part of non pairing nucle
 \begin{figure}
 \centering
 \includegraphics[scale=0.3]{results/additional_pairing.PNG}
-\label{addipairing}
 \caption{Addition 3'pairing}
+\label{addipairing}
 \end{figure}
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.5]{results/sites_regulation.PNG} 
-\label{siteregulation}
+\includegraphics[scale=0.4]{results/sites_regulation.PNG} 
 \caption{Relation between regulation and starting position of additional pairing}
+\label{siteregulation}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[scale=0.5]{results/sites_conserved.PNG} 
-\label{conserved}
 \caption{Conservation of nucleotide positions}
+\label{conserved}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[scale=0.5]{results/site_efficacy.PNG} 
-\label{efficacy}
 \caption{Efficacy of different combination of seed region and additional 3' pairing}
+\label{efficacy}
 \end{figure}
 
 
@@ -137,11 +144,7 @@ Enright et al. \cite{Enright} and Doench et al. \cite{Doench} also found that th
 \label{sitedistance}
 \end{figure}
 
-Another indicator is the position of the binding site relatively to the stop codon and the center of the UTR. Generally sites in the 3'UTR are investigated but Grimson et al. detected that sites in the Open reading frame (ORF) are slightly effective, sites in the 5'UTR not at all \cite{Grimson}. Figure~\ref{siteorf} shows the different efficacies. Another characteristic concerning the site locations is the distance from the stop codon. Figure~\ref{sitestop} illustrates that approximately in the first 15 nucleotides the efficacy is still very low like in the ORF but afterwards it increases much. 
-The sites were present at least 15 nucleotides from the stop codon and not present in the center of long UTRs but away from it. 
-
-Grimson et al. also found that the AU nucleotide content is increased in the region of conserved sites \cite{Grimson}.
-
+Another indicator is the position of the binding site relatively to the stop codon and the center of the UTR. Generally sites in the 3'UTR are investigated but Grimson et al. detected that sites in the Open reading frame (ORF) are slightly effective, sites in the 5'UTR not at all \cite{Grimson}. 
 
 \begin{figure}
 \centering
@@ -149,6 +152,11 @@ Grimson et al. also found that the AU nucleotide content is increased in the reg
 \caption{Efficacy of different site locations}
 \label{siteorf}
 \end{figure}
+
+Figure~\ref{siteorf} shows the different efficacies. Another characteristic concerning the site locations is the distance from the stop codon. Figure~\ref{sitestop} illustrates that approximately in the first 15 nucleotides the efficacy is still very low like in the ORF but afterwards it increases much. 
+The sites were present at least 15 nucleotides from the stop codon and not present in the center of long UTRs but away from it. 
+
+Grimson et al. also found that the AU nucleotide content is increased in the region of conserved sites \cite{Grimson}.
 
 \begin{figure}
 \centering
@@ -178,7 +186,6 @@ The Biopython library provides a module, pairwise2, for pairwise local alignment
 To be able to analyse the data statistically a set of negative controls is required. To produce this data, miRNAs were randomly assigned to genes and then aligned in the same way as the sequences of the true target interactions. For these datasets the average and standard deviation were computed as well. Then with case and control alignment scores a statistical two-tailed t-test for two samples with equal variances was performed with LibreOffice \cite{ttest}. This provides a p-value as a result. The lower this p-value is, the more significant the increase of the alignment score of the true targets is. If there is an increase in the score, this would be an indication that is we only calculate the alignment score for a new miRNA and any target sequence and observe a high one, the probability that this is a true target would be high. If this is a reliable feature for the prediction will be discussed in the following.
 
 \begin{table}
-\label{table:parameter}
 \caption{Parameter sets}
 \vspace{0.3cm}
 \begin{tabular}{c|c|c|c|c}
@@ -195,6 +202,7 @@ Parameterset & match score & mismatch score & gap open & gap extend\\
 9 &  5 & -4 & -6 & -4 \\
 \hline
 \end{tabular}
+\label{table:parameter}
 \end{table}
 
  
@@ -219,7 +227,6 @@ For the alignment of miRNA to the corresponding gene the respective miRNA sequen
 For each parameter set the alignment score for every MTI is stored in a table. Additionally the average alignment score, the standard deviation and the p-values are listed underneath. Table~\ref{table:results} shows only a summary of the table, excluding the single alignment scores. (whole table somewhere else) To draw a better comparison, the scores of the non targets are listed right under the scores of the true targets. The averages of both alignment score sets show that the scores of the true targets are in general slightly higher than the ones of the non targets. For the lower alignment scores of e.g. set 1 -2 -2 -1, resulting from really low match scores, the difference is only 0.3, so not significant. For the higher scores the difference amounts to 2. The standard deviation of the non targets is slightly higher than for the true targets but also not very significant. The p-value sheds light on whether the increase in the alignment score is significant when considering the whole set of scores. According to the listed values of the t-test this is a significant increase in the score because they are all really low. The parameters 5 -1 -8 -4 show the most significant difference with a p-value of 2.529E-61 whereas 2 -2 -5 -4 shows the least significant increase but also here the p-value is really low with 3.279E-36. So even though the average scores are not significantly different, the scores of the true targets seem to be distributed towards the higher scores and the ons of the non targets are lower.
 
 \begin{table}
-\label{table:results}
 \footnotesize
 \caption{Table of alignment results}
 \vspace{0.3cm}
@@ -248,24 +255,10 @@ Standard deviation non targets & 1.311 & 1.309 & 1.385 & 2.868\\
 t-test p-value & 8.824E-50 & 1.131E-49 & 8.157E-42 & 3.279E-36 \\
 \hline
 \end{tabular}
-
+\label{table:results}
 \end{table}
 
-This increase in the alignment score can be also be observed when considering the distribution of the scores within the two groups of case and control. For two parameter sets such a distribution was plotted which is shown in Figure~\ref{fig:distribution}. On the x-axis the different scores are shown and on the y-axis the percentage of how many of the true targets had these scores. It can be observed that towards the higher alignment scores the percentage of true targets with this score increases. Although there are some scores that are exceptions because more non targets produced this scores than true targets. Assuming the score as the only prediction feature, the high score would classify this target as a true target. This causes therefore still many false positives. But in general the higher the score the higher the likelihood to observe a true target.
-
-For every parameter set the complementarity of the alignments of the miRNA and gene sequence were also plotted. These are shown in figure~\ref{ratio}.
-
-\begin{figure}
-\includegraphics[scale=0.65]{results/combined_results.pdf}
-\label{ratios}
-\caption{Ratios of complementarity per parameter set: targets right, non targets left}
-\end{figure}
-
-\begin{figure}
-\includegraphics[scale=0.65]{results/combined_results2.pdf}
-\end{figure}
-
-
+This increase in the alignment score can be also be observed when considering the distribution of the scores within the two groups of case and control. For two parameter sets such a distribution was plotted which is shown in figure~\ref{fig:distribution}. 
 
 \begin{figure}
 \includegraphics[scale=0.35]{results/plot_scores-4-4.png}
@@ -274,6 +267,22 @@ For every parameter set the complementarity of the alignments of the miRNA and g
 \label{fig:distribution}
 \end{figure}
 
+On the x-axis the different scores are shown and on the y-axis the percentage of how many of the true targets had these scores. It can be observed that towards the higher alignment scores the percentage of true targets with this score increases. Although there are some scores that are exceptions because more non targets produced this scores than true targets. Assuming the score as the only prediction feature, the high score would classify this target as a true target. This causes therefore still many false positives. But in general the higher the score the higher the likelihood to observe a true target.
+
+For every parameter set the complementarity of the alignments of the miRNA and gene sequence were also plotted. These are shown in figure~\ref{ratios}.
+
+\begin{figure}
+\includegraphics[scale=0.65]{results/combined_results.pdf}
+\caption{Ratios of complementarity per parameter set: targets right, non targets left}
+\label{ratios}
+\end{figure}
+
+\begin{figure}
+\includegraphics[scale=0.65]{results/combined_results2.pdf}
+\end{figure}
+
+
+
 
 The x-axis of the plots shows the positions one to 22 or more of the miRNA, the y-axis the ratio of complementary bases at this position considering all alignments produced with these parameters. For some sets there is not a significant difference between true targets and non targets, e.g. for parameters -5 -1 . Regarding set 1 -2 -2 -1 and for the true target an increase in complementarity in the seed region can be observed. On the other hand the ratio towards the end gets really low down to only 30\% of the bases were complementary to the target sequence. In comparison, maximum of complementarity of the non targets is shifted towards the central positions, not showing the typical seed region. Notably the plot of the true targets does not show the complementary region towards the 3' end. Considering the other figures of the complementarities there are no significant differences between the two groups. For the non targets the complementarity is almost as high as for the true targets, gaining no reliable information for the prediction. This implicates that the consideration of the complementarities of the miRNA positions is not a significant and reliable prediction feature.
 
@@ -281,7 +290,6 @@ The analysis of the alignment starting positions was not really successful and s
 
 
 \begin{table}
-\label{tab:positions}
 \caption{Number of common alignment starting positions}
 \vspace{0.3cm}
 \begin{tabular}{c||c|c|c|c|c} 
@@ -298,17 +306,18 @@ Found number & 815 & 804 & 388 & 411 & 800\\
 Found number & 882 & 793 & 776 & 845  \\
 \hline
 \end{tabular}
+\label{tab:positions}
 \end{table}
 
 
 The table in figure ~\ref{table:ratios} shows that the average of the complementarity ratios are pretty similar comparing true targets with non-targets. Highlighted in yellow are the nucleotides of the seed region, in blue the nucleotides of the additional 3' pairing. Building the average ratios of these regions a possible increase could be observed. For the first parameter set, the true targets show a slight increase in the seed region but a decrease in the additional pairing. So the described feature from above can not be significantly observed. For the same set and the negative control, a constant average can be seen. For almost all true target an increase in the seed region and a decrease in the other region can be observed. For the non targets there are different patterns. E.g. for the third parameter set both regions are increased in contrast to the standard average. For the other sets either no big difference can be seen or both are enriched but never decreased. Going back to the plots, there the seed region in the true targets is slightly more visible than for the non targets. But all in all the differences in here are not very big and significant. Both regions can not be observed as clearly as expected.  
 
 \begin{figure}
-\label{table:ratios}
 \vspace{-3cm}
 \includegraphics[scale=0.8]{results/ratio_table.pdf}
 \vspace{-2.8cm}
 \caption{Table of ratios of complementarities}
+\label{table:ratios}
 \end{figure}
 
 \newpage
@@ -316,6 +325,8 @@ The table in figure ~\ref{table:ratios} shows that the average of the complement
 
 
 \section{Abbildungen}
+
+Figure~\ref{biogenesis}: \cite{Kelly} http://www.nature.com/nrurol/journal/v9/n7/images/nrurol.2012.104-f1.jpg
 Figure ~\ref{seed}: http://journal.frontiersin.org/article/10.3389/fgene.2014.00023/full
 
 Figure ~\ref{Fig:canonical}: http://www.targetscan.org/docs/7mer.html
