@@ -128,7 +128,7 @@ To get an even more reliable and precise prediction additional features can be c
  
 https://elifesciences.org/content/4/e05005
 
-Enright et al. \cite{Enright} and Doench et al. \cite{Doench} also found that the presence of multiple miRNA target sites results in a higher repression and destabilization of the mRNA. Grimson et al. \cite{Grimson} further investigated that the distance between two sites is also an important criterion. Generally the repression of two present site is the multiplication of the two single once because they act independently. The interesting thing now is that if the two sites are adjacent the repression is increased and not equal to the multiplication of the single ones. The increase in repression is however not very high (Figure~\ref{sitedistance}). To investigate the effect of cooperative miRNAs they analysed a mixture of miR-1 and miR-133 and simulated three different spacings. The results show that a spacing of four nucleotides did not show a cooperative repression but six or eight nucleotide spacing showed an increase in repression (Figure~\ref{sitespacing}).\\
+Enright et al. \cite{Enright} and Doench et al. \cite{Doench} also found that the presence of multiple miRNA target sites results in a higher repression and destabilization of the mRNA. Grimson et al. \cite{Grimson} further investigated that the distance between two sites is also an important criterion. Generally the repression of two present site is the multiplication of the two single once because they act independently. The interesting thing now is that if the two sites are adjacent the repression is increased and not equal to the multiplication of the single ones. The increase in repression is however not very high (Figure~\ref{sitedistance}). To investigate the effect of cooperative miRNAs they analysed a mixture of miR-1 and miR-133 and simulated three different spacings. The results show that a spacing of four nucleotides did not show a cooperative repression but six or eight nucleotide spacing showed an increase in repression (Figure~\ref{sitespacing}).
 
 \begin{figure}
 \centering
@@ -224,7 +224,7 @@ For the alignment of miRNA to the corresponding gene the respective miRNA sequen
 
 
 \section{Results}
-For each parameter set the alignment score for every MTI is stored in a table. Additionally the average alignment score, the standard deviation and the p-values are listed underneath. Table~\ref{table:results} shows only a summary of the table, excluding the single alignment scores. (whole table somewhere else) To draw a better comparison, the scores of the non targets are listed right under the scores of the true targets. The averages of both alignment score sets show that the scores of the true targets are in general slightly higher than the ones of the non targets. For the lower alignment scores of e.g. set 1 -2 -2 -1, resulting from really low match scores, the difference is only 0.3, so not significant. For the higher scores the difference amounts to 2. The standard deviation of the non targets is slightly higher than for the true targets but also not very significant. The p-value sheds light on whether the increase in the alignment score is significant when considering the whole set of scores. According to the listed values of the t-test this is a significant increase in the score because they are all really low. The parameters 5 -1 -8 -4 show the most significant difference with a p-value of 2.529E-61 whereas 2 -2 -5 -4 shows the least significant increase but also here the p-value is really low with 3.279E-36. So even though the average scores are not significantly different, the scores of the true targets seem to be distributed towards the higher scores and the ons of the non targets are lower.
+For each parameter set the alignment score for every MTI is stored in a table. Additionally the average alignment score, the standard deviation and the p-values are listed underneath. Table~\ref{table:results} shows only a summary of the table, excluding the single alignment scores. (whole table somewhere else) To draw a better comparison, the scores of the non targets are listed right under the scores of the true targets. The averages of both alignment score sets show that the scores of the true targets are in general only slightly higher than the ones of the non targets. For the lower alignment scores of e.g. set 1 -2 -2 -1, resulting from really low match scores, the difference is only 0.3, so not very significant. For the higher scores, the difference amounts to 2. The standard deviation of the non targets is slightly higher than for the true targets but also not very significant. The p-value sheds light on whether the increase in the alignment score is significant when considering the whole set of scores. According to the listed values of the t-test this is a significant increase in the score because they are all really low. The parameters 5 -1 -8 -4 show the most significant difference with a p-value of 2.529E-61 whereas 2 -2 -5 -4 shows the least significant increase but also here the p-value is really low with 3.279E-36. So even though the average scores are not significantly different, the scores of the true targets seem to be distributed in the higher scores and the ones of the non targets in the lower scores.
 
 \begin{table}
 \footnotesize
@@ -258,33 +258,39 @@ t-test p-value & 8.824E-50 & 1.131E-49 & 8.157E-42 & 3.279E-36 \\
 \label{table:results}
 \end{table}
 
-This increase in the alignment score can be also be observed when considering the distribution of the scores within the two groups of case and control. For two parameter sets such a distribution was plotted which is shown in figure~\ref{fig:distribution}. 
+This increase in the alignment score can be also be observed when considering the distribution of the scores within the two groups of case and control. For two parameter sets (No. 1 and no. 8) such a distribution was plotted which is shown in figure~\ref{fig:distribution}. 
 
 \begin{figure}
-\includegraphics[scale=0.35]{results/plot_scores-4-4.png}
-\includegraphics[scale=0.35]{results/plot_scores5-3-8-2.png}
+\includegraphics[scale=0.35]{results/plot_scores-4-4_thresh.png}
+\includegraphics[scale=0.35]{results/plot_scores5-3-8-2_thresh.png}
 \caption{Distribution of alignment scores, parameters -4 -4 and 5 -3 -8- 2}
 \label{fig:distribution}
 \end{figure}
 
-On the x-axis the different scores are shown and on the y-axis the percentage of how many of the true targets had these scores. It can be observed that towards the higher alignment scores the percentage of true targets with this score increases. Although there are some scores that are exceptions because more non targets produced this scores than true targets. Assuming the score as the only prediction feature, the high score would classify this target as a true target. This causes therefore still many false positives. But in general the higher the score the higher the likelihood to observe a true target.
+On the x-axis the different existing scores of the respective data set are shown and on the y-axis the percentage of how many of the true targets had these scores. It can be observed that towards the higher alignment scores the percentage of true targets with this score increases. But also, there are some scores that are exceptions because more non targets produced this scores than true targets shown by lower y-values. Using this score as a prediction feature, a certain threshold needs to be determined to identify a true target. In figure~\ref{fig:distribution} a threshold of 90\% is delineated meaning at least 90\% true targets produced a certain alignment but still 10\% of random non targets had this score as well. Assuming this threshold and using the alignment scores for a prediction, for the first parameter set if we have scores of nine, 17, 20, 21, 22 or 23, a mRNA would be classified as a true target. Obviously the score nine would not fit in the pattern because it is a really low alignment score and the binding site would not be very suitable. On the other hand, alignments of miRNA and mRNA with a resulting score or 19 which belongs to the higher scores for this set, would not be classified as a true target even though the binding might be good. How this classification will look like depends strongly on this threshold. A lower threshold will result in a higher lower specificity and higher sensitivity, a higher one vice versa, so the two measurements of the performance need to be balanced.
 
-For every parameter set the complementarity of the alignments of the miRNA and gene sequence were also plotted. These are shown in figure~\ref{ratios}.
+For the second plot the same can be observed: some lower alignment score are above the threshold although they are not suitable and for some higher ones the probability to be a true target would be low.
+
+Summing up, assuming the score as the only prediction feature and given a certain threshold, some mRNAs are predicted right to be true targets but there are also false positives. Given high alignment scores, a true target is not necessarily present. This uncertainty can be compensated by considering many more features to combine them and get a more reliable prediction.\\
+
+
+For each parameter set the complementarity of single nucleotides of the alignments of miRNA and target gene sequence were also plotted. These plots are shown in figure~\ref{ratios}.
 
 \begin{figure}
 \includegraphics[scale=0.65]{results/combined_results.pdf}
-\caption{Ratios of complementarity per parameter set: targets right, non targets left}
-\label{ratios}
+
 \end{figure}
 
 \begin{figure}
 \includegraphics[scale=0.65]{results/combined_results2.pdf}
+\vspace{-4cm}
+\caption{Ratios of complementarity per parameter set (A-H): targets right, non targets left}
+\label{ratios}
 \end{figure}
 
+The x-axis of the plots shows the positions one to 22 or more of the miRNA, the y-axis the ratio of complementary bases at this position considering all alignments produced with these parameters. Because most of the miRNAs are only 22 nucleotides long, I will only focus on these positions because higher positions are very imprecise because of the different lengths.
 
-
-
-The x-axis of the plots shows the positions one to 22 or more of the miRNA, the y-axis the ratio of complementary bases at this position considering all alignments produced with these parameters. For some sets there is not a significant difference between true targets and non targets, e.g. for parameters -5 -1 . Regarding set 1 -2 -2 -1 and for the true target an increase in complementarity in the seed region can be observed. On the other hand the ratio towards the end gets really low down to only 30\% of the bases were complementary to the target sequence. In comparison, maximum of complementarity of the non targets is shifted towards the central positions, not showing the typical seed region. Notably the plot of the true targets does not show the complementary region towards the 3' end. Considering the other figures of the complementarities there are no significant differences between the two groups. For the non targets the complementarity is almost as high as for the true targets, gaining no reliable information for the prediction. This implicates that the consideration of the complementarities of the miRNA positions is not a significant and reliable prediction feature.
+For some sets there is not a significant difference between true targets and non targets, e.g. in plots H and I. Regarding set A and for the true target an increase in complementarity in the seed region can be observed. On the other hand the ratio towards the end gets really low down to only 30\% of the bases were complementary to the target sequence. In comparison, maximum of complementarity of the non targets is shifted towards the central positions, not showing the typical seed region. Notably the plot of the true targets does not show the complementary region towards the 3' end. Considering the other figures of the complementarities there are no significant differences between the two groups. For the non targets the complementarity is almost as high as for the true targets, gaining no reliable information for the prediction. This implicates that the consideration of the complementarities of the miRNA positions is not a significant and reliable prediction feature.
 
 The analysis of the alignment starting positions was not really successful and significant. Table~\ref{tab:positions} shows the number of the own predicted positions that were also given in the miRTarBase. It can be seen that two sets deliver only half the number of the other. These two sets also use very similar parameters. This shows that the alignment positions strongly depend on the selected parameters. In comparison to the given number of about 3700 provided positions in the miRTarBase the numbers of the respective own found ones are in general not very high. This can be due to the different sizes of the UTRs of the genes. In this research they are from the UCSC website whereas the miRTarBase may use another source. Therefore the sizes can be a bit different. To eliminate these small disagreements I allowed a window of 10 positions where the starting position can be. So if the provided miRTarBase position is given, the own predicted position is classified as consistent if the position lies in a window of +5 or -5 related to the miRTarBase position. 
 
