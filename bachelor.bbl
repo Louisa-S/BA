@@ -1,156 +1,158 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{}
 
-\bibitem{alignment}
-??
+\bibitem[??, 2000a]{alignment}
+?? (2000a).
 \newblock Definition of sequence alignment.
 \newblock URL \url{https://en.wikipedia.org/wiki/Sequence_alignment}.
 
-\bibitem{pairwise}
-??
+\bibitem[??, 2000b]{pairwise}
+?? (2000b).
 \newblock Documentation of module pairwise2.
 \newblock URL
   \url{http://biopython.org/DIST/docs/api/Bio.pairwise2-module.html}.
 
-\bibitem{ttest}
-??
+\bibitem[??, 2000c]{ttest}
+?? (2000c).
 \newblock Documentation of ttest function of libreoffice.
 \newblock URL
   \url{https://wiki.openoffice.org/wiki/Documentation/How_Tos/Calc:_TTEST_function}.
 
-\bibitem{Grunz}
-F.~Afonso-Grunz and S.~Muller.
+\bibitem[Afonso-Grunz and Muller, 2015]{Grunz}
+Afonso-Grunz, F. and Muller, S. (2015).
 \newblock {{P}rinciples of mi{R}{N}{A}-m{R}{N}{A} interactions: beyond sequence
   complementarity}.
-\newblock {\em Cell. Mol. Life Sci.}, 72(16):3127--3141, Aug 2015.
+\newblock {\em Cell. Mol. Life Sci.}, 72(16):3127--3141.
 
-\bibitem{Ardekani}
-A.~M. Ardekani and M.~M. Naeini.
+\bibitem[Ardekani and Naeini, 2010]{Ardekani}
+Ardekani, A.~M. and Naeini, M.~M. (2010).
 \newblock {{T}he {R}ole of {M}icro{R}{N}{A}s in {H}uman {D}iseases}.
-\newblock {\em Avicenna J Med Biotechnol}, 2(4):161--179, Oct 2010.
+\newblock {\em Avicenna J Med Biotechnol}, 2(4):161--179.
 
-\bibitem{Betel}
-D.~Betel, A.~Koppal, P.~Agius, C.~Sander, and C.~Leslie.
+\bibitem[Betel et~al., 2010]{Betel}
+Betel, D., Koppal, A., Agius, P., Sander, C., and Leslie, C. (2010).
 \newblock {{C}omprehensive modeling of micro{R}{N}{A} targets predicts
   functional non-conserved and non-canonical sites}.
-\newblock {\em Genome Biol.}, 11(8):R90, 2010.
+\newblock {\em Genome Biol.}, 11(8):R90.
 
-\bibitem{Brennecke}
-J.~Brennecke, A.~Stark, R.~B. Russell, and S.~M. Cohen.
+\bibitem[Brennecke et~al., 2005]{Brennecke}
+Brennecke, J., Stark, A., Russell, R.~B., and Cohen, S.~M. (2005).
 \newblock {{P}rinciples of micro{R}{N}{A}-target recognition}.
-\newblock {\em PLoS Biol.}, 3(3):e85, Mar 2005.
+\newblock {\em PLoS Biol.}, 3(3):e85.
 
-\bibitem{Chou}
-C.~H. Chou, N.~W. Chang, S.~Shrestha, S.~D. Hsu, Y.~L. Lin, W.~H. Lee, C.~D.
-  Yang, H.~C. Hong, T.~Y. Wei, S.~J. Tu, T.~R. Tsai, S.~Y. Ho, T.~Y. Jian,
-  H.~Y. Wu, P.~R. Chen, N.~C. Lin, H.~T. Huang, T.~L. Yang, C.~Y. Pai, C.~S.
-  Tai, W.~L. Chen, C.~Y. Huang, C.~C. Liu, S.~L. Weng, K.~W. Liao, W.~L. Hsu,
-  and H.~D. Huang.
+\bibitem[Chou et~al., 2016]{Chou}
+Chou, C.~H., Chang, N.~W., Shrestha, S., Hsu, S.~D., Lin, Y.~L., Lee, W.~H.,
+  Yang, C.~D., Hong, H.~C., Wei, T.~Y., Tu, S.~J., Tsai, T.~R., Ho, S.~Y.,
+  Jian, T.~Y., Wu, H.~Y., Chen, P.~R., Lin, N.~C., Huang, H.~T., Yang, T.~L.,
+  Pai, C.~Y., Tai, C.~S., Chen, W.~L., Huang, C.~Y., Liu, C.~C., Weng, S.~L.,
+  Liao, K.~W., Hsu, W.~L., and Huang, H.~D. (2016).
 \newblock {mi{R}{T}ar{B}ase 2016: updates to the experimentally validated
   mi{R}{N}{A}-target interactions database}.
-\newblock {\em Nucleic Acids Res.}, 44(D1):D239--247, Jan 2016.
+\newblock {\em Nucleic Acids Res.}, 44(D1):D239--247.
 
-\bibitem{Doench}
-J.~G. Doench and P.~A. Sharp.
+\bibitem[Doench and Sharp, 2004]{Doench}
+Doench, J.~G. and Sharp, P.~A. (2004).
 \newblock {{S}pecificity of micro{R}{N}{A} target selection in translational
   repression}.
-\newblock {\em Genes Dev.}, 18(5):504--511, Mar 2004.
+\newblock {\em Genes Dev.}, 18(5):504--511.
 
-\bibitem{Enright}
-A.~J. Enright, B.~John, U.~Gaul, T.~Tuschl, C.~Sander, and D.~S. Marks.
+\bibitem[Enright et~al., 2003]{Enright}
+Enright, A.~J., John, B., Gaul, U., Tuschl, T., Sander, C., and Marks, D.~S.
+  (2003).
 \newblock {{M}icro{R}{N}{A} targets in {D}rosophila}.
-\newblock {\em Genome Biol.}, 5(1):R1, 2003.
+\newblock {\em Genome Biol.}, 5(1):R1.
 
-\bibitem{Filipowicz}
-W.~Filipowicz, S.~N. Bhattacharyya, and N.~Sonenberg.
+\bibitem[Filipowicz et~al., 2008]{Filipowicz}
+Filipowicz, W., Bhattacharyya, S.~N., and Sonenberg, N. (2008).
 \newblock {{M}echanisms of post-transcriptional regulation by micro{R}{N}{A}s:
   are the answers in sight?}
-\newblock {\em Nat. Rev. Genet.}, 9(2):102--114, Feb 2008.
+\newblock {\em Nat. Rev. Genet.}, 9(2):102--114.
 
-\bibitem{Griffiths-Jones}
-S.~Griffiths-Jones, R.~J. Grocock, S.~van Dongen, A.~Bateman, and A.~J.
-  Enright.
+\bibitem[Griffiths-Jones et~al., 2006]{Griffiths-Jones}
+Griffiths-Jones, S., Grocock, R.~J., van Dongen, S., Bateman, A., and Enright,
+  A.~J. (2006).
 \newblock {mi{R}{B}ase: micro{R}{N}{A} sequences, targets and gene
   nomenclature}.
-\newblock {\em Nucleic Acids Res.}, 34(Database issue):D140--144, Jan 2006.
+\newblock {\em Nucleic Acids Res.}, 34(Database issue):D140--144.
 
-\bibitem{Grimson}
-A.~Grimson, K.~K. Farh, W.~K. Johnston, P.~Garrett-Engele, L.~P. Lim, and D.~P.
-  Bartel.
+\bibitem[Grimson et~al., 2007]{Grimson}
+Grimson, A., Farh, K.~K., Johnston, W.~K., Garrett-Engele, P., Lim, L.~P., and
+  Bartel, D.~P. (2007).
 \newblock {{M}icro{R}{N}{A} targeting specificity in mammals: determinants
   beyond seed pairing}.
-\newblock {\em Mol. Cell}, 27(1):91--105, Jul 2007.
+\newblock {\em Mol. Cell}, 27(1):91--105.
 
-\bibitem{Ha}
-M.~Ha and V.~N. Kim.
+\bibitem[Ha and Kim, 2014]{Ha}
+Ha, M. and Kim, V.~N. (2014).
 \newblock {{R}egulation of micro{R}{N}{A} biogenesis}.
-\newblock {\em Nat. Rev. Mol. Cell Biol.}, 15(8):509--524, Aug 2014.
+\newblock {\em Nat. Rev. Mol. Cell Biol.}, 15(8):509--524.
 
-\bibitem{Hsu}
-S.~D. Hsu, F.~M. Lin, W.~Y. Wu, C.~Liang, W.~C. Huang, W.~L. Chan, W.~T. Tsai,
-  G.~Z. Chen, C.~J. Lee, C.~M. Chiu, C.~H. Chien, M.~C. Wu, C.~Y. Huang, A.~P.
-  Tsou, and H.~D. Huang.
+\bibitem[Hsu et~al., 2011]{Hsu}
+Hsu, S.~D., Lin, F.~M., Wu, W.~Y., Liang, C., Huang, W.~C., Chan, W.~L., Tsai,
+  W.~T., Chen, G.~Z., Lee, C.~J., Chiu, C.~M., Chien, C.~H., Wu, M.~C., Huang,
+  C.~Y., Tsou, A.~P., and Huang, H.~D. (2011).
 \newblock {mi{R}{T}ar{B}ase: a database curates experimentally validated
   micro{R}{N}{A}-target interactions}.
-\newblock {\em Nucleic Acids Res.}, 39(Database issue):D163--169, Jan 2011.
+\newblock {\em Nucleic Acids Res.}, 39(Database issue):D163--169.
 \newblock URL \url{http://mirtarbase.mbc.nctu.edu.tw/}.
 
-\bibitem{ucsc}
-D.~Karolchik, A.S. Hinrichs, T.S. Furey, K.M. Roskin, C.W. Sugnet, D.~Haussler,
-  and W.J. Kent.
-\newblock The ucsc table browser data retrieval tool, Jun 2004.
+\bibitem[Karolchik et~al., 2004]{ucsc}
+Karolchik, D., Hinrichs, A., Furey, T., Roskin, K., Sugnet, C., Haussler, D.,
+  and Kent, W. (2004).
+\newblock The ucsc table browser data retrieval tool.
 \newblock URl \url{https://genome.ucsc.edu/}.
 
-\bibitem{Kertesz}
-M.~Kertesz, N.~Iovino, U.~Unnerstall, U.~Gaul, and E.~Segal.
+\bibitem[Kertesz et~al., 2007]{Kertesz}
+Kertesz, M., Iovino, N., Unnerstall, U., Gaul, U., and Segal, E. (2007).
 \newblock {{T}he role of site accessibility in micro{R}{N}{A} target
   recognition}.
-\newblock {\em Nat. Genet.}, 39(10):1278--1284, Oct 2007.
+\newblock {\em Nat. Genet.}, 39(10):1278--1284.
 
-\bibitem{mirbase}
-A.~Kozomara and S.~Griffiths-Jones.
+\bibitem[Kozomara and Griffiths-Jones, 2011]{mirbase}
+Kozomara, A. and Griffiths-Jones, S. (2011).
 \newblock {mi{R}{B}ase: integrating micro{R}{N}{A} annotation and
   deep-sequencing data}.
-\newblock {\em Nucleic Acids Res.}, 39(Database issue):D152--157, Jan 2011.
+\newblock {\em Nucleic Acids Res.}, 39(Database issue):D152--157.
 \newblock URL \url{http://mirbase.org/}.
 
-\bibitem{Krek}
-A.~Krek, D.~Grun, M.~N. Poy, R.~Wolf, L.~Rosenberg, E.~J. Epstein,
-  P.~MacMenamin, I.~da~Piedade, K.~C. Gunsalus, M.~Stoffel, and N.~Rajewsky.
+\bibitem[Krek et~al., 2005]{Krek}
+Krek, A., Grun, D., Poy, M.~N., Wolf, R., Rosenberg, L., Epstein, E.~J.,
+  MacMenamin, P., da~Piedade, I., Gunsalus, K.~C., Stoffel, M., and Rajewsky,
+  N. (2005).
 \newblock {{C}ombinatorial micro{R}{N}{A} target predictions}.
-\newblock {\em Nat. Genet.}, 37(5):495--500, May 2005.
+\newblock {\em Nat. Genet.}, 37(5):495--500.
 
-\bibitem{Lewis}
-B.~P. Lewis, C.~B. Burge, and D.~P. Bartel.
+\bibitem[Lewis et~al., 2005]{Lewis}
+Lewis, B.~P., Burge, C.~B., and Bartel, D.~P. (2005).
 \newblock {{C}onserved seed pairing, often flanked by adenosines, indicates
   that thousands of human genes are micro{R}{N}{A} targets}.
-\newblock {\em Cell}, 120(1):15--20, Jan 2005.
+\newblock {\em Cell}, 120(1):15--20.
 
-\bibitem{Macfarlane}
-L.~A. Macfarlane and P.~R. Murphy.
+\bibitem[Macfarlane and Murphy, 2010]{Macfarlane}
+Macfarlane, L.~A. and Murphy, P.~R. (2010).
 \newblock {{M}icro{R}{N}{A}: {B}iogenesis, {F}unction and {R}ole in {C}ancer}.
-\newblock {\em Curr. Genomics}, 11(7):537--561, Nov 2010.
+\newblock {\em Curr. Genomics}, 11(7):537--561.
 
-\bibitem{biodb}
-U.~Mudunuri, A.~Che, M.~Yi, and R.M. Stephens.
-\newblock biodbnet: the biological database network, 2009.
+\bibitem[Mudunuri et~al., 2009]{biodb}
+Mudunuri, U., Che, A., Yi, M., and Stephens, R. (2009).
+\newblock biodbnet: the biological database network.
 \newblock URL \url{https://biodbnet-abcc.ncifcrf.gov/db/db2db.php}.
 
-\bibitem{Kelly}
-F.~O'Kelly, L.~Marignol, A.~Meunier, T.~H. Lynch, A.~S. Perry, and
-  D.~Hollywood.
+\bibitem[O'Kelly et~al., 2012]{Kelly}
+O'Kelly, F., Marignol, L., Meunier, A., Lynch, T.~H., Perry, A.~S., and
+  Hollywood, D. (2012).
 \newblock {{M}icro{R}{N}{A}s as putative mediators of treatment response in
   prostate cancer}.
-\newblock {\em Nat Rev Urol}, 9(7):397--407, Jul 2012.
+\newblock {\em Nat Rev Urol}, 9(7):397--407.
 
-\bibitem{Peterson}
-S.~M. Peterson, J.~A. Thompson, M.~L. Ufkin, P.~Sathyanarayana, L.~Liaw, and
-  C.~B. Congdon.
+\bibitem[Peterson et~al., 2014]{Peterson}
+Peterson, S.~M., Thompson, J.~A., Ufkin, M.~L., Sathyanarayana, P., Liaw, L.,
+  and Congdon, C.~B. (2014).
 \newblock {{C}ommon features of micro{R}{N}{A} target prediction tools}.
-\newblock {\em Front Genet}, 5:23, 2014.
+\newblock {\em Front Genet}, 5:23.
 
-\bibitem{Rehmsmeier}
-M.~Rehmsmeier, P.~Steffen, M.~Hochsmann, and R.~Giegerich.
+\bibitem[Rehmsmeier et~al., 2004]{Rehmsmeier}
+Rehmsmeier, M., Steffen, P., Hochsmann, M., and Giegerich, R. (2004).
 \newblock {{F}ast and effective prediction of micro{R}{N}{A}/target duplexes}.
-\newblock {\em RNA}, 10(10):1507--1517, Oct 2004.
+\newblock {\em RNA}, 10(10):1507--1517.
 
 \end{thebibliography}

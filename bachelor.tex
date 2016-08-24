@@ -19,13 +19,13 @@
 
 
 
-\bibliographystyle{plain}
+\bibliographystyle{apalike}
 
  
 \section{Introduction}
 \subsection{Background}
 
-miRNAs are small, non-coding RNAs that function in post-transcriptional regulation of gene expression, especially in terms of gene silencing. A miRNA consists of approximately 22 nucleotides which build a single strand RNA. The maturation of the miRNA is shown in figure~\ref{biogenesis}. After transcription the miRNA folds into a hairpin structure and builds the primary miRNA \cite{Macfarlane}. First, this pri-miRNA is processed by Drosha which results in a precursor miRNA (pre-miRNA). This precursor is about 60 to 70 nucleotides long and contains two single stranded miRNAs. After the export into the cytoplasm another processing step is executed with Dicer to gain the actual form of miRNA. But they are still double stranded and need to be unwinded to be mature miRNAs \cite{Maxfarlane}. So after processing of the initial double stranded miRNA-duplex, the guide strand will be further used in association with other molecules \cite{Grunz}. In detail, the miRNA is mainly active in combination with a catalytic protein of the AGO protein family. With it, the miRNA builds an RNA-induced silencing complex \cite{Ha}. This complex targets a mRNA mainly at its 3' untranslated region (UTR) by complementary binding to the sequence. The miRNA functions in this case as a guide with their base pairing \cite{Macfarlane}. It can also bind at the 5' UTR or even in the coding region but these are the uncommon regions. Either way, this binding results in gene silencing either by repression of mRNA translation or degradation of the respective mRNA \cite{Enright}. Which of the two pathways is chosen depends on the degree of complementarity. As figure~\ref{biogenesis} illustrates, if the complementarity is nearly perfect then the target mRNA is degraded otherwise if the seed regions contains mismatches the translation is only repressed. Both ways have a huge impact on the expression and resulting genetic changes which can initiate cancer \cite{Macfarlane}.
+miRNAs are small, non-coding RNAs that function in post-transcriptional regulation of gene expression, especially in terms of gene silencing. A miRNA consists of approximately 22 nucleotides which build a single strand RNA. The maturation of the miRNA is shown in figure~\ref{biogenesis}. After transcription the miRNA folds into a hairpin structure and builds the primary miRNA \cite{Macfarlane}. First, this pri-miRNA is processed by Drosha which results in a precursor miRNA (pre-miRNA). This precursor is about 60 to 70 nucleotides long and contains two single stranded miRNAs. After the export into the cytoplasm another processing step is executed with Dicer to gain the actual form of miRNA. But they are still double stranded and need to be unwinded to be mature miRNAs \cite{Macfarlane}. So after processing of the initial double stranded miRNA-duplex, the guide strand will be further used in association with other molecules \cite{Grunz}. In detail, the miRNA is mainly active in combination with a catalytic protein of the AGO protein family. With it, the miRNA builds an RNA-induced silencing complex \cite{Ha}. This complex targets a mRNA mainly at its 3' untranslated region (UTR) by complementary binding to the sequence. The miRNA functions in this case as a guide with their base pairing \cite{Macfarlane}. It can also bind at the 5' UTR or even in the coding region but these are the uncommon regions. Either way, this binding results in gene silencing either by repression of mRNA translation or degradation of the respective mRNA \cite{Enright}. Which of the two pathways is chosen depends on the degree of complementarity. As figure~\ref{biogenesis} illustrates, if the complementarity is nearly perfect then the target mRNA is degraded otherwise if the seed regions contains mismatches the translation is only repressed. Both ways have a huge impact on the expression and resulting genetic changes which can initiate cancer \cite{Macfarlane}.
 
 \begin{figure}
 \centering
@@ -329,11 +329,19 @@ The table in figure~\ref{table:ratios} shows that the average of the complementa
 \label{table:ratios}
 \end{figure}
 
+
+
+\section{Discussion}
+every feature its own limits and strength (Peterson), more features like AAA AA or others, how strong each feature .. still no perfect, always false positives. Conservation threshold, prediction of energys always ungenau. Mirnda widely used. Some out of date, some need to be downloaded. machine learning immer besser je mehr postive and negative targets (non targets ma have true targets!!!) bis jetzt dominieren aber die anderen wegen unzureichender daten. In future die limits die noch da sind zu überwinden um besser zu werden.
+New tools: http://www.ncbi.nlm.nih.gov/pubmed/23445489/
+combination of tools to overcome limits: http://www.ncbi.nlm.nih.gov/pubmed/23716633/
+integrate expression data: http://www.ncbi.nlm.nih.gov/pubmed/23703208/
+
 \newpage
 \bibliography{bachelor}
 
 
-\section{Abbildungen}
+\section{Abbildungsverzeichnis}
 
 Figure~\ref{biogenesis}: \cite{Kelly} http://www.nature.com/nrurol/journal/v9/n7/images/nrurol.2012.104-f1.jpg
 Figure ~\ref{seed}: http://journal.frontiersin.org/article/10.3389/fgene.2014.00023/full
