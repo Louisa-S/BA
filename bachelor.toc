@@ -2,11 +2,11 @@
 \contentsline {subsection}{\numberline {1.1}Background}{1}
 \contentsline {subsection}{\numberline {1.2}Prediction features}{4}
 \contentsline {subsubsection}{\numberline {1.2.1}Seed matching}{4}
-\contentsline {subsubsection}{\numberline {1.2.2}Free energy}{6}
+\contentsline {subsubsection}{\numberline {1.2.2}Free energy}{5}
 \contentsline {subsubsection}{\numberline {1.2.3}Conservation}{6}
 \contentsline {subsubsection}{\numberline {1.2.4}Site accessibility}{6}
 \contentsline {subsubsection}{\numberline {1.2.5}Addtional Watson-Crick pairing}{7}
-\contentsline {subsubsection}{\numberline {1.2.6}Other features}{9}
+\contentsline {subsubsection}{\numberline {1.2.6}Other features}{7}
 \contentsline {section}{\numberline {2}Methods and Data}{12}
 \contentsline {subsection}{\numberline {2.1}Methods}{12}
 \contentsline {subsection}{\numberline {2.2}Data}{13}
@@ -15,4 +15,4 @@
 \contentsline {subsubsection}{\numberline {2.2.3}UCSC Genome Bioinformatics Site}{14}
 \contentsline {section}{\numberline {3}Results}{15}
 \contentsline {section}{\numberline {4}Discussion}{21}
-\contentsline {section}{\numberline {5}Abbildungsverzeichnis}{25}
+\contentsline {section}{\numberline {5}Abbildungsverzeichnis}{26}
