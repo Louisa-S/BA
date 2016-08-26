@@ -23,7 +23,6 @@
 
  
 \section{Introduction}
-\subsection{Background}
 
 miRNAs are small, non-coding RNAs that function in post-transcriptional regulation of gene expression, especially in terms of gene silencing. A miRNA consists of approximately 22 nucleotides which build a single strand RNA. The maturation of the miRNA is shown in figure~\ref{biogenesis}. After transcription the miRNA folds into a hairpin structure and builds the primary miRNA \cite{Macfarlane}. First, this pri-miRNA is processed by Drosha which results in a precursor miRNA (pre-miRNA). This precursor is about 60 to 70 nucleotides long and contains two single stranded miRNAs. After the export into the cytoplasm another processing step is executed with Dicer to gain the actual form of miRNA. But they are still double stranded and need to be unwinded to be mature miRNAs \cite{Macfarlane}. So after processing of the initial double stranded miRNA-duplex, the guide strand will be further used in association with other molecules \cite{Grunz}. In detail, the miRNA is mainly active in combination with a catalytic protein of the AGO protein family. With it, the miRNA builds an RNA-induced silencing complex \cite{Ha}. This complex targets a mRNA mainly at its 3' untranslated region (UTR) by complementary binding to the sequence. The miRNA functions in this case as a guide with their base pairing \cite{Macfarlane}. It can also bind at the 5' UTR or even in the coding region but these are the uncommon regions. Either way, this binding results in gene silencing either by repression of mRNA translation or degradation of the respective mRNA \cite{Enright}. Which of the two pathways is chosen depends on the degree of complementarity. As figure~\ref{biogenesis} illustrates, if the complementarity is nearly perfect then the target mRNA is degraded otherwise if the seed regions contains mismatches the translation is only repressed. Both ways have a huge impact on the expression and resulting genetic changes which can initiate cancer \cite{Macfarlane}.\\
 
@@ -41,6 +40,44 @@ Because the miRNA binds to the sequence of its target gene an obvious starting p
 Because of the early knowledge of base complementarity close to the 5'end of the miRNA, one of the first features that was used for the prediction, is the presence of the so called 'seed region' of the miRNA. This region consists of 7 or 8 nucleotides that are complementary to the respective nucleotides in the mRNA sequence. Another early characteristic is the bulge after the complementary region where the nucleotides do not fit together. After this part complementary bases towards the 3' end of the miRNA may occur again. Whether these rules apply and if they are present in validated data will be discussed later. \\\\
 For these miRNA analyses three main databases are useful and necessary. A collection of experimental validated miRNA-target interactions(MTIs) is essential. The database miRTarBase provides a big dataset of validated MTIs \cite{Hsu}. To get information about every single miRNA for different organisms miRBase contains large datasets about the miRNAs. The most interesting information are sequences of the precursor and of all mature miRNAs \cite{mirbase}. For further analyses I will only consider miRNAs of \textit{Homo sapiens}. The last used database is the UCSC Genome Bioinformatics Site. In their table browser you can get data files about human gene sequences and untranslated regions and their respective sequences \cite{ucsc}.
   
+
+
+
+\section{Methods and Data}
+
+
+\subsection{Methodology}
+
+
+only functional ones, not non and not weak
+
+The program for the analysis is implemented in Python. The data files are parsed and stored into dictionaries that allow fast searching. Then for every MTI in the miRTarBase file the respective miRNA sequence is searched in the miRBase file and combined with the gene sequence of the corresponding target in the UCSC file. Having theses two sequences, a local alignment is performed. An alignment is defined as the optimal positioning of the bases of one sequence, in this case the miRNA, to a region in the other sequence, the gene sequence. From the result functional or structural similarities can be obtained \cite{alignment}. In this case, the similarity can be interpreted as a binding site, because if we take the reverse complement of the miRNA sequence and align it to the mRNA sequence, this will simulate the binding. More precisely, if the alignment score is high, the sequences (mRNA and reverse complement of miRNA) are more similar, implying  the actual miRNA could possibly bind at this alignment position. Because the miRNA can bind at any region in the gene, a local alignment is executed, not a global.\\\\
+
+The Biopython library provides a module, pairwise2, for pairwise local alignments of two sequences. This tool is based on a dynamic programming algorithm. This function can be used either with default parameter or different scores and costs can be defined. The default parameters are as following: +1 for matching character, 0 for not matching ones and there are no gap penalties \cite{pairwise}. To get a more suitable alignment own parameters can be selected. Table~\ref{table:parameter} shows the different parameters that I used to generate the data. Set no. 8 is similar to the parameters they used for the tool miRanda \cite{Enright}. The other parameters are just logically selected to test which influence they have on the results. \\\\
+
+To be able to analyse the data statistically a set of negative controls is required. To produce this data, 1000 miRNAs of the miRBase file were randomly assigned to a list of genes and then aligned in the same way as the sequences of the true target interactions. This randomly assigment can by chance contain true targets but generally the miRNAs are matched with genes that are no true targets. \\\\
+
+For these datasets the average and standard deviation were computed as well. Then with case and control alignment scores a statistical two-tailed t-test for two samples with equal variances was performed with LibreOffice \cite{ttest}. This provides a p-value as a result. The lower this p-value is, the more significant the increase of the alignment score of the true targets is. If there is an increase in the score, this would be an indication that is we only calculate the alignment score for a new miRNA and any target sequence and observe a high one, the probability that this is a true target would be high. If this is a reliable feature for the prediction will be discussed in the following.
+
+\begin{table}
+\caption{Parameter sets}
+\vspace{0.3cm}
+\begin{tabular}{c|c|c|c|c}
+Parameterset & match score & mismatch score & gap open & gap extend\\
+\hline\hline 
+1 & default: 1 & default: 0 & -4 & -4\\
+2 &  default: 1 & default: 0 & -5 & -1 \\
+3 &  1 & -2 & -2 & -1 \\
+4 &  2 & -2 & -5 & -4 \\
+5 &  3 & -2 & -4 & -4 \\
+6 &  5 & -1 & -8 & -4 \\
+7 &  5 & -2 & -8 & -3 \\
+8 &  5 & -3 & -8 & -2 \\
+9 &  5 & -4 & -6 & -4 \\
+\hline
+\end{tabular}
+\label{table:parameter}
+\end{table}
 
 \subsection{Prediction features}
 \subsubsection{Seed matching}
@@ -168,37 +205,6 @@ Considering all these different common and less common features, new targets for
 \caption{Prediction tools and their features}
 \label{fig:tools}
 \end{figure}
-
-
-\section{Methods and Data}
-\subsection{Methods}
-The program for the analysis is implemented in Python. The data files are parsed and stored into dictionaries that allow fast searching. Then for every MTI in the miRTarBase file the respective miRNA sequence is searched in the miRBase file and combined with the gene sequence of the corresponding target in the UCSC file. Having theses two sequences, a local alignment is performed. An alignment is defined as the optimal positioning of the bases of one sequence, in this case the miRNA, to a region in the other sequence, the gene sequence. From the result functional or structural similarities can be obtained \cite{alignment}. In this case, the similarity can be interpreted as a binding site, because if we take the reverse complement of the miRNA sequence and align it to the mRNA sequence, this will simulate the binding. More precisely, if the alignment score is high, the sequences (mRNA and reverse complement of miRNA) are more similar, implying  the actual miRNA could possibly bind at this alignment position. Because the miRNA can bind at any region in the gene, a local alignment is executed, not a global.\\\\
-
-The Biopython library provides a module, pairwise2, for pairwise local alignments of two sequences. This tool is based on a dynamic programming algorithm. This function can be used either with default parameter or different scores and costs can be defined. The default parameters are as following: +1 for matching character, 0 for not matching ones and there are no gap penalties \cite{pairwise}. To get a more suitable alignment own parameters can be selected. Table~\ref{table:parameter} shows the different parameters that I used to generate the data. Set no. 8 is similar to the parameters they used for the tool miRanda \cite{Enright}. The other parameters are just logically selected to test which influence they have on the results. \\\\
-
-To be able to analyse the data statistically a set of negative controls is required. To produce this data, 1000 miRNAs of the miRBase file were randomly assigned to a list of genes and then aligned in the same way as the sequences of the true target interactions. This randomly assigment can by chance contain true targets but generally the miRNAs are matched with genes that are no true targets. \\\\
-
-For these datasets the average and standard deviation were computed as well. Then with case and control alignment scores a statistical two-tailed t-test for two samples with equal variances was performed with LibreOffice \cite{ttest}. This provides a p-value as a result. The lower this p-value is, the more significant the increase of the alignment score of the true targets is. If there is an increase in the score, this would be an indication that is we only calculate the alignment score for a new miRNA and any target sequence and observe a high one, the probability that this is a true target would be high. If this is a reliable feature for the prediction will be discussed in the following.
-
-\begin{table}
-\caption{Parameter sets}
-\vspace{0.3cm}
-\begin{tabular}{c|c|c|c|c}
-Parameterset & match score & mismatch score & gap open & gap extend\\
-\hline\hline 
-1 & default: 1 & default: 0 & -4 & -4\\
-2 &  default: 1 & default: 0 & -5 & -1 \\
-3 &  1 & -2 & -2 & -1 \\
-4 &  2 & -2 & -5 & -4 \\
-5 &  3 & -2 & -4 & -4 \\
-6 &  5 & -1 & -8 & -4 \\
-7 &  5 & -2 & -8 & -3 \\
-8 &  5 & -3 & -8 & -2 \\
-9 &  5 & -4 & -6 & -4 \\
-\hline
-\end{tabular}
-\label{table:parameter}
-\end{table}
 
  
 \subsection{Data} 
@@ -342,16 +348,32 @@ The early miRanda tools is also still widely used. The class of tools that use m
 
 The future consists of the elimination of the limits the tools and finding more useful features for the prediction.
 
+Fujiwara and Yada \cite{Fuji} followed a new approach by considering other characteristics than binding sites for the prediction, in fact the transcriptional regulation. In their research they searched for common cis-elements in the miRNA as well as in the target gene. Compared to conventional methods theirs method is almost as good as the standard binding site base ones, but combining the two different methods decreases the accuracy much. The advantages of this novel approach are independence of conservation of binding sites and the amount of available training data. 
 n future die limits die noch da sind zu überwinden um besser zu werden.
 New tools: http://www.ncbi.nlm.nih.gov/pubmed/23445489/
 combination of tools to overcome limits: http://www.ncbi.nlm.nih.gov/pubmed/23716633/
 integrate expression data: http://www.ncbi.nlm.nih.gov/pubmed/23703208/
 
+newst one:http://www.ncbi.nlm.nih.gov/pubmed/27561079
+http://www.ncbi.nlm.nih.gov/pubmed/27560313
+
+http://www.ncbi.nlm.nih.gov/pubmed/27494513
+
+http://www.ncbi.nlm.nih.gov/pubmed/27477696
+
+http://www.ncbi.nlm.nih.gov/pubmed/27450903
+
+http://www.ncbi.nlm.nih.gov/pubmed/27438777
+
 \newpage
 \bibliography{bachelor}
 
 
-\section{Abbildungsverzeichnis}
+\listoffigures
+
+
+\listoftables
+
 
 Figure~\ref{biogenesis}: \cite{Kelly} http://www.nature.com/nrurol/journal/v9/n7/images/nrurol.2012.104-f1.jpg
 Figure ~\ref{seed}: http://journal.frontiersin.org/article/10.3389/fgene.2014.00023/full
