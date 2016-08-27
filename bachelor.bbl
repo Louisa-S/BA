@@ -49,6 +49,11 @@ Chou, C.~H., Chang, N.~W., Shrestha, S., Hsu, S.~D., Lin, Y.~L., Lee, W.~H.,
   mi{R}{N}{A}-target interactions database}.
 \newblock {\em Nucleic Acids Res.}, 44(D1):D239--247.
 
+\bibitem[Coronnello and Benos, 2013]{Coronnello}
+Coronnello, C. and Benos, P.~V. (2013).
+\newblock {{C}omi{R}: {C}ombinatorial micro{R}{N}{A} target prediction tool}.
+\newblock {\em Nucleic Acids Res.}, 41(Web Server issue):W159--164.
+
 \bibitem[Doench and Sharp, 2004]{Doench}
 Doench, J.~G. and Sharp, P.~A. (2004).
 \newblock {{S}pecificity of micro{R}{N}{A} target selection in translational

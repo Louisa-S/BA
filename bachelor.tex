@@ -50,6 +50,7 @@ For these miRNA analyses three main databases are useful and necessary. A collec
 
 
 only functional ones, not non and not weak
+input data and runtime, csv etc.
 
 The program for the analysis is implemented in Python. The data files are parsed and stored into dictionaries that allow fast searching. Then for every MTI in the miRTarBase file the respective miRNA sequence is searched in the miRBase file and combined with the gene sequence of the corresponding target in the UCSC file. Having theses two sequences, a local alignment is performed. An alignment is defined as the optimal positioning of the bases of one sequence, in this case the miRNA, to a region in the other sequence, the gene sequence. From the result functional or structural similarities can be obtained \cite{alignment}. In this case, the similarity can be interpreted as a binding site, because if we take the reverse complement of the miRNA sequence and align it to the mRNA sequence, this will simulate the binding. More precisely, if the alignment score is high, the sequences (mRNA and reverse complement of miRNA) are more similar, implying  the actual miRNA could possibly bind at this alignment position. Because the miRNA can bind at any region in the gene, a local alignment is executed, not a global.\\\\
 
@@ -349,6 +350,12 @@ The early miRanda tools is also still widely used. The class of tools that use m
 The future consists of the elimination of the limits the tools and finding more useful features for the prediction.
 
 Fujiwara and Yada \cite{Fuji} followed a new approach by considering other characteristics than binding sites for the prediction, in fact the transcriptional regulation. In their research they searched for common cis-elements in the miRNA as well as in the target gene. Compared to conventional methods theirs method is almost as good as the standard binding site base ones, but combining the two different methods decreases the accuracy much. The advantages of this novel approach are independence of conservation of binding sites and the amount of available training data. 
+
+Coronnello and Benos \cite{Coronnello} investigated another approach trying to improve the prediction power. They developed a tool ComiR that considers additionally the miRNA expression levels and the combination of miRNA bindings. It also combines different scoring schemes from tools mentioned above. The innovation in this tool is the investigation of sets of miRNAs and their co-expression. ?? www.ncbi.nlm.nih.gov/pmc/articles/PMC3692082/
+
+
+
+
 n future die limits die noch da sind zu überwinden um besser zu werden.
 New tools: http://www.ncbi.nlm.nih.gov/pubmed/23445489/
 combination of tools to overcome limits: http://www.ncbi.nlm.nih.gov/pubmed/23716633/
