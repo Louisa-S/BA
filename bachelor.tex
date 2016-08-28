@@ -3,30 +3,114 @@
 \usepackage{booktabs}
 \usepackage{chngcntr}
 \usepackage{pdfpages}
+
 \usepackage{url}
 
 
 \begin{document}
 
 \pagenumbering{gobble}
+\def\supervisorIname{Advisor I}
+\def\supervisorIIname{Second Reviewer}
+
+	\def\university{Universit\"{a}t des Saarlandes}
+	\def\institute{Center for Bioinformatics}
+	\def\projectname{MiRNA target analysis focussing on sequence alignment}
+	\vspace{.2em}  
+	\def\author{Louisa Schwed}
+	\def\date{September 2016}
+
+\begin{titlepage}
+
+  \begin{minipage}{\textwidth}
+    \begin{center}
+    { \large Saarland University \\ Center for Bioinformatics \\ Bachelor's Programme in Bioinformatics\\}
+	\vspace{0.5cm}
+    \includegraphics[width=4cm]{Logo-Universitaet_des_Saarlandes.pdf}\\
+    \vspace{0.5cm}
+    { \large Bachelor's Thesis\\}
+    \vspace{0.5cm}
+    {\huge\textbf{\projectname}}\\
+    \vspace{0.5cm}
+    { \large submitted by}\\
+	\vspace{0.5cm}
+    {\large\textbf{\author}}\\
+    \vspace{0.5cm}
+    {\large on September XX, 2016}\\
+    \vspace{0.5cm}
+    \end{center}
+  \end{minipage}
+  \newpage
+
+    
+    \begin{minipage}{\textwidth}
+        \begin{center}
+        \begin{minipage}{\textwidth}
+        \begin{center}
+		  \textbf{\emph{Supervisor}}\\
+    		  \supervisorIname      \\
+    		  \vspace{0.5cm}
+		  \textbf{\emph{Advisors}}\\
+    		 XXXX\\
+    		  \vspace{0.5cm}
+		  \textbf{\emph{Reviewers}}\\
+		  \supervisorIIname \\
+		  \vspace{0.5cm}
+    		  Center for Bioinformatics\\
+    		  \includegraphics[scale=0.3]{cbi.jpg}	
+              		          
+    		  \end{center}
+        \end{minipage}
+		\hfill
+     
+        \end{center}
+    \end{minipage}
+
+\end{titlepage}
+
+
+\newpage
+\vfill
+\pagestyle{empty}
+\vspace{10cm}
+\noindent {\bf Schwed, Louisa}\\
+\emph{MiRNA target analysis focussing on sequence alignment}\\
+Bachelor's Thesis in Bioinformatics\\
+Saarland University
+Saarbr\"ucken, Germany\\
+September 2016
+\newpage
+
+\section*{Declaration}
+\emph{I hereby confirm that this thesis is my own work and that I have documented all sources used.}
+
+\vspace{1cm}
+
+\noindent Saarbr\"ucken, September xx, 2016
+\vspace{1.5cm}
+
+\noindent Louisa Schwed
+\newpage
+\mbox{}
+
+
+
 \tableofcontents
 
 \newpage 
-\pagenumbering{arabic}
-
+\pagestyle{plain}
 \counterwithin{figure}{section}
 \counterwithin{table}{section}
 
-
-
 \bibliographystyle{apalike}
+\pagenumbering{arabic}
 
  
 \section{Introduction}
 
 miRNAs are small, non-coding RNAs that function in post-transcriptional regulation of gene expression, especially in terms of gene silencing. A miRNA consists of approximately 22 nucleotides which build a single strand RNA. The maturation of the miRNA is shown in figure~\ref{biogenesis}. After transcription the miRNA folds into a hairpin structure and builds the primary miRNA \cite{Macfarlane}. First, this pri-miRNA is processed by Drosha which results in a precursor miRNA (pre-miRNA). This precursor is about 60 to 70 nucleotides long and contains two single stranded miRNAs. After the export into the cytoplasm another processing step is executed with Dicer to gain the actual form of miRNA. But they are still double stranded and need to be unwinded to be mature miRNAs \cite{Macfarlane}. So after processing of the initial double stranded miRNA-duplex, the guide strand will be further used in association with other molecules \cite{Grunz}. In detail, the miRNA is mainly active in combination with a catalytic protein of the AGO protein family. With it, the miRNA builds an RNA-induced silencing complex \cite{Ha}. This complex targets a mRNA mainly at its 3' untranslated region (UTR) by complementary binding to the sequence. The miRNA functions in this case as a guide with their base pairing \cite{Macfarlane}. It can also bind at the 5' UTR or even in the coding region but these are the uncommon regions. Either way, this binding results in gene silencing either by repression of mRNA translation or degradation of the respective mRNA \cite{Enright}. Which of the two pathways is chosen depends on the degree of complementarity. As figure~\ref{biogenesis} illustrates, if the complementarity is nearly perfect then the target mRNA is degraded otherwise if the seed regions contains mismatches the translation is only repressed. Both ways have a huge impact on the expression and resulting genetic changes which can initiate cancer \cite{Macfarlane}.\\
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.5]{results/biogenesis.png}
 \caption{Biogenesis of miRNAs}
@@ -52,7 +136,9 @@ For these miRNA analyses three main databases are useful and necessary. A collec
 only functional ones, not non and not weak
 input data and runtime, csv etc.
 
-The program for the analysis is implemented in Python. The data files are parsed and stored into dictionaries that allow fast searching. Then for every MTI in the miRTarBase file the respective miRNA sequence is searched in the miRBase file and combined with the gene sequence of the corresponding target in the UCSC file. Having theses two sequences, a local alignment is performed. An alignment is defined as the optimal positioning of the bases of one sequence, in this case the miRNA, to a region in the other sequence, the gene sequence. From the result functional or structural similarities can be obtained \cite{alignment}. In this case, the similarity can be interpreted as a binding site, because if we take the reverse complement of the miRNA sequence and align it to the mRNA sequence, this will simulate the binding. More precisely, if the alignment score is high, the sequences (mRNA and reverse complement of miRNA) are more similar, implying  the actual miRNA could possibly bind at this alignment position. Because the miRNA can bind at any region in the gene, a local alignment is executed, not a global.\\\\
+The program for the analysis is implemented in Python. The data files are parsed and stored into dictionaries that allow fast searching. Then for every MTI in the miRTarBase file the respective miRNA sequence is searched in the miRBase file and combined with the gene sequence of the corresponding target in the UCSC file. The miRTarBase file contains data of Functional MTIs, weak Functional MTIs and Non-Functional MTIs. Here I only consider the strong validated data of the Functional MTIs because they deliver strong evidence for the interaction. 
+
+Having theses two sequences, a local alignment is performed. An alignment is defined as the optimal positioning of the bases of one sequence, in this case the miRNA, to a region in the other sequence, the gene sequence. From the result functional or structural similarities can be obtained \cite{alignment}. In this case, the similarity can be interpreted as a binding site, because if we take the reverse complement of the miRNA sequence and align it to the mRNA sequence, this will simulate the binding. More precisely, if the alignment score is high, the sequences (mRNA and reverse complement of miRNA) are more similar, implying the actual miRNA could possibly bind at this alignment position. Because the miRNA can bind at any region in the gene, a local alignment is executed, not a global.\\\\
 
 The Biopython library provides a module, pairwise2, for pairwise local alignments of two sequences. This tool is based on a dynamic programming algorithm. This function can be used either with default parameter or different scores and costs can be defined. The default parameters are as following: +1 for matching character, 0 for not matching ones and there are no gap penalties \cite{pairwise}. To get a more suitable alignment own parameters can be selected. Table~\ref{table:parameter} shows the different parameters that I used to generate the data. Set no. 8 is similar to the parameters they used for the tool miRanda \cite{Enright}. The other parameters are just logically selected to test which influence they have on the results. \\\\
 
@@ -86,7 +172,7 @@ The main feature that is considered in this research is the sequence complementa
 In the mentioned seed region there can be different types of matching patterns: perfect matching between six nucleotides, seven nucleotides including the 8th position, seven nucleotides and an Adenine at position one or eight matching nucleotides from position one to eight and also an Adenine at position one  \cite{Lewis} \cite{Brennecke} \cite{Krek}. Figure~\ref{Fig:canonical} illustrates the different types of sites. Grimson et al. \cite{Grimson} investigated the different types of sites referring to the effectiveness of the gene repression. As shown in figure~\ref{types}, they found that the repression is the highest when an 8mer site is present and the lowest when only six nucleotides are perfectly matching.
 
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=2.8]{results/seedmatching.png} 
 \caption{Scheme of seed matching}
@@ -105,7 +191,7 @@ In the mentioned seed region there can be different types of matching patterns: 
 \begin{figure}
 \centering
 \includegraphics[scale=0.6]{results/site_3addi.png}
-\caption{Effectiveness of different sites}
+\caption{Effectiveness of different types of sites}
 \label{types}
 \end{figure}
 
@@ -127,7 +213,7 @@ Between the two complementary areas there is usually a part of non pairing nucle
 \begin{figure}
 \centering
 \includegraphics[scale=0.3]{results/additional_pairing.PNG}
-\caption{Addition 3'pairing}
+\caption{Additional 3' pairing}
 \label{addipairing}
 \end{figure}
 
@@ -141,14 +227,14 @@ Between the two complementary areas there is usually a part of non pairing nucle
 \begin{figure}
 \centering
 \includegraphics[scale=0.5]{results/sites_conserved.PNG} 
-\caption{Conservation of nucleotide positions}
+\caption{Conservation of nucleotide positions of miRNA}
 \label{conserved}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[scale=0.5]{results/site_efficacy.PNG} 
-\caption{Efficacy of different combination of seed region and additional 3' pairing}
+\caption{Efficacy of different combinations of seed region and additional 3' pairing}
 \label{efficacy}
 \end{figure}
 
