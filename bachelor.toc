@@ -4,8 +4,8 @@
 \contentsline {subsection}{\numberline {2.2}Prediction features}{5}
 \contentsline {subsubsection}{\numberline {2.2.1}Seed matching}{5}
 \contentsline {subsubsection}{\numberline {2.2.2}Free energy}{7}
-\contentsline {subsubsection}{\numberline {2.2.3}Conservation}{8}
-\contentsline {subsubsection}{\numberline {2.2.4}Site accessibility}{8}
+\contentsline {subsubsection}{\numberline {2.2.3}Conservation}{7}
+\contentsline {subsubsection}{\numberline {2.2.4}Site accessibility}{7}
 \contentsline {subsubsection}{\numberline {2.2.5}Addtional Watson-Crick pairing}{9}
 \contentsline {subsubsection}{\numberline {2.2.6}Other features}{11}
 \contentsline {subsection}{\numberline {2.3}Data}{13}
