@@ -140,15 +140,13 @@ For these miRNA analyses three main databases are useful and necessary. A collec
 only functional ones, not non and not weak
 input data and runtime, csv etc.
 
-The program for the analysis is implemented in Python. The data files are parsed and stored into dictionaries that allow fast searching. Then for every MTI in the miRTarBase file the respective miRNA sequence is searched in the miRBase file and combined with the gene sequence of the corresponding target in the UCSC file. The miRTarBase file contains data of Functional MTIs, weak Functional MTIs and Non-Functional MTIs. Here I only consider the strong validated data of the Functional MTIs because they deliver strong evidence for the interaction. 
+The program for the analysis is implemented in Python. As input files the UCSC gene file, miRTarBase file and miRBase file are required in csv format. Additionally the conversion file of gene id end nm number is needed. It can be given as a text file. 
+The data files are parsed and each entry is stored into the respective dictionary that allows fast searching. Then for every MTI in the miRTarBase file the respective miRNA sequence is searched in the miRBase dictionary and combined with the gene sequence of the corresponding target in the gene dictionary. The miRTarBase file contains data of 'Functional MTI', 'Functional MTI(Weak)' and 'Non-Functional MTI'. Here I only consider the strong validated data of the Functional MTIs because they deliver strong evidence for the interaction. So if an entry in the miRTarBase file contains something different than 'Functional MTI', it is scipped.
 
-Having theses two sequences, a local alignment is performed. An alignment is defined as the optimal positioning of the bases of one sequence, in this case the miRNA, to a region in the other sequence, the gene sequence. From the result functional or structural similarities can be obtained \cite{alignment}. In this case, the similarity can be interpreted as a binding site, because if we take the reverse complement of the miRNA sequence and align it to the mRNA sequence, this will simulate the binding. More precisely, if the alignment score is high, the sequences (mRNA and reverse complement of miRNA) are more similar, implying the actual miRNA could possibly bind at this alignment position. Because the miRNA can bind at any region in the gene, a local alignment is executed, not a global.\\\\
+After matching these two sequences, a local alignment is performed with them. An alignment is defined as the optimal positioning of the bases of one sequence, in this case the miRNA, to a region in the other sequence, the gene sequence. From the result functional or structural similarities can be obtained \cite{alignment}. In this case, the similarity can be interpreted as a binding site, because if we take the reverse complement of the miRNA sequence and align it to the mRNA sequence, this will simulate the binding. More precisely, if the alignment score is high, the sequences (mRNA and reverse complement of miRNA) are more similar, implying the actual miRNA could possibly bind at this alignment position. Because the miRNA can bind at any region in the gene, a local alignment is executed, not a global.\\\\
 
-The Biopython library provides a module, pairwise2, for pairwise local alignments of two sequences. This tool is based on a dynamic programming algorithm. This function can be used either with default parameter or different scores and costs can be defined. The default parameters are as following: +1 for matching character, 0 for not matching ones and there are no gap penalties \cite{pairwise}. To get a more suitable alignment own parameters can be selected. Table~\ref{table:parameter} shows the different parameters that I used to generate the data. Set no. 8 is similar to the parameters they used for the tool miRanda \cite{Enright}. The other parameters are just logically selected to test which influence they have on the results. \\\\
+The Biopython library provides a module, pairwise2, for pairwise local alignments of two sequences. This tool is based on a dynamic programming algorithm. This function can be used either with default parameter or different scores and costs can be defined. The default parameters are as following: +1 for matching character, 0 for not matching ones and there are no gap penalties \cite{pairwise}. To get a more suitable alignment own parameters can be selected. Table~\ref{table:parameter} shows the different parameters that I used to generate the data. Set no. 8 is similar to the parameters they used for the tool miRanda \cite{Enright}. The other parameters are just logically selected to test which influence they have on the results.\\
 
-To be able to analyse the data statistically a set of negative controls is required. To produce this data, 1000 miRNAs of the miRBase file were randomly assigned to a list of genes and then aligned in the same way as the sequences of the true target interactions. This randomly assigment can by chance contain true targets but generally the miRNAs are matched with genes that are no true targets. \\\\
-
-For these datasets the average and standard deviation were computed as well. Then with case and control alignment scores a statistical two-tailed t-test for two samples with equal variances was performed with LibreOffice \cite{ttest}. This provides a p-value as a result. The lower this p-value is, the more significant the increase of the alignment score of the true targets is. If there is an increase in the score, this would be an indication that is we only calculate the alignment score for a new miRNA and any target sequence and observe a high one, the probability that this is a true target would be high. If this is a reliable feature for the prediction will be discussed in the following.
 
 \begin{table}
 \caption{Parameter sets}
@@ -170,10 +168,23 @@ Parameterset & match score & mismatch score & gap open & gap extend\\
 \label{table:parameter}
 \end{table}
 
+For each alignment the following steps are performed: the pairwise2 module delivers the best alignment with the highest score. Sometimes there is more than one alignment because they have the same highest score. So for each found alignment list the miRNA name, the respective NM-number and the alignment score is stored in a string. Then for each single alignment in the list the starting position is computed and added to this string. To get a final list of all alignments, the string is written to a text file.
+
+For the analysis of the complementarities the alignment is further examined. Each position of miRNA and target mRNA is compared and whenever the nucleotide is similar, a '1' is added to a list, if they are different or there is a gap, a '0' is added. This list is yielded to a big matrix for the final analysis. Going through this matrix for each position the number of '1's is computed and divided by the total number of elements in the matrix. So the result will be the ratio of complementary bases. This ratio is plotted for each position in the alignment. 
+
+
+To be able to analyse the data statistically a set of negative controls is required. To produce this data, 1000 miRNAs of the miRBase file were randomly assigned to a list of genes and then aligned in the same way as the sequences of the true target interactions. This randomly assigment can by chance contain true targets but generally the miRNAs are matched with genes that are no true targets. \\
+
+For these datasets the average and standard deviation were computed as well. Then with case and control alignment scores a statistical two-tailed t-test for two samples with equal variances was performed with LibreOffice \cite{ttest}. This provides a p-value as a result. The lower this p-value is, the more significant the increase of the alignment score of the true targets is. If there is an increase in the score, this would be an indication that is we only calculate the alignment score for a new miRNA and any target sequence and observe a high one, the probability that this is a true target would be high. If this is a reliable feature for the prediction will be discussed in the following.
+
+For the analysis of the alignment starting position, the miRTarBase was parsed first. For each strong validated data in the file the respective miRBase target page was parsed and the three given starting postions were searched. For that only the MTI id was put into the url and then opened. Together with the corresponding miRNA name and target NM number the positions were stored in a text file. In the final table the found starting positions were compared to the positions given in the resulting text file above. The final number of found positions are stored in the final result table as well. 
+
+
+
 \subsection{Prediction features}
 \subsubsection{Seed matching}
 The main feature that is considered in this research is the sequence complementarity especially at a certain seed region. In contrast to miRNAs in plants which bind nearly perfectly complementary to their targets, miRNAs in animals bind less tightly and are not perfectly complementary. There can be regions were the nucleotides are unbound which results in complex secondary structures that are hard to predict \cite{Rehmsmeier}. The main complementary region or seed region includes nucleotides from position two to eight starting from the 5' end. Figure~\ref{seed} shows the scheme of the seed region \cite{Peterson}. This irregularity of the presence of non-complementarity regions makes the reliable prediction more difficult for animals than for plants. Because concentration on the seed region for a prediction will lead to many false positives. This small region of seven or eight nucleotides would be too unspecific because they can be present in the mRNA although there is no binding site at this position. It would be recommended to take more than the seed region into account to increase the complexity and specificity of the prediction. How significant the consideration of the sequence complementarity of miRNA and mRNA sequence is, will be further analysed with validated data in this research.\\\\
-In the mentioned seed region there can be different types of matching patterns: perfect matching between six nucleotides, seven nucleotides including the 8th position, seven nucleotides and an Adenine at position one or eight matching nucleotides from position one to eight and also an Adenine at position one  \cite{Lewis} \cite{Brennecke} \cite{Krek}. Figure~\ref{Fig:canonical} illustrates the different types of sites. Grimson et al. \cite{Grimson} investigated the different types of sites referring to the effectiveness of the gene repression. As shown in figure~\ref{types}, they found that the repression is the highest when an 8mer site is present and the lowest when only six nucleotides are perfectly matching.
+In the mentioned seed region there can be different types of matching patterns: perfect matching between six nucleotides, seven nucleotides including the 8th position, seven nucleotides and an Adenine at position one or eight matching nucleotides from position one to eight and also an Adenine at position one  \cite{Lewis} \cite{Brennecke} \cite{Krek}. Figure~\ref{Fig:canonical} illustrates the different types of sites. Grimson et al. \cite{Grimson} investigated the different types of sites referring to the effectiveness of the gene repression. As shown in figure~\ref{types}, they found that the repression is the highest when an 8mer site is present and the lowest when only six nucleotides are perfectly matching. \\
 
 
 \begin{figure}[h]
@@ -184,7 +195,7 @@ In the mentioned seed region there can be different types of matching patterns: 
 \end{figure}
 
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.6]{results/canonical_sites.png}
 \caption{Canonical sites of seed region}
@@ -192,7 +203,7 @@ In the mentioned seed region there can be different types of matching patterns: 
 \end{figure}
 
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.6]{results/site_3addi.png}
 \caption{Effectiveness of different types of sites}
@@ -214,28 +225,28 @@ Kertesz et al. \cite{Kertesz} investigated the importance of site accessibility 
 In addition to the seed matching towards the 5' end, another complementary site towards the 3' end in the miRNA is present (Figure~\ref{addipairing}). Grimson et al. \cite{Grimson} investigated that the highest down regulation was found when the site started at position 13 and had four or five contiguous base pairings (Figure~\ref{siteregulation}). Considering again the conservation of the nucleotides they found that outside the seed region the contiguous nucleotides starting from nucleotide 12, 13 or 14 were the most conserved ones indicating / demonstrating their functional importance (Figure~\ref{conserved}). Putting the information of seed region and additional base pairing together, it can be observed that if one 7mer-m8 site is present as well as a good 3' pairing that the efficacy is the highest. Even though the difference between the efficacy of the presence of one 8mer site and the one mentioned before is not very big. But the improvement of the presence of a good 3' pairing instead of a poor one is more significant (Figure ~\ref{efficacy}).  \\\\
 Between the two complementary areas there is usually a part of non pairing nucleotides where bulges and mismatches are found. These are important for the prevention of the AGO cleavage function \cite{Filipowicz}.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.3]{results/additional_pairing.PNG}
 \caption{Additional 3' pairing}
 \label{addipairing}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.4]{results/sites_regulation.PNG} 
 \caption{Relation between regulation and starting position of additional pairing}
 \label{siteregulation}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.5]{results/sites_conserved.PNG} 
 \caption{Conservation of nucleotide positions of miRNA}
 \label{conserved}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.5]{results/site_efficacy.PNG} 
 \caption{Efficacy of different combinations of seed region and additional 3' pairing}
@@ -251,14 +262,14 @@ https://elifesciences.org/content/4/e05005
 
 Enright et al. \cite{Enright} and Doench et al. \cite{Doench} also found that the presence of multiple miRNA target sites results in a higher repression and destabilization of the mRNA. Grimson et al. \cite{Grimson} further investigated that the distance between two sites is also an important criterion. Generally the repression of two present site is the multiplication of the two single once because they act independently. The interesting thing now is that if the two sites are adjacent the repression is increased and not equal to the multiplication of the single ones. The increase in repression is however not very high (Figure~\ref{sitedistance}). To investigate the effect of cooperative miRNAs they analysed a mixture of miR-1 and miR-133 and simulated three different spacings. The results show that a spacing of four nucleotides did not show a cooperative repression but six or eight nucleotide spacing showed an increase in repression (Figure~\ref{sitespacing}).\\\\
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=1.2]{results/sites_8nt.PNG}  
 \caption{Cooperative repression with different site spacings}
 \label{sitespacing}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.7]{results/sites_distance.PNG}
 \caption{Effect of multiple sites}
@@ -267,7 +278,7 @@ Enright et al. \cite{Enright} and Doench et al. \cite{Doench} also found that th
 
 Another indicator is the position of the binding site relatively to the stop codon and the center of the UTR. Generally sites in the 3'UTR are investigated but Grimson et al. detected that sites in the Open reading frame (ORF) are slightly effective, sites in the 5'UTR not at all \cite{Grimson}. \\\\
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.7]{results/sites_orf.PNG}
 \caption{Efficacy of different site locations}
@@ -279,7 +290,7 @@ The sites were present at least 15 nucleotides from the stop codon and not prese
 
 Grimson et al. also found that the AU nucleotide content is increased in the region of conserved sites \cite{Grimson}.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.6]{results/site_stop.PNG} 
 \caption{Efficacy of sites located relative to the stop codon}
@@ -290,12 +301,13 @@ Grimson et al. also found that the AU nucleotide content is increased in the reg
 Considering all these different common and less common features, new targets for miRNAs can be roughly reliably predicted. Figure~\ref{fig:tools} shows known prediction tools and the features they consider. As mentioned above the most common feature that nearly all of them consider are seed matching, conservation and free energy. 
 
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.5]{results/tools.PNG}
 \caption{Prediction tools and their features}
 \label{fig:tools}
 \end{figure}
+
 
  
 \subsection{Data} 
@@ -352,7 +364,7 @@ t-test p-value & 8.824E-50 & 1.131E-49 & 8.157E-42 & 3.279E-36 \\
 
 This increase in the alignment score can be also be observed when considering the distribution of the scores within the two groups of case and control. For two parameter sets (No. 1 and no. 8) such a distribution was plotted which is shown in figure~\ref{fig:distribution}. 
 
-\begin{figure}
+\begin{figure}[h]
 \includegraphics[scale=0.35]{results/plot_scores-4-4_thresh.png}
 \includegraphics[scale=0.35]{results/plot_scores5-3-8-2_thresh.png}
 \caption{Distribution of alignment scores, parameters -4 -4 and 5 -3 -8- 2}
@@ -370,7 +382,6 @@ For each parameter set the complementarity of single nucleotides of the alignmen
 
 \begin{figure}
 \includegraphics[scale=0.65]{results/combined_results.pdf}
-
 \end{figure}
 
 \begin{figure}
@@ -384,6 +395,16 @@ The x-axis of the plots shows the positions one to 22 or more of the miRNA, the 
 
 For some sets there is not a significant difference between true targets and non targets, e.g. in plots H and I. Regarding set A, for the true target right an increase in complementarity in the seed region can be observed. On the other hand the ratio towards the end gets really low down to only 30\% of the bases were complementary to the target sequence. In comparison, the maximum of complementarity of the non targets left is shifted towards the central positions, not showing the typical seed region. Notably the plot of the true targets does not show the complementary region towards the 3' end. The same applies for plot B. Considering the other figures of the complementarities there are no significant differences between the two groups. For the non targets all other plots, especially F to I show no big variability overall. The ratios are pretty similar comparing the positions. For the true targets a slight increase in the first positions can be seen but the increase amounts only to a few percentages.
 Also for the non targets the complementarity is almost as high as for the true targets, gaining no reliable information for the prediction. This implicates that the consideration of the complementarities of the miRNA positions is not a significant and reliable prediction feature.\\
+
+In figure~\ref{curves} two plots with curves of two parametersets illustrate the complementarities of the nucleotides. In the first plot the difference in the seed region can be seen. ... etc TODO when plots are ready
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.3]{results/curves1-2-2-1.png}
+\includegraphics[scale=0.3]{results/curves5-4-6-4}
+\caption{Curves of complementarity of non and true targets: 1 -2 -2 -1, 5 -4 -6 -4}
+\label{curves}
+\end{figure}
 
 The analysis of the alignment starting positions was not really successful and significant. Table~\ref{tab:positions} shows the numbers of the own predicted positions that were also given in the miRTarBase. It can be seen that two sets deliver only half the number of the other (5 -2 -8 -3 and 5 -3 -8 -2). These two sets also use very similar parameters. That shows that the alignment positions strongly depend on the selected parameters. In comparison to the given number of about 3700 provided positions in the miRTarBase the numbers of the respective own found ones are in general not very high. This can be due to the different sizes of the UTRs of the genes. In this research they are from the UCSC website whereas the miRTarBase may use another source. Therefore the sizes can be a bit different resulting in different defined positions, although the alignment would start at the same position. To eliminate these small disagreements, I allowed a window of 10 positions where the starting position can be. So if the provided miRTarBase position is given, the own predicted position is classified as consistent if the position lies in a window of +5 or -5 related to the miRTarBase position. 
 
@@ -413,7 +434,7 @@ Found number & 882 & 793 & 776 & 845  \\
 
 The table in figure~\ref{table:ratios} shows that the average of the complementarity ratios are pretty similar comparing true targets with non-targets. Highlighted in yellow are the nucleotides of the seed region, in blue the nucleotides of the additional 3' pairing. Building the average ratios of these regions a possible increase could be observed. For the first parameter set, the true targets show a slight increase in the seed region but a decrease in the additional pairing. So the described feature from above can not be significantly observed. For the same set and the negative control, a constant average can be seen. For almost all true target an increase in the seed region and a decrease in the other region can be observed. For the non targets there are different patterns. E.g. for the third parameter set both regions are increased in contrast to the standard average. For the other sets either no big difference can be seen or both are enriched but never decreased. Going back to the plots, there the seed region in the true targets is slightly more visible than for the non targets. But all in all the differences in here are not very big and significant. Both regions can not be observed as clearly as expected.  
 
-\begin{figure}
+\begin{figure}[h]
 \vspace{-3cm}
 \includegraphics[scale=0.8]{results/ratio_table.pdf}
 \vspace{-2.8cm}
@@ -428,6 +449,8 @@ Because of their potential to function in treatment and detection of diseases, m
 
 
 biomarker: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3199035/
+
+
 
 As described above there are many features that can be considered and many different existing tools. They all differ from each other in the number and type of features they use and also in the weighting of the single features \cite{Peterson}. Concluding, each tool and feature has its advantages and strength but also its limitations which makes none of the existing tools perfect and 100\% reliable. 
 

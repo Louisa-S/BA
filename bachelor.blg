@@ -1,3 +1,46 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: bachelor.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: bachelor.aux
 The style file: apalike.bst
 Database file #1: bachelor.bib
+You've used 27 entries,
+            1935 wiz_defined-function locations,
+            656 strings with 8842 characters,
+and the built_in function-call counts, 12563 in all, are:
+= -- 1185
+> -- 758
+< -- 11
++ -- 276
+- -- 272
+* -- 1215
+:= -- 2253
+add.period$ -- 83
+call.type$ -- 27
+change.case$ -- 271
+chr.to.int$ -- 25
+cite$ -- 27
+duplicate$ -- 358
+empty$ -- 719
+format.name$ -- 315
+if$ -- 2335
+int.to.chr$ -- 3
+int.to.str$ -- 0
+missing$ -- 22
+newline$ -- 140
+num.names$ -- 81
+pop$ -- 204
+preamble$ -- 1
+purify$ -- 271
+quote$ -- 0
+skip$ -- 271
+stack$ -- 0
+substring$ -- 811
+swap$ -- 22
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 162
+warning$ -- 0
+while$ -- 93
+width$ -- 0
+write$ -- 352

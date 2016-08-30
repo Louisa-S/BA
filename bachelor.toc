@@ -1,16 +1,16 @@
 \contentsline {section}{\numberline {1}Introduction}{1}
 \contentsline {section}{\numberline {2}Methods and Data}{4}
 \contentsline {subsection}{\numberline {2.1}Methodology}{4}
-\contentsline {subsection}{\numberline {2.2}Prediction features}{5}
-\contentsline {subsubsection}{\numberline {2.2.1}Seed matching}{5}
+\contentsline {subsection}{\numberline {2.2}Prediction features}{7}
+\contentsline {subsubsection}{\numberline {2.2.1}Seed matching}{7}
 \contentsline {subsubsection}{\numberline {2.2.2}Free energy}{7}
-\contentsline {subsubsection}{\numberline {2.2.3}Conservation}{7}
-\contentsline {subsubsection}{\numberline {2.2.4}Site accessibility}{7}
+\contentsline {subsubsection}{\numberline {2.2.3}Conservation}{8}
+\contentsline {subsubsection}{\numberline {2.2.4}Site accessibility}{9}
 \contentsline {subsubsection}{\numberline {2.2.5}Addtional Watson-Crick pairing}{9}
-\contentsline {subsubsection}{\numberline {2.2.6}Other features}{11}
-\contentsline {subsection}{\numberline {2.3}Data}{13}
-\contentsline {subsubsection}{\numberline {2.3.1}miRTarBase}{13}
+\contentsline {subsubsection}{\numberline {2.2.6}Other features}{10}
+\contentsline {subsection}{\numberline {2.3}Data}{14}
+\contentsline {subsubsection}{\numberline {2.3.1}miRTarBase}{14}
 \contentsline {subsubsection}{\numberline {2.3.2}miRBase}{15}
 \contentsline {subsubsection}{\numberline {2.3.3}UCSC Genome Bioinformatics Site}{15}
 \contentsline {section}{\numberline {3}Results}{16}
-\contentsline {section}{\numberline {4}Discussion}{22}
+\contentsline {section}{\numberline {4}Discussion}{23}
