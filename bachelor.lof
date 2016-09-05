@@ -1,17 +1,17 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Biogenesis of miRNAs}}{2}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Scheme of seed matching}}{8}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Canonical sites of seed region}}{8}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Effectiveness of different types of sites}}{9}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Additional 3' pairing}}{10}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Relation between regulation and starting position of additional pairing}}{10}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Conservation of nucleotide positions of miRNA}}{11}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Efficacy of different combinations of seed region and additional 3' pairing}}{11}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Cooperative repression with different site spacings}}{12}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Effect of multiple sites}}{13}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Efficacy of different site locations}}{13}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Efficacy of sites located relative to the stop codon}}{14}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Prediction tools and their features}}{14}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Distribution of alignment scores, parameters -4 -4 and 5 -3 -8- 2}}{17}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Ratios of complementarity per parameter set (A-H): targets right, non targets left}}{20}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Curves of complementarity of non and true targets: 1 -2 -2 -1, 5 -4 -6 -4}}{21}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Table of ratios of complementarities}}{29}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Scheme of seed matching}}{10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Canonical sites of seed region}}{10}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Effectiveness of different types of sites}}{11}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Additional 3' pairing}}{12}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Relation between regulation and starting position of additional pairing}}{13}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Conservation of nucleotide positions of miRNA}}{13}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Efficacy of different combinations of seed region and additional 3' pairing}}{14}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Cooperative repression with different site spacings}}{14}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Effect of multiple sites}}{15}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Efficacy of different site locations}}{15}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Efficacy of sites located relative to the stop codon}}{16}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Prediction tools and their features}}{16}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Distribution of alignment scores, parameters -4 -4 and 5 -3 -8- 2}}{19}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Ratios of complementarity per parameter set (A-H): targets right, non targets left}}{22}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Curves of complementarity of non and true targets: 1 -2 -2 -1, 5 -4 -6 -4}}{23}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Table of ratios of complementarities}}{31}
