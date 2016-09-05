@@ -1,21 +1,9 @@
 \begin{thebibliography}{}
 
-\bibitem[??, 2000a]{alignment}
-?? (2000a).
+\bibitem[a~Wikipedia, 2016]{alignment}
+a~Wikipedia (2016).
 \newblock Definition of sequence alignment.
 \newblock URL \url{https://en.wikipedia.org/wiki/Sequence_alignment}.
-
-\bibitem[??, 2000b]{pairwise}
-?? (2000b).
-\newblock Documentation of module pairwise2.
-\newblock URL
-  \url{http://biopython.org/DIST/docs/api/Bio.pairwise2-module.html}.
-
-\bibitem[??, 2000c]{ttest}
-?? (2000c).
-\newblock Documentation of ttest function of libreoffice.
-\newblock URL
-  \url{https://wiki.openoffice.org/wiki/Documentation/How_Tos/Calc:_TTEST_function}.
 
 \bibitem[Ardekani and Naeini, 2010]{Ardekani}
 Ardekani, A.~M. and Naeini, M.~M. (2010).
@@ -52,6 +40,12 @@ Chou, C.~H., Chang, N.~W., Shrestha, S., Hsu, S.~D., Lin, Y.~L., Lee, W.~H.,
 Coronnello, C. and Benos, P.~V. (2013).
 \newblock {{C}omi{R}: {C}ombinatorial micro{R}{N}{A} target prediction tool}.
 \newblock {\em Nucleic Acids Res.}, 41(Web Server issue):W159--164.
+
+\bibitem[d~Biopython, 2016]{pairwise}
+d~Biopython (2016).
+\newblock Documentation of module pairwise2.
+\newblock URL
+  \url{http://biopython.org/DIST/docs/api/Bio.pairwise2-module.html}.
 
 \bibitem[Doench and Sharp, 2004]{Doench}
 Doench, J.~G. and Sharp, P.~A. (2004).
@@ -121,6 +115,12 @@ Kertesz, M., Iovino, N., Unnerstall, U., Gaul, U., and Segal, E. (2007).
 \newblock {{T}he role of site accessibility in micro{R}{N}{A} target
   recognition}.
 \newblock {\em Nat. Genet.}, 39(10):1278--1284.
+
+\bibitem[King, 2013]{ttest}
+King, D. (2013).
+\newblock Documentation/how tos/calc: Ttest function.
+\newblock URL
+  \url{https://wiki.openoffice.org/wiki/Documentation/How_Tos/Calc:_TTEST_function}.
 
 \bibitem[Kozomara and Griffiths-Jones, 2011]{mirbase}
 Kozomara, A. and Griffiths-Jones, S. (2011).

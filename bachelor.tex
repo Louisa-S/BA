@@ -4,7 +4,7 @@
 \usepackage{chngcntr}
 \usepackage{pdfpages}
 \usepackage{url}
-\usepackage[font=small]{caption}
+\usepackage[font=footnotesize]{caption}
 
 
 
@@ -188,6 +188,7 @@ The last required dataset is the collection of target gene sequences and their r
 
 
 \subsubsection{ID converter}
+\label{sec:id}
 For the alignment of miRNA to the corresponding gene the respective miRNA sequence and gene sequence are required. The interaction data from miRTarBase only provides the correlation between miRNA name and target gene ID. But the dataset from UCSC only delivers the NM number for the gene sequence. Therefore a conversion from gene Entrez ID to Refseq mRNA accession number is required. Biodbnet provides a conversion tool for different IDs, names and numbers \cite{biodb}. I entered all existing target Entrez IDs of the miRTarBase file and obtained a conversion list of IDs and their corresponding Refseq accession numbers. In my program I used this list by storing every entry in a dictionary and simply looked the particular ID up for every MTI. This is also described in the following section.
  
 
@@ -198,15 +199,13 @@ For the alignment of miRNA to the corresponding gene the respective miRNA sequen
 \subsection{Methodology}
 
 
-only functional ones, not non and not weak
-input data and runtime, csv etc.
+The program for the analysis is implemented in Python. As input files the UCSC gene file, miRTarBase file and miRBase file are required in a csv format. Additionally the conversion file of gene id and nm number is needed. It can be generated as described in section~\ref{sec:id} and given as an input file in a text format. 
+For each data file except the MTI file an own dictionary is generated. Therefore the data files are parsed and each entry is stored into the respective dictionary that allows fast searching. For the miRNAs the dictionary is defined as following: miRNA name as key and sequence as value. The two mature forms, if two exist, are stored separately. For the gene file, the NM number is the key and the value is a list of sequences of 5' UTR, coding redion and 3' UTR. Finally, for the conversion list, the Entrez id is stored as the key and the list of NM numbers as a value. There can exist more than one NM number for one gene Entrez id because different transcripts can be obtained by alternative splicing. 
+Then for every MTI in the miRTarBase file the respective miRNA sequence is searched in the miRBase dictionary and combined with the gene sequence of the corresponding target in the gene dictionary. The miRTarBase file contains data of 'Functional MTI', 'Functional MTI(Weak)' and 'Non-Functional MTI'. Here I only consider the strong validated data of the Functional MTIs because they deliver strong evidence for the interaction. So if an entry in the miRTarBase file contains something different than 'Functional MTI', it is scipped.
 
-The program for the analysis is implemented in Python. As input files the UCSC gene file, miRTarBase file and miRBase file are required in a csv format. Additionally the conversion file of gene id and nm number is needed. It can be generated as described in section~\ref{ID converter} given as a text file. 
-For each data file except the MTI file an own dictionary is generated. Therefore the data files are parsed and each entry is stored into the respective dictionary that allows fast searching. For the miRNAs the dictionary is defined as following: miRNA name as key and sequence as value. The two mature forms, if two exist, are stored separately. For the gene file, the key is the NM number and the value is a list of 5' UTR, coding redion and 3' UTR. Finally, for the conversion list, the Entrez id is stored as the key and the list of NM numbers as a value. There can exist more than one NM number for one gene Entrez id because different transcripts can be obtained by different splicings or other processing??. Then for every MTI in the miRTarBase file the respective miRNA sequence is searched in the miRBase dictionary and combined with the gene sequence of the corresponding target in the gene dictionary. The miRTarBase file contains data of 'Functional MTI', 'Functional MTI(Weak)' and 'Non-Functional MTI'. Here I only consider the strong validated data of the Functional MTIs because they deliver strong evidence for the interaction. So if an entry in the miRTarBase file contains something different than 'Functional MTI', it is scipped.
+After matching these two sequences, a local alignment is performed. An alignment is defined as the optimal positioning of the bases of one sequence, in this case the miRNA, to a region in the other sequence, the gene sequence. From the result functional or structural similarities can be obtained \cite{alignment}. In this case, the similarity can be interpreted as region where a binding site could be present because if we take the reverse complement of the miRNA sequence and align it to the mRNA sequence, this will simulate the binding. More precisely, if the alignment score is high, the sequences (mRNA and reverse complement of miRNA) are more similar, implying the actual miRNA could possibly bind at this alignment position. Because the miRNA can bind at any region in the gene, a local alignment is executed, not a global.\\
 
-After matching these two sequences, a local alignment is performed with them. An alignment is defined as the optimal positioning of the bases of one sequence, in this case the miRNA, to a region in the other sequence, the gene sequence. From the result functional or structural similarities can be obtained \cite{alignment}. In this case, the similarity can be interpreted as a binding site, because if we take the reverse complement of the miRNA sequence and align it to the mRNA sequence, this will simulate the binding. More precisely, if the alignment score is high, the sequences (mRNA and reverse complement of miRNA) are more similar, implying the actual miRNA could possibly bind at this alignment position. Because the miRNA can bind at any region in the gene, a local alignment is executed, not a global.\\\\
-
-The Biopython library provides a module, pairwise2, for pairwise local alignments of two sequences. This tool is based on a dynamic programming algorithm. This function can be used either with default parameter or different scores and costs can be defined. The default parameters are as following: +1 for matching character, 0 for not matching ones and there are no gap penalties \cite{pairwise}. To get a more suitable alignment own parameters can be selected. Table~\ref{table:parameter} shows the different parameters that I used to generate the data. Set no. 8 is similar to the parameters they used for the tool miRanda \cite{Enright}. The other parameters are just logically selected to test which influence they have on the results.\\
+The Biopython library provides a module, pairwise2, for pairwise local alignments of two sequences. This tool is based on a dynamic programming algorithm. This function can be used either with default parameter or different scores and costs can be defined. The default parameters are as following: +1 for matching character, 0 for not matching ones and there are no gap penalties \cite{pairwise}. To get a more suitable alignment, own parameters can be selected. Table~\ref{table:parameter} shows the different parameters I used to analyse the data. Set no. 8 is similar to the parameters they used for the tool miRanda \cite{Enright}. The other parameters are just logically selected to test which influence they have on the results.
 
 
 \begin{table}
@@ -229,12 +228,12 @@ Parameterset & match score & mismatch score & gap open & gap extend\\
 \label{table:parameter}
 \end{table}
 
-For each alignment the following steps are performed: the pairwise2 module delivers the best alignment with the highest score. Sometimes there is more than one alignment because they have the same highest score. So for each found alignment list the miRNA name, the respective NM-number and the alignment score is stored in a string. Then for each single alignment in the list the starting position is computed and added to this string. To get a final list of all alignments, the string is written to a text file.
+For each alignment the following steps are performed: the pairwise2 module delivers the best alignment with the highest score. Sometimes there is more than one alignment because they have the same highest score. So for each found alignment list the miRNA name, the respective NM-number and the alignment score are stored in a string. Then for each single alignment in the list the starting position is computed and added to this string. To get a final list of all alignments, the single strings of each MTI is written to a text file.
 
-For the analysis of the complementarities the alignment is further examined. Each position of miRNA and target mRNA is compared and whenever the nucleotide is similar, a '1' is added to a list, if they are different or there is a gap, a '0' is added. This list is yielded to a big matrix for the final analysis. Going through this matrix for each position the number of '1's is computed and divided by the total number of elements in the matrix. So the result will be the ratio of complementary bases. This ratio is plotted for each position in the alignment. 
+For the analysis of the complementarities the alignment is further examined. First both sequences are reversed because they are given from 3' to 5'. To further analyse the 5' seed region and make the plots more clearly, the sequences then start with the 5' end. 
+Each nucleotide position of miRNA and target mRNA is compared and whenever the nucleotide is the same, a '1' is added to a list, if they are different or there is a gap, a '0' is added. This list is yielded to a big matrix for the final analysis. Going through this matrix through each column the number of '1's is computed and divided by the total number of elements in the matrix. So the result will be the ratio of complementary bases. This ratio is plotted for each position in the alignment. 
 
-
-To be able to analyse the data statistically a set of negative controls is required. To produce this data, 1000 miRNAs of the miRBase file were randomly assigned to a list of genes and then aligned in the same way as the sequences of the true target interactions. This randomly assigment can by chance contain true targets but generally the miRNAs are matched with genes that are no true targets. \\
+To be able to analyse the data statistically a set of negative controls is required. To produce this data, 1000 miRNAs of the miRBase file were randomly assigned to a list of genes and then this non target file is processed in the same way as the file of the true target interactions. This random assigment can by chance contain true targets but generally the miRNAs are matched with genes that are not targeted by them. \\
 
 For these datasets the average and standard deviation were computed as well. Then with case and control alignment scores a statistical two-tailed t-test for two samples with equal variances was performed with LibreOffice \cite{ttest}. This provides a p-value as a result. The lower this p-value is, the more significant the increase of the alignment score of the true targets is. If there is an increase in the score, this would be an indication that is we only calculate the alignment score for a new miRNA and any target sequence and observe a high one, the probability that this is a true target would be high. If this is a reliable feature for the prediction will be discussed in the following.
 
@@ -453,6 +452,7 @@ Summing up, assuming the score as the only prediction feature and given a certai
 For each parameter set the complementarity of single nucleotides of the alignments of miRNA and target gene sequence were also plotted. These plots are shown in figure~\ref{ratios}.
 
 \begin{figure}
+\vspace{-1cm}
 \includegraphics[scale=0.65]{results/compl1.png}
 \end{figure}
 
