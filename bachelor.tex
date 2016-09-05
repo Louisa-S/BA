@@ -468,7 +468,9 @@ The x-axis of the plots shows the positions one to 22 or more of the miRNA, the 
 For some sets there is not a significant difference between true targets and non targets, e.g. in plots H and I. Regarding set A, for the true target right an increase in complementarity in the seed region can be observed. On the other hand the ratio towards the end gets really low down to only 30\% of the bases were complementary to the target sequence. In comparison, the maximum of complementarity of the non targets left is shifted towards the central positions, not showing the typical seed region. Notably the plot of the true targets does not show the complementary region towards the 3' end. The same applies for plot B. Considering the other figures of the complementarities there are no significant differences between the two groups. For the non targets all other plots, especially F to I show no big variability overall. The ratios are pretty similar comparing the positions. For the true targets a slight increase in the first positions can be seen but the increase amounts only to a few percentages.
 Also for the non targets the complementarity is almost as high as for the true targets, gaining no reliable information for the prediction. This implicates that the consideration of the complementarities of the miRNA positions is not a significant and reliable prediction feature.\\
 
-In figure~\ref{curves} two plots with curves of two parametersets illustrate the complementarities of the nucleotides. In the first plot the difference in the seed region can be seen. ... etc TODO when plots are ready
+In figure~\ref{curves} three plots with curves of three parameter sets illustrate the complementarities of the nucleotides. In the first plot the difference in the seed region can be seen. The blue curve of the true targets is about 10\% higher than the curve of the none targets. From nucleotide eight on the red curve has its maximum and passes the blue one but the difference is not very big. From then on the curves are very similar. So for this parameter set only a difference in the seed region can be observed. 
+The second plot of the parameter set 5 -4 -6 -4 shows even less differences. Again, there is a small difference in the seed region where the blue curve is a bit higher but only up to 5\%. Then both curves stay high between 65 and 70\% that is a contrast to the first plot. But the main point, a difference between true and non targets can not be observed.
+The last plot is again a bit different from the two others. The blue and the red curve alternate and are very similar in height. In here, neither seed region nor additional 3' pairing can be observed. For the two others the additional paring can no be seen at all as well. So from these plots and the complementarity of the paring nucleotides not many information can be gained. Hence, having a look at the complementarity of a new examined binding site is not significant to decide whether this position is a new found binding site and consequently the examined target is really targeted by the considered miRNA.
 
 \begin{figure}[h]
 \centering
@@ -505,16 +507,17 @@ Found number & 882 & 793 & 776 & 845  \\
 \end{table}
 
 
+
+
 The table in figure~\ref{table:ratios} shows that the average of the complementarity ratios are pretty similar comparing true targets with non-targets. Highlighted in yellow are the nucleotides of the seed region, in blue the nucleotides of the additional 3' pairing. Building the average ratios of these regions a possible increase could be observed. For the first parameter set, the true targets show a slight increase in the seed region but a decrease in the additional pairing. So the described feature from above can not be significantly observed. For the same set and the negative control, a constant average can be seen. For almost all true target an increase in the seed region and a decrease in the other region can be observed. For the non targets there are different patterns. For example, for the third parameter set both regions are increased in contrast to the standard average. For the other sets either no big difference can be seen or both are enriched but never decreased. Going back to the plots, there the seed region in the true targets is slightly more visible than for the non targets. But all in all the differences in here are not very big and significant. Both regions can not be observed as clearly as expected.  
 
+\begin{figure}[h]
+\centering
+\includegraphics[scale=1.1]{results/ratio_table2.png}
+\caption{Table of ratios of complementarities}
+\label{table:ratios}
+\end{figure}
 
-%begin{figure}[h]
-%\vspace{-3cm}
-%\includegraphics[scale=0.8]{results/ratio_table.pdf}
-%\vspace{-2.8cm}
-%\caption{Table of ratios of complementarities}
-%\label{table:ratios}
-%\end{figure}
 
 
 
@@ -547,16 +550,13 @@ The future consists of the elimination of the limits the tools and finding more 
 
 Fujiwara and Yada \cite{Fuji} followed a new approach by considering other characteristics than binding sites for the prediction, in fact the transcriptional regulation. In their research they searched for common cis-elements in the miRNA as well as in the target gene. Compared to conventional methods theirs method is almost as good as the standard binding site base ones, but combining the two different methods decreases the accuracy much. The advantages of this novel approach are independence of conservation of binding sites and the amount of available training data. 
 
-Coronnello and Benos \cite{Coronnello} investigated another approach trying to improve the prediction power. They developed a tool ComiR that considers additionally the miRNA expression levels and the combination of miRNA bindings. It also combines different scoring schemes from tools mentioned above. The innovation in this tool is the investigation of sets of miRNAs and their co-expression. ?? www.ncbi.nlm.nih.gov/pmc/articles/PMC3692082/
+Coronnello and Benos \cite{Coronnello} investigated another approach trying to improve the prediction power. They developed a tool ComiR that considers additionally the miRNA expression levels and the combination of miRNA bindings. It also combines different scoring schemes from tools mentioned above. The innovation in this tool is the investigation of sets of miRNAs and their co-expression. ?? www.ncbi.nlm.nih.gov/pmc/articles/PMC3692082/ \\
 
 
 
 
-n future die limits die noch da sind zu überwinden um besser zu werden.
-New tools: http://www.ncbi.nlm.nih.gov/pubmed/23445489/
-combination of tools to overcome limits: http://www.ncbi.nlm.nih.gov/pubmed/23716633/
-integrate expression data: http://www.ncbi.nlm.nih.gov/pubmed/23703208/
 
+evtl noch zu beachten:
 newst one:http://www.ncbi.nlm.nih.gov/pubmed/27561079
 http://www.ncbi.nlm.nih.gov/pubmed/27560313
 
@@ -567,6 +567,11 @@ http://www.ncbi.nlm.nih.gov/pubmed/27477696
 http://www.ncbi.nlm.nih.gov/pubmed/27450903
 
 http://www.ncbi.nlm.nih.gov/pubmed/27438777
+\\
+
+
+conclusion noch dazu?
+
 
 \newpage
 \bibliography{bachelor}

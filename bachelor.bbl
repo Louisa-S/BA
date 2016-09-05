@@ -1,10 +1,5 @@
 \begin{thebibliography}{}
 
-\bibitem[a~Wikipedia, 2016]{alignment}
-a~Wikipedia (2016).
-\newblock Definition of sequence alignment.
-\newblock URL \url{https://en.wikipedia.org/wiki/Sequence_alignment}.
-
 \bibitem[Ardekani and Naeini, 2010]{Ardekani}
 Ardekani, A.~M. and Naeini, M.~M. (2010).
 \newblock {{T}he {R}ole of {M}icro{R}{N}{A}s in {H}uman {D}iseases}.
@@ -20,6 +15,12 @@ Betel, D., Koppal, A., Agius, P., Sander, C., and Leslie, C. (2010).
 \newblock {{C}omprehensive modeling of micro{R}{N}{A} targets predicts
   functional non-conserved and non-canonical sites}.
 \newblock {\em Genome Biol.}, 11(8):R90.
+
+\bibitem[Biopython, 2016]{pairwise}
+Biopython (2016).
+\newblock Documentation of module pairwise2.
+\newblock URL
+  \url{http://biopython.org/DIST/docs/api/Bio.pairwise2-module.html}.
 
 \bibitem[Brennecke et~al., 2005]{Brennecke}
 Brennecke, J., Stark, A., Russell, R.~B., and Cohen, S.~M. (2005).
@@ -40,12 +41,6 @@ Chou, C.~H., Chang, N.~W., Shrestha, S., Hsu, S.~D., Lin, Y.~L., Lee, W.~H.,
 Coronnello, C. and Benos, P.~V. (2013).
 \newblock {{C}omi{R}: {C}ombinatorial micro{R}{N}{A} target prediction tool}.
 \newblock {\em Nucleic Acids Res.}, 41(Web Server issue):W159--164.
-
-\bibitem[d~Biopython, 2016]{pairwise}
-d~Biopython (2016).
-\newblock Documentation of module pairwise2.
-\newblock URL
-  \url{http://biopython.org/DIST/docs/api/Bio.pairwise2-module.html}.
 
 \bibitem[Doench and Sharp, 2004]{Doench}
 Doench, J.~G. and Sharp, P.~A. (2004).
@@ -169,5 +164,10 @@ Peterson, S.~M., Thompson, J.~A., Ufkin, M.~L., Sathyanarayana, P., Liaw, L.,
 Rehmsmeier, M., Steffen, P., Hochsmann, M., and Giegerich, R. (2004).
 \newblock {{F}ast and effective prediction of micro{R}{N}{A}/target duplexes}.
 \newblock {\em RNA}, 10(10):1507--1517.
+
+\bibitem[Wikipedia, 2016]{alignment}
+Wikipedia (2016).
+\newblock Definition of sequence alignment.
+\newblock URL \url{https://en.wikipedia.org/wiki/Sequence_alignment}.
 
 \end{thebibliography}
