@@ -2,16 +2,16 @@
 \contentsline {section}{\numberline {2}Methods and Data}{4}
 \contentsline {subsection}{\numberline {2.1}Data}{4}
 \contentsline {subsubsection}{\numberline {2.1.1}miRTarBase}{4}
-\contentsline {subsubsection}{\numberline {2.1.2}miRBase}{5}
-\contentsline {subsubsection}{\numberline {2.1.3}UCSC Genome Bioinformatics Site}{5}
-\contentsline {subsubsection}{\numberline {2.1.4}ID converter??}{6}
-\contentsline {subsection}{\numberline {2.2}Methodology}{6}
-\contentsline {subsection}{\numberline {2.3}Prediction features}{9}
-\contentsline {subsubsection}{\numberline {2.3.1}Seed matching}{9}
-\contentsline {subsubsection}{\numberline {2.3.2}Free energy}{10}
-\contentsline {subsubsection}{\numberline {2.3.3}Conservation}{11}
-\contentsline {subsubsection}{\numberline {2.3.4}Site accessibility}{11}
-\contentsline {subsubsection}{\numberline {2.3.5}Addtional Watson-Crick pairing}{12}
-\contentsline {subsubsection}{\numberline {2.3.6}Other features}{12}
-\contentsline {section}{\numberline {3}Results}{16}
-\contentsline {section}{\numberline {4}Discussion}{24}
+\contentsline {subsubsection}{\numberline {2.1.2}miRBase}{6}
+\contentsline {subsubsection}{\numberline {2.1.3}UCSC Genome Bioinformatics Site}{6}
+\contentsline {subsubsection}{\numberline {2.1.4}ID converter}{6}
+\contentsline {subsection}{\numberline {2.2}Methodology}{7}
+\contentsline {subsection}{\numberline {2.3}Prediction features}{10}
+\contentsline {subsubsection}{\numberline {2.3.1}Seed matching}{10}
+\contentsline {subsubsection}{\numberline {2.3.2}Free energy}{11}
+\contentsline {subsubsection}{\numberline {2.3.3}Conservation}{12}
+\contentsline {subsubsection}{\numberline {2.3.4}Site accessibility}{12}
+\contentsline {subsubsection}{\numberline {2.3.5}Addtional Watson-Crick pairing}{13}
+\contentsline {subsubsection}{\numberline {2.3.6}Other features}{14}
+\contentsline {section}{\numberline {3}Results}{17}
+\contentsline {section}{\numberline {4}Discussion}{25}

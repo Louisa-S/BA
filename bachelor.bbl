@@ -17,16 +17,15 @@
 \newblock URL
   \url{https://wiki.openoffice.org/wiki/Documentation/How_Tos/Calc:_TTEST_function}.
 
-\bibitem[Afonso-Grunz and Muller, 2015]{Grunz}
-Afonso-Grunz, F. and Muller, S. (2015).
-\newblock {{P}rinciples of mi{R}{N}{A}-m{R}{N}{A} interactions: beyond sequence
-  complementarity}.
-\newblock {\em Cell. Mol. Life Sci.}, 72(16):3127--3141.
-
 \bibitem[Ardekani and Naeini, 2010]{Ardekani}
 Ardekani, A.~M. and Naeini, M.~M. (2010).
 \newblock {{T}he {R}ole of {M}icro{R}{N}{A}s in {H}uman {D}iseases}.
 \newblock {\em Avicenna J Med Biotechnol}, 2(4):161--179.
+
+\bibitem[Bartel, 2004]{Bartel}
+Bartel, D.~P. (2004).
+\newblock {{M}icro{R}{N}{A}s: genomics, biogenesis, mechanism, and function}.
+\newblock {\em Cell}, 116(2):281--297.
 
 \bibitem[Betel et~al., 2010]{Betel}
 Betel, D., Koppal, A., Agius, P., Sander, C., and Leslie, C. (2010).
@@ -71,6 +70,12 @@ Filipowicz, W., Bhattacharyya, S.~N., and Sonenberg, N. (2008).
 \newblock {{M}echanisms of post-transcriptional regulation by micro{R}{N}{A}s:
   are the answers in sight?}
 \newblock {\em Nat. Rev. Genet.}, 9(2):102--114.
+
+\bibitem[Friedman et~al., 2009]{Friedman}
+Friedman, R.~C., Farh, K.~K., Burge, C.~B., and Bartel, D.~P. (2009).
+\newblock {{M}ost mammalian m{R}{N}{A}s are conserved targets of
+  micro{R}{N}{A}s}.
+\newblock {\em Genome Res.}, 19(1):92--105.
 
 \bibitem[Fujiwara and Yada, 2013]{Fuji}
 Fujiwara, T. and Yada, T. (2013).

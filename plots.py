@@ -2,8 +2,8 @@ import sys
 import matplotlib.pyplot as plt
 
 def curves():
-	f1 = "results/non-result1-2-2-1.txt"
-	f2 = "results/result1-2-2-1.txt"
+	f1 = "results/non-result-5-1_new.txt"
+	f2 = "results/result-5-1_new.txt"
 
 	nons = []
 	reals = []
@@ -29,9 +29,12 @@ def curves():
 	plt.xlabel("nucleotides")
 	plt.ylabel("complementarity")
 	plt.legend(loc="upper right")
-	plt.savefig("results/curves1-2-2-1.png")
+	plt.savefig("results/curves-5-1.png")
+
+curves()
 
 
+'''
 def scores():
 	x = dict()
 	
@@ -50,3 +53,4 @@ def scores():
 	plt.plot(yvals,
 				
 	
+'''
