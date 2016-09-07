@@ -400,20 +400,16 @@ Found number & 882 & 793 & 776 & 845  \\
 
 \section{Discussion}
 
-In this research the main focus was on sequence alignment of miRNA sequence and its target mRNA sequence for given validated miRNA target interactions. This alignment should simulate a binding between the two sequence. In this way, it was investigated how this approach can be used to predict new target sites for miRNAs without any other biological experiments. 
+In this research the main focus was on sequence alignment of miRNA sequence and its target mRNA sequence for given validated miRNA target interactions. This alignment should simulate a binding between the two sequence. In this way, it was investigated how this approach can be used to predict new target sites for miRNAs without any other biological experiments.
 
-The results showed that with this alignment tool I used the increase in the alignment score for true targets are significant. This means that if a certain threshold for the scoring is exceeded, with a certain error rate a considered mRNA is really targeted by this miRNA. On the other hand, with this alignment tool different binding sites were found compared to binding sites predicted by some existing prediction tools like miRanda. So if the positions I found with the alignment tool are the right ones is questionable. The alignment strongly depends on parameters and therefore the results are that different. Nevertheless the scroes showed a significant increase for the true targets. But again in here it is questionable how certain this prediction feature is if its considered by itself. As it can be observed for the existing tools, a much better prediction can be achieved with the consideration of more prediction features which are described underneath.\\
+The results showed that with this alignment tool I used the increase in the alignment score for true targets are significant. This means that if a certain threshold for the scoring is exceeded, with a certain error rate a considered mRNA is really targeted by this miRNA. On the other hand, with this alignment tool different binding sites were found compared to binding sites predicted by some existing prediction tools like miRanda. So if the positions I found with the alignment tool are the right ones is questionable. The alignment strongly depends on parameters and therefore the results are that different. Nevertheless the scroes showed a significant increase for the true targets. But again in here it is questionable how certain this prediction feature is if its considered by itself. As it can be observed for the existing tools, a much better prediction can be achieved with the consideration of more prediction features which are described underneath.
 
-A first step can be the improvement of the alignment process, especially the refinement of the alignment parameters. In some other tools like miRanda, the parameters are adapted to the binding mechanism. For example, in the present seed region the complementarity should be nearly perfect, meaning mismatches in the first few nucleotides should be highly penalized or only a certain number of mismatches should be allowed. In addition, mismatches or gaps in the central nucleotides of the miRNA can be present and are therefore not much penalized. Adapting the parameters to some targeting rules can highly improve the target prediction. \\
+A first step can be the improvement of the alignment process, especially the refinement of the alignment parameters. In some other tools like miRanda, the parameters are adapted to the binding mechanism. For example, in the present seed region the complementarity should be nearly perfect, meaning mismatches in the first few nucleotides should be highly penalized or only a certain number of mismatches should be allowed. In addition, mismatches or gaps in the central nucleotides of the miRNA can be present and are therefore not much penalized. Adapting the parameters to some targeting rules can highly improve the target prediction. 
 
 Another thing is, in general, the more data of true targets are available, the more can be learned from the mechanism and the more the prediction tools can be adapted in different ways like features and precision of features.
-The complexitiy of the prediction can be observed by considering the consensus of all predicted targets of the different tools. Just a really small subset of all targets are predicted by all tools. Further, comparing validated target interactions of the database with the results of all tools about 16\% of all interactions are predicted by at least one tool. But there is no interaction that is predicted by all tools. That shows that there are big differences between the different tools partly because of the variable features they consider. (Quelle Keller Vorlesung 4) \\\\
+The complexitiy of the prediction can be observed by considering the consensus of all predicted targets of the different tools. Just a really small subset of all targets are predicted by all tools. Further, comparing validated target interactions of the database with the results of all tools about 16\% of all interactions are predicted by at least one tool. But there is no interaction that is predicted by all tools. That shows that there are big differences between the different tools partly because of the variable features they consider. (Quelle Keller Vorlesung 4) 
 
-Because of their potential to function in treatment and detection of diseases, miRNAs become more and more important. Therefore miRNA research must be further extended and the complex target prediction has to be improved. Many researchers have found diffe
-
-\subsection{Prediction features}
-
-research...
+Because of their potential to function in treatment and detection of diseases, miRNAs become more and more important. Therefore miRNA research must be further extended and the complex target prediction has to be improved. Many researchers have found different additional features that can be considered. As described in the introduction, the seed region is one of the most important ones. The different types of sites vary already in the effectiveness of repression. Grimson et al. investigates the different types and figure~\ref{types} shows their results. If one 8mer site is present, the repression effect is the highest \cite{Grimson}.
 
 
 \begin{figure}[h]
@@ -423,23 +419,13 @@ research...
 \label{types}
 \end{figure}
 
+Another useful feature is the free energy of the binding complex. This energy determines the stability and tightness of a  system, in this case the binding \cite{Peterson}. If the free energy is lower than the binding between the miRNA and the mRNA sequence is tighter resulting in more evidence that the miRNA targets this mRNA. If the energy is high then the binding is not very favourable, meaning the miRNA not favours to target this mRNA at this position. Some tools like RNAhybrid \cite{Rehmsmeier} rely strongly on this feature. 
 
-\subsubsection{Seed matching}
+A completely different feature like the evolutionary conservation can be taken into account. If a sequence occurs across species, it is defined as conserved. This implicates that this part has been maintained by evolution because of a selected function \cite{Peterson}. Conservation near the miRNA binding site can indicate that this part of the sequence is necessary for some mechanisms. This includes conservation of the miRNA itself as well as the conservation of the respective site of the mRNA. These conservations can be analysed with phylogenetic methods. Figure~\ref{conserved} shows how conserved the different nucleotides of a miRNA are, implicating regions like the seed region and additional 3' pairing. 
 
+Site accessibility is a feature that Kertesz et al. investigated for their target prediction. The mRNA generally folds into a secondary structure. Therefore the miRNA can not easily bind to its target because at first interactions within the mRNA have to be broken to make the target accessible. As a result miRNA will favourably bind to regions where the mRNA is more accessible. The researchers found that if the targets form highly stem structures the repression is reduced. If sites occur in open loop structures the repression is much higher. Summing up they found that site accessibility is not less important than seed matching \cite{Kertesz}. 
 
-\subsubsection{Free energy}
-The free energy of a system determines its stability and tightness of binding. If the free energy is lower than the binding between the miRNA and the mRNA sequence is tighter resulting in more evidence that this miRNA targets this mRNA. If the energy is high then the binding is not very favourable meaning the miRNA not favours to target this mRNA at this position. Some tools like RNAhybrid \cite{Rehmsmeier} rely mainly on this feature. (thermodynamics von miranda)
- 
-\subsubsection{Conservation}
-Another feature to take into account is the evolutionary conservation. If a sequence occurs across species it is defined as conserved. This implicates that this part has been maintained by evolution because of a selected function \cite{Peterson}. Conservation near the miRNA binding site can indicate that this part of the sequence is necessary for some mechanisms. This includes conservation of the miRNA itself as well as the conservation of the respective site of the mRNA. These conservations can be analysed with phylogenetic methods. In terms of conservation, figure~\ref{conserved} shows how conserved the different nucleotides of a miRNA are implicating regions like the seed region and additional 3' pairing. 
-
-
-\subsubsection{Site accessibility}
-Kertesz et al. \cite{Kertesz} investigated the importance of site accessibility for the target prediction. The mRNA generally folds into a secondary structure. Therefore the miRNA can not easily bind to its target because at first, interactions within the mRNA have to be broken to make the target accessible. As a result miRNA will favourably bind to regions where the mRNA is more accessible. Kertesz et al. \cite{Kertesz} found that if the targets form highly stem structures the repression is reduced. If sites occur in open loop structures the repression is much higher. Summing up they found that site accessibility is not less important than seed matching. \\
-
-
-\subsubsection{Addtional Watson-Crick pairing}
-In addition to the seed matching towards the 5' end, another complementary site towards the 3' end in the miRNA is present (Figure~\ref{addipairing}). Grimson et al. \cite{Grimson} investigated that the highest down regulation was found when the site started at position 13 and had four or five contiguous base pairings (Figure~\ref{siteregulation}). Considering again the conservation of the nucleotides they found that outside the seed region the contiguous nucleotides starting from nucleotide 12, 13 or 14 were the most conserved ones indicating / demonstrating their functional importance (Figure~\ref{conserved}). Putting the information of seed region and additional base pairing together, it can be observed that if one 7mer-m8 site is present as well as a good 3' pairing that the efficacy is the highest. Even though the difference between the efficacy of the presence of one 8mer site and the one mentioned before is not very big. But the improvement of the presence of a good 3' pairing instead of a poor one is more significant (Figure ~\ref{efficacy}).  \\\\
+As already mentioned above, in addition to the seed matching towards the 5' end, another complementary site towards the 3' end in the miRNA is present (Figure~\ref{addipairing}). Grimson et al. investigated that the highest down regulation was found when the site started at position 13 and had four or five contiguous base pairings (Figure~\ref{siteregulation}) \cite{Grimson}. Considering again the conservation of the nucleotides they found that outside the seed region the contiguous nucleotides starting from nucleotide 12, 13 or 14 were the most conserved ones indicating their functional importance (Figure~\ref{conserved}). Putting the information of seed region and additional base pairing together, it can be observed that if one 7mer-m8 site is present as well as a good 3' pairing that the efficacy is the highest. Even though the difference between the efficacy of the presence of one 8mer site and the one mentioned before is not very big. But the improvement of the presence of a good 3' pairing instead of a poor one is more significant (Figure ~\ref{efficacy}).
 Between the two complementary areas there is usually a part of non pairing nucleotides where bulges and mismatches are found. These are important for the prevention of the AGO cleavage function \cite{Filipowicz}.
 
 \begin{figure}[h]
@@ -472,15 +458,10 @@ Between the two complementary areas there is usually a part of non pairing nucle
 
 
 
-\vspace{1cm}
+To get an even more reliable and precise prediction even more features can be considered. The presence of GU-wobbles is common in targeting. In this wobble positions Guanine(G) binds to Uracil(U) even though the pairing with Cytosine would be prevalent. This special pairing is thermodynamically favourable and occurs therefore in many target interactions but results in lower repression of the translation \cite{Doench}. As mentioned before miRanda uses different scores for matches in their alignment step. They score the usual base pairing A-U and G-C with +5 and they penalize the other mismatches with a score of -3, excluding the pairing of G and U. This pairing is rewarded with at least +2 and therefore the GU wobbles are not penalized as much as other mismatches because they are very common \cite{Enright}. 
 
+Enright et al. and Doench et al. also found that the presence of multiple miRNA target sites results in a higher repression and destabilization of the mRNA \cite{Enright} \cite{Doench}. Grimson et al. \cite{Grimson} further investigated that the distance between two sites is also an important criterion. Generally the repression of two present site is the multiplication of the two single once because they act independently. The interesting thing now is that if the two sites are adjacent, the repression is increased and not equal to the multiplication of the single ones. The increase in repression is however not very high (Figure~\ref{sitedistance}). To investigate the effect of cooperative miRNAs they analysed a mixture of miR-1 and miR-133 and simulated three different spacings. The results show that a spacing of four nucleotides did not show a cooperative repression but six or eight nucleotide spacing showed an increase in repression (Figure~\ref{sitespacing}).
 
-\subsubsection{Other features}
-To get an even more reliable and precise prediction additional features can be considered. The presence of GU-wobbles is common in targeting. In this wobble positions Guanine(G) binds to Uracil(U) even though the pairing with Cytosine would be prevalent. This special pairing is thermodynamically favourable and occurs therefore in many target interactions but results in lower repression of the translation \cite{Doench}. As mentioned before miRanda uses different scores for matches in their alignment step. They score the usual base pairing A-U and G-C with +5 and they penalize the other mismatches with a score of -3, excluding the pairing of G and U. This pairing is rewarded with at least +2 and therefore the GU wobbles are not penalized as much as other mismatches because they are very common \cite{Enright}.\\\\
- 
-https://elifesciences.org/content/4/e05005
-
-Enright et al. \cite{Enright} and Doench et al. \cite{Doench} also found that the presence of multiple miRNA target sites results in a higher repression and destabilization of the mRNA. Grimson et al. \cite{Grimson} further investigated that the distance between two sites is also an important criterion. Generally the repression of two present site is the multiplication of the two single once because they act independently. The interesting thing now is that if the two sites are adjacent the repression is increased and not equal to the multiplication of the single ones. The increase in repression is however not very high (Figure~\ref{sitedistance}). To investigate the effect of cooperative miRNAs they analysed a mixture of miR-1 and miR-133 and simulated three different spacings. The results show that a spacing of four nucleotides did not show a cooperative repression but six or eight nucleotide spacing showed an increase in repression (Figure~\ref{sitespacing}).\\\\
 
 \begin{figure}[h]
 \centering
@@ -496,7 +477,7 @@ Enright et al. \cite{Enright} and Doench et al. \cite{Doench} also found that th
 \label{sitedistance}
 \end{figure}
 
-Another indicator is the position of the binding site relatively to the stop codon and the center of the UTR. Generally sites in the 3'UTR are investigated but Grimson et al. detected that sites in the Open reading frame (ORF) are slightly effective, sites in the 5'UTR not at all \cite{Grimson}. \\\\
+Another indicator is the position of the binding site relatively to the stop codon and the center of the UTR. Generally sites in the 3'UTR are investigated but Grimson et al. detected that sites in the Open reading frame (ORF) are slightly effective, sites in the 5'UTR not at all \cite{Grimson}. \\
 
 \begin{figure}[h]
 \centering
@@ -505,11 +486,6 @@ Another indicator is the position of the binding site relatively to the stop cod
 \label{siteorf}
 \end{figure}
 
-Figure~\ref{siteorf} shows the different efficacies. Another characteristic concerning the site locations is the distance from the stop codon. Figure~\ref{sitestop} illustrates that approximately in the first 15 nucleotides the efficacy is still very low like in the ORF but afterwards it increases much. 
-The sites were present at least 15 nucleotides from the stop codon and not present in the center of long UTRs but away from it. \\\\
-
-Grimson et al. also found that the AU nucleotide content is increased in the region of conserved sites \cite{Grimson}.
-
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.5]{results/site_stop.PNG} 
@@ -517,6 +493,8 @@ Grimson et al. also found that the AU nucleotide content is increased in the reg
 \label{sitestop}
 \end{figure}
 
+Figure~\ref{siteorf} shows the different efficacies regarding the site location. Another characteristic concerning the site locations is the distance from the stop codon. Figure~\ref{sitestop} illustrates that approximately in the first 15 nucleotides the efficacy is still very low like in the ORF but afterwards it increases much. 
+The sites were present at least 15 nucleotides from the stop codon and not present in the center of long UTRs but away from it. 
    
 Considering all these different common and less common features, new targets for miRNAs can be roughly reliably predicted. Figure~\ref{fig:tools} shows known prediction tools and the features they consider. As mentioned above the most common feature that nearly all of them consider are seed matching, conservation and free energy. 
 
@@ -531,39 +509,22 @@ Considering all these different common and less common features, new targets for
 
 \vspace{2cm}
 
-As described above there are many features that can be considered and many different existing tools. They all differ from each other in the number and type of features they use and also in the weighting of the single features \cite{Peterson}. Concluding, each tool and feature has its advantages and strength but also its limitations which makes none of the existing tools perfect and 100\% reliable. 
+\section{Conclusion}
+
+As described above there are a lot of features that can be considered and many different existing tools. They all differ from each other in the number and type of features they use and also in the weighting of the single features \cite{Peterson}. Concluding, each tool and feature has its advantages and strength but also its limitations which makes none of the existing tools perfect and 100\% reliable.
 
 Relying on just a few features will for sure lead to many errors, either false positives or false negatives. There are many irregularities and some features like the free energy are not always very precise \cite{Peterson}. These problems have to be incorporated to lower the error rate.
 
-Additionally not every tool is frequently updated which is a big problem and does not lead to improvements in target prediction. Some tools do not use the current data or innovations in target interactions. According to Peterson et al. \cite{Peterson} the following tools are outstanding because of maintenance, newest input data and they are the easiest once to use: DIANA-microT-CDS, miRanda-mirSVR and Targetscan. All three are somehow unique but all e.g. use looser thresholds for conservation allowing less conserved regions to balance irregularities and refuse less true targets.
+Additionally not every tool is frequently updated which is a big problem and does not lead to improvements in target prediction. Some tools do not use the current data or innovations in target interactions. According to Peterson et al. the following tools are outstanding because of maintenance, newest input data and they are the easiest once to use: DIANA-microT-CDS, miRanda-mirSVR and Targetscan \cite{Peterson}. All three are somehow unique but all e.g. use looser thresholds for conservation allowing less conserved regions to balance irregularities and refuse less true targets.
 
 The early miRanda tools is also still widely used. The class of tools that use machine-learning are getting more accurate the more positive and negative target data is verified and features are found. Because of a lack of this data these tools are not significantly better than the three other tools mentioned above \cite{Peterson}.
+The future consists of elimination of the limits of some tools and finding more useful features for the prediction.
 
-The future consists of the elimination of the limits the tools and finding more useful features for the prediction.
+Fujiwara and Yada \cite{Fuji} followed a new approach by considering other characteristics than binding sites for the prediction, in fact the transcriptional regulation. In their research they searched for common cis-elements in the miRNA as well as in the target gene. Compared to conventional methods their method is almost as good as the standard binding site based ones but combining the two different methods decreases the accuracy much. The advantages of this novel approach are independence of conservation of binding sites and of the amount of available training data. 
 
-Fujiwara and Yada \cite{Fuji} followed a new approach by considering other characteristics than binding sites for the prediction, in fact the transcriptional regulation. In their research they searched for common cis-elements in the miRNA as well as in the target gene. Compared to conventional methods theirs method is almost as good as the standard binding site base ones, but combining the two different methods decreases the accuracy much. The advantages of this novel approach are independence of conservation of binding sites and the amount of available training data. 
+Coronnello and Benos investigated another approach trying to improve the prediction power \cite{Coronnello}. They developed a tool ComiR that considers additionally the miRNA expression levels and the combination of miRNA bindings. It also combines different scoring schemes from tools mentioned above. The innovation in this tool is the investigation of sets of miRNAs and their co-expression. 
 
-Coronnello and Benos \cite{Coronnello} investigated another approach trying to improve the prediction power. They developed a tool ComiR that considers additionally the miRNA expression levels and the combination of miRNA bindings. It also combines different scoring schemes from tools mentioned above. The innovation in this tool is the investigation of sets of miRNAs and their co-expression. ?? www.ncbi.nlm.nih.gov/pmc/articles/PMC3692082/ \\
-
-
-
-
-
-evtl noch zu beachten:
-newst one:http://www.ncbi.nlm.nih.gov/pubmed/27561079
-http://www.ncbi.nlm.nih.gov/pubmed/27560313
-
-http://www.ncbi.nlm.nih.gov/pubmed/27494513
-  
-http://www.ncbi.nlm.nih.gov/pubmed/27477696
-
-http://www.ncbi.nlm.nih.gov/pubmed/27450903
-
-http://www.ncbi.nlm.nih.gov/pubmed/27438777
-\\
-
-
-conclusion noch dazu?
+All in all the analysis of miRNAs is very complex and needs to be improved in terms of prediction.
 
 
 \newpage
