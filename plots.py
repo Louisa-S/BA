@@ -2,8 +2,8 @@ import sys
 import matplotlib.pyplot as plt
 
 def curves():
-	f1 = "results/non-result-5-1_new.txt"
-	f2 = "results/result-5-1_new.txt"
+	f1 = "results/non-result5-4-6-4_new.txt"
+	f2 = "results/result5-4-6-4_new.txt"
 
 	nons = []
 	reals = []
@@ -24,12 +24,12 @@ def curves():
 				
 	y = range(22)
 
-	plt.plot(y,nons[:22], "-r", label="non targets")
+	plt.plot(y, nons[:22], "-r", label="non targets")
 	plt.plot(y, reals[:22], "-b", label="true targets")
 	plt.xlabel("nucleotides")
 	plt.ylabel("complementarity")
-	plt.legend(loc="upper right")
-	plt.savefig("results/curves-5-1.png")
+	plt.legend(loc="lower left")
+	plt.savefig("results/curves5-4-6-4_new.png")
 
 curves()
 
@@ -54,3 +54,5 @@ def scores():
 				
 	
 '''
+
+

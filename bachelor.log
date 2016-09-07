@@ -1,12 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.23)  5 SEP 2016 20:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.6)  7 SEP 2016 12:00
 entering extended mode
-**./bachelor.tex
-(bachelor.tex
-LaTeX2e <2016/03/31>
-Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**bachelor.tex
+(./bachelor.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -21,39 +23,39 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 96.
+Package graphics Info: Driver file: pdftex.def on input line 95.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count87
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen105
 \lightrulewidth=\dimen106
@@ -73,16 +75,16 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count91
 \@thisrulewidth=\dimen117
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\chngcntr\chngcntr.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
-Package: pdfpages 2016/04/19 v0.5f Insert pages of external PDF documents (AM)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2015/09/18 v0.5d Insert pages of external PDF documents (AM)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count92
 \calc@Bcount=\count93
@@ -95,53 +97,53 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count94
 \calc@Cskip=\skip45
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
-Package: atbegshi 2016/05/16 v1.17 At begin shipout hook (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 ))
 \AM@pagewidth=\dimen120
 \AM@pageheight=\dimen121
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
-File: pppdftex.def 2016/04/19 v0.5f Pdfpages driver for pdfTeX (AM)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2015/09/18 v0.5d Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box26
-\AM@global@opts=\toks15
-\AM@toc@title=\toks16
+\AM@toc@title=\toks15
 \c@AM@survey=\count95
 \AM@templatesizebox=\box27
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen122
 \captionmargin@=\dimen123
@@ -152,8 +154,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@hangindent=\dimen128
 )
 \c@ContinuedFloat=\count96
-)
-(bachelor.aux)
+) (./bachelor.aux)
 \openout1 = `bachelor.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -168,26 +169,25 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count97
 \scratchdimen=\dimen129
 \scratchbox=\box28
 \nofMPsegments=\count98
 \nofMParguments=\count99
-\everyMPshowfont=\toks17
+\everyMPshowfont=\toks16
 \MPscratchCnt=\count100
 \MPscratchDim=\dimen130
 \MPnumerator=\count101
 \makeMPintoPDFobject=\count102
-\everyMPtoPDFconversion=\toks18
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+\everyMPtoPDFconversion=\toks17
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -195,23 +195,23 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
@@ -220,23 +220,31 @@ Package etexcmds Info: Could not find \expanded.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 \AtBeginShipoutBox=\box29
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
-Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¼ in font cmr12!
 
 <Logo-Universitaet_des_Saarlandes.pdf, id=1, 417.56pt x 168.63pt>
 File: Logo-Universitaet_des_Saarlandes.pdf Graphic file (type pdf)
@@ -246,481 +254,489 @@ Package pdftex.def Info: Logo-Universitaet_des_Saarlandes.pdf used on input lin
 e 31.
 (pdftex.def)             Requested size: 113.81102pt x 45.9604pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 44.
+(Font)              <12> on input line 53.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 44.
+(Font)              <8> on input line 53.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 44.
+(Font)              <6> on input line 53.
 
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 27--45
-[]$[]$ 
- []
-
-<cbi.jpg, id=2, 803.0pt x 401.5pt>
-File: cbi.jpg Graphic file (type jpg)
- <use cbi.jpg>
-Package pdftex.def Info: cbi.jpg used on input line 62.
-(pdftex.def)             Requested size: 240.90186pt x 120.45091pt.
-
-Overfull \hbox (17.62482pt too wide) in paragraph at lines 48--70
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 27--54
 []$[]$ 
  []
 
 [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./Logo-Universitaet_des_S
-aarlandes.pdf>] [2 <./cbi.jpg>] [1] [2] (bachelor.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Logo-Universitaet_des_Sa
+arlandes.pdf>] [1] [2] (./bachelor.toc)
 \tf@toc=\write3
 \openout3 = `bachelor.toc'.
 
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
-[1] <results/biogenesis.png, id=31, 501.875pt x 414.54875pt>
+[1] <results/biogenesis.png, id=27, 501.875pt x 414.54875pt>
 File: results/biogenesis.png Graphic file (type png)
 
 <use results/biogenesis.png>
-Package pdftex.def Info: results/biogenesis.png used on input line 124.
-(pdftex.def)             Requested size: 250.93687pt x 207.27386pt.
+Package pdftex.def Info: results/biogenesis.png used on input line 103.
+(pdftex.def)             Requested size: 225.84166pt x 186.54521pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--134
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--134
+Underfull \hbox (badness 10000) in paragraph at lines 108--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--134
+Underfull \hbox (badness 10000) in paragraph at lines 108--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--134
+Underfull \hbox (badness 10000) in paragraph at lines 108--111
 
  []
 
-[2 <./results/biogenesis.png>] [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+[2 <./results/biogenesis.png>]
 
- []
+LaTeX Warning: Citation `Rhoades' on page 3 undefined on input line 112.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
-
- []
-
-<results/mirtarbase_scrot.png, id=43, 981.6675pt x 180.675pt>
-File: results/mirtarbase_scrot.png Graphic file (type png)
-
-<use results/mirtarbase_scrot.png>
-Package pdftex.def Info: results/mirtarbase_scrot.png used on input line 151.
-(pdftex.def)             Requested size: 390.0pt x 71.77798pt.
-
-Overfull \hbox (21.15686pt too wide) in paragraph at lines 160--161
-\OT1/cmr/m/n/12 quences to align those to the gene se-quence [[]]. 
- []
-
-[5 <./results/mirtarbase_scrot.png>]
-<results/mirbase.png, id=49, 1005.00468pt x 179.92218pt>
-File: results/mirbase.png Graphic file (type png)
-
-<use results/mirbase.png>
-Package pdftex.def Info: results/mirbase.png used on input line 165.
-(pdftex.def)             Requested size: 390.0pt x 69.81795pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--176
-
- []
-
-<results/ucsc.png, id=50, 612.78937pt x 112.92188pt>
-File: results/ucsc.png Graphic file (type png)
- <use results/ucsc.png>
-Package pdftex.def Info: results/ucsc.png used on input line 180.
-(pdftex.def)             Requested size: 390.0pt x 71.86655pt.
-
-[6 <./results/mirbase.png> <./results/ucsc.png>] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 206--207
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 249--251
+Underfull \hbox (badness 10000) in paragraph at lines 112--115
 
  []
 
 
-Overfull \hbox (22.95175pt too wide) in paragraph at lines 249--251
-\OT1/cmr/m/n/12 ure 2.5[] il-lus-trates the dif-fer-ent types of sites. Grim-so
+Overfull \hbox (22.95175pt too wide) in paragraph at lines 112--115
+\OT1/cmr/m/n/12 ure 1.3[] il-lus-trates the dif-fer-ent types of sites. Grim-so
 n et al. [[]]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--251
+Underfull \hbox (badness 10000) in paragraph at lines 112--115
 
  []
 
-[10] <results/seedmatching.png, id=69, 90.8193pt x 24.69225pt>
+[3] <results/seedmatching.png, id=36, 90.8193pt x 24.69225pt>
 File: results/seedmatching.png Graphic file (type png)
 
 <use results/seedmatching.png>
-Package pdftex.def Info: results/seedmatching.png used on input line 255.
+Package pdftex.def Info: results/seedmatching.png used on input line 119.
 (pdftex.def)             Requested size: 254.29369pt x 69.13814pt.
 
-<results/canonical_sites.png, id=70, 269.50688pt x 392.96812pt>
+<results/canonical_sites.png, id=37, 269.50688pt x 392.96812pt>
 File: results/canonical_sites.png Graphic file (type png)
 
 <use results/canonical_sites.png>
-Package pdftex.def Info: results/canonical_sites.png used on input line 263.
+Package pdftex.def Info: results/canonical_sites.png used on input line 127.
 (pdftex.def)             Requested size: 161.70537pt x 235.78268pt.
 
-<results/site_3addi.png, id=71, 237.88875pt x 187.45032pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (62.10783pt too wide) in paragraph at lines 134--136
+\OT1/cmr/m/n/12 quences of the pre-cur-sor and of all ma-ture miR-NAs [[]].
+ []
+
+[4 <./results/seedmatching.png>] [5 <./results/canonical_sites.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+<results/mirtarbase_scrot.png, id=46, 981.6675pt x 180.675pt>
+File: results/mirtarbase_scrot.png Graphic file (type png)
+
+<use results/mirtarbase_scrot.png>
+Package pdftex.def Info: results/mirtarbase_scrot.png used on input line 153.
+(pdftex.def)             Requested size: 390.0pt x 71.77798pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6]
+Overfull \hbox (21.15686pt too wide) in paragraph at lines 162--163
+\OT1/cmr/m/n/12 quences to align those to the gene se-quence [[]]. 
+ []
+
+<results/mirbase.png, id=50, 1005.00468pt x 179.92218pt>
+File: results/mirbase.png Graphic file (type png)
+
+<use results/mirbase.png>
+Package pdftex.def Info: results/mirbase.png used on input line 167.
+(pdftex.def)             Requested size: 390.0pt x 69.81795pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+ []
+
+<results/ucsc.png, id=51, 612.78937pt x 112.92188pt>
+File: results/ucsc.png Graphic file (type png)
+ <use results/ucsc.png>
+Package pdftex.def Info: results/ucsc.png used on input line 182.
+(pdftex.def)             Requested size: 390.0pt x 71.86655pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./results/mirtarbase_scrot.png> <./results/mirbase.png>] [8 <./results/ucsc
+.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 238--239
+
+ []
+
+[10] [11]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 260.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 260.
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--302
+
+ []
+
+[12] <results/plot_scores-4-4_thresh.png, id=75, 602.25pt x 451.6875pt>
+File: results/plot_scores-4-4_thresh.png Graphic file (type png)
+
+<use results/plot_scores-4-4_thresh.png>
+Package pdftex.def Info: results/plot_scores-4-4_thresh.png used on input line 
+307.
+(pdftex.def)             Requested size: 180.67639pt x 135.5073pt.
+
+<results/plot_scores5-3-8-2_thresh.png, id=76, 602.25pt x 451.6875pt>
+File: results/plot_scores5-3-8-2_thresh.png Graphic file (type png)
+
+<use results/plot_scores5-3-8-2_thresh.png>
+Package pdftex.def Info: results/plot_scores5-3-8-2_thresh.png used on input li
+ne 308.
+(pdftex.def)             Requested size: 180.67639pt x 135.5073pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
+
+ []
+
+[13 <./results/plot_scores-4-4_thresh.png> <./results/plot_scores5-3-8-2_thresh
+.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
+
+ []
+
+[14] <results/compl1.png, id=85, 597.73312pt x 845.40843pt>
+File: results/compl1.png Graphic file (type png)
+
+<use results/compl1.png>
+Package pdftex.def Info: results/compl1.png used on input line 326.
+(pdftex.def)             Requested size: 388.52193pt x 549.50896pt.
+
+<results/compl2.png, id=86, 597.73312pt x 845.40843pt>
+File: results/compl2.png Graphic file (type png)
+
+<use results/compl2.png>
+Package pdftex.def Info: results/compl2.png used on input line 330.
+(pdftex.def)             Requested size: 388.52193pt x 549.50896pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--332
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
+
+ []
+
+[15] [16 <./results/compl1.png>] [17 <./results/compl2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 343--346
+
+ []
+
+<results/curves1-2-2-1_new.png, id=99, 578.16pt x 433.62pt>
+File: results/curves1-2-2-1_new.png Graphic file (type png)
+
+<use results/curves1-2-2-1_new.png>
+Package pdftex.def Info: results/curves1-2-2-1_new.png used on input line 349.
+(pdftex.def)             Requested size: 173.44933pt x 130.087pt.
+
+<results/curves5-4-6-4_new.png, id=100, 578.16pt x 433.62pt>
+File: results/curves5-4-6-4_new.png Graphic file (type png)
+
+<use results/curves5-4-6-4_new.png>
+Package pdftex.def Info: results/curves5-4-6-4_new.png used on input line 350.
+(pdftex.def)             Requested size: 173.44933pt x 130.087pt.
+
+<results/curves-5-1_new.png, id=101, 578.16pt x 433.62pt>
+File: results/curves-5-1_new.png Graphic file (type png)
+
+<use results/curves-5-1_new.png>
+Package pdftex.def Info: results/curves-5-1_new.png used on input line 351.
+(pdftex.def)             Requested size: 173.44933pt x 130.087pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<results/ratio_table2.PNG, id=102, 306.39468pt x 467.49657pt>
+File: results/ratio_table2.PNG Graphic file (type png)
+
+<use results/ratio_table2.PNG>
+Package pdftex.def Info: results/ratio_table2.PNG used on input line 359.
+(pdftex.def)             Requested size: 337.03519pt x 514.2478pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
+
+ []
+
+[18] [19 <./results/curves1-2-2-1_new.png> <./results/curves5-4-6-4_new.png> <.
+/results/curves-5-1_new.png>] [20 <./results/ratio_table2.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 370--371
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 411--412
+
+ []
+
+<results/site_3addi.png, id=120, 237.88875pt x 187.45032pt>
 File: results/site_3addi.png Graphic file (type png)
 
 <use results/site_3addi.png>
-Package pdftex.def Info: results/site_3addi.png used on input line 271.
+Package pdftex.def Info: results/site_3addi.png used on input line 426.
 (pdftex.def)             Requested size: 142.73433pt x 112.47104pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11 <./results/seedmatching.png> <./results/canonical_sites.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 443--444
 
  []
 
-[12 <./results/site_3addi.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 288--290
+[23 <./results/site_3addi.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 447--449
 
  []
 
-<results/additional_pairing.PNG, id=80, 972.63374pt x 201.00093pt>
+<results/additional_pairing.PNG, id=128, 972.63374pt x 201.00093pt>
 File: results/additional_pairing.PNG Graphic file (type png)
 
 <use results/additional_pairing.PNG>
-Package pdftex.def Info: results/additional_pairing.PNG used on input line 293.
+Package pdftex.def Info: results/additional_pairing.PNG used on input line 452.
 
 (pdftex.def)             Requested size: 291.79237pt x 60.30074pt.
 
-<results/sites_regulation.PNG, id=81, 262.73157pt x 248.42813pt>
+<results/sites_regulation.PNG, id=129, 262.73157pt x 248.42813pt>
 File: results/sites_regulation.PNG Graphic file (type png)
 
 <use results/sites_regulation.PNG>
-Package pdftex.def Info: results/sites_regulation.PNG used on input line 300.
+Package pdftex.def Info: results/sites_regulation.PNG used on input line 459.
 (pdftex.def)             Requested size: 105.09076pt x 99.36949pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<results/sites_conserved.PNG, id=82, 243.15843pt x 199.49532pt>
+<results/sites_conserved.PNG, id=130, 243.15843pt x 199.49532pt>
 File: results/sites_conserved.PNG Graphic file (type png)
 
 <use results/sites_conserved.PNG>
-Package pdftex.def Info: results/sites_conserved.PNG used on input line 307.
+Package pdftex.def Info: results/sites_conserved.PNG used on input line 466.
 (pdftex.def)             Requested size: 121.57892pt x 99.7474pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<results/site_efficacy.PNG, id=83, 525.46312pt x 213.04594pt>
+<results/site_efficacy.PNG, id=131, 525.46312pt x 213.04594pt>
 File: results/site_efficacy.PNG Graphic file (type png)
 
 <use results/site_efficacy.PNG>
-Package pdftex.def Info: results/site_efficacy.PNG used on input line 314.
+Package pdftex.def Info: results/site_efficacy.PNG used on input line 473.
 (pdftex.def)             Requested size: 262.73091pt x 106.5227pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--326
+Underfull \hbox (badness 10000) in paragraph at lines 484--485
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--326
+Underfull \hbox (badness 10000) in paragraph at lines 484--485
 
  []
 
-[13 <./results/additional_pairing.PNG>]
-Overfull \hbox (32.11694pt too wide) in paragraph at lines 329--330
+[24 <./results/additional_pairing.PNG>]
+Overfull \hbox (32.11694pt too wide) in paragraph at lines 488--489
 []\OT1/cmr/m/n/12 Enright et al. [[]] and Doench et al. [[]]
  []
 
 
-Overfull \hbox (22.43001pt too wide) in paragraph at lines 329--330
+Overfull \hbox (22.43001pt too wide) in paragraph at lines 488--489
 \OT1/cmr/m/n/12 re-pres-sion and desta-bi-liza-tion of the mRNA. Grim-son et al
 . [[]]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
 
  []
 
-[14 <./results/sites_regulation.PNG> <./results/sites_conserved.PNG>]
-<results/sites_8nt.PNG, id=94, 121.20282pt x 166.37157pt>
+[25 <./results/sites_regulation.PNG> <./results/sites_conserved.PNG>]
+<results/sites_8nt.PNG, id=141, 121.20282pt x 166.37157pt>
 File: results/sites_8nt.PNG Graphic file (type png)
 
 <use results/sites_8nt.PNG>
-Package pdftex.def Info: results/sites_8nt.PNG used on input line 333.
+Package pdftex.def Info: results/sites_8nt.PNG used on input line 492.
 (pdftex.def)             Requested size: 121.20251pt x 166.37114pt.
 
-<results/sites_distance.PNG, id=95, 414.04688pt x 162.6075pt>
+<results/sites_distance.PNG, id=142, 414.04688pt x 162.6075pt>
 File: results/sites_distance.PNG Graphic file (type png)
 
 <use results/sites_distance.PNG>
-Package pdftex.def Info: results/sites_distance.PNG used on input line 340.
+Package pdftex.def Info: results/sites_distance.PNG used on input line 499.
 (pdftex.def)             Requested size: 289.83083pt x 113.82446pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (8.9433pt too wide) in paragraph at lines 345--346
+Overfull \hbox (8.9433pt too wide) in paragraph at lines 504--505
 \OT1/cmr/m/n/12 (ORF) are slightly ef-fec-tive, sites in the 5'UTR not at all [
 []]. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--346
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--346
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
 
  []
 
-[15 <./results/site_efficacy.PNG> <./results/sites_8nt.PNG>]
-<results/sites_orf.PNG, id=101, 453.19313pt x 188.95593pt>
+[26 <./results/site_efficacy.PNG> <./results/sites_8nt.PNG>]
+<results/sites_orf.PNG, id=148, 453.19313pt x 188.95593pt>
 File: results/sites_orf.PNG Graphic file (type png)
 
 <use results/sites_orf.PNG>
-Package pdftex.def Info: results/sites_orf.PNG used on input line 349.
+Package pdftex.def Info: results/sites_orf.PNG used on input line 508.
 (pdftex.def)             Requested size: 271.91797pt x 113.37442pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--356
+Underfull \hbox (badness 10000) in paragraph at lines 513--515
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--356
+Underfull \hbox (badness 10000) in paragraph at lines 513--515
 
  []
 
-<results/site_stop.PNG, id=102, 264.99pt x 212.29312pt>
+<results/site_stop.PNG, id=149, 264.99pt x 212.29312pt>
 File: results/site_stop.PNG Graphic file (type png)
 
 <use results/site_stop.PNG>
-Package pdftex.def Info: results/site_stop.PNG used on input line 361.
+Package pdftex.def Info: results/site_stop.PNG used on input line 520.
 (pdftex.def)             Requested size: 132.49467pt x 106.1463pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<results/tools.PNG, id=103, 702.37407pt x 350.05782pt>
+[27 <./results/sites_distance.PNG> <./results/sites_orf.PNG>]
+<results/tools.PNG, id=156, 702.37407pt x 350.05782pt>
 File: results/tools.PNG Graphic file (type png)
  <use results/tools.PNG>
-Package pdftex.def Info: results/tools.PNG used on input line 372.
+Package pdftex.def Info: results/tools.PNG used on input line 531.
 (pdftex.def)             Requested size: 351.18617pt x 175.02847pt.
 
-[16 <./results/sites_distance.PNG> <./results/sites_orf.PNG>] [17 <./results/si
-te_stop.PNG> <./results/tools.PNG>]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 390.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 390.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 430--432
-
- []
-
-[18] <results/plot_scores-4-4_thresh.png, id=118, 602.25pt x 451.6875pt>
-File: results/plot_scores-4-4_thresh.png Graphic file (type png)
-
-<use results/plot_scores-4-4_thresh.png>
-Package pdftex.def Info: results/plot_scores-4-4_thresh.png used on input line 
-437.
-(pdftex.def)             Requested size: 180.67639pt x 135.5073pt.
-
-<results/plot_scores5-3-8-2_thresh.png, id=119, 602.25pt x 451.6875pt>
-File: results/plot_scores5-3-8-2_thresh.png Graphic file (type png)
-
-<use results/plot_scores5-3-8-2_thresh.png>
-Package pdftex.def Info: results/plot_scores5-3-8-2_thresh.png used on input li
-ne 438.
-(pdftex.def)             Requested size: 180.67639pt x 135.5073pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 443--444
-
- []
-
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 449--450
-
- []
-
-[20 <./results/plot_scores-4-4_thresh.png> <./results/plot_scores5-3-8-2_thresh
-.png>] <results/compl1.png, id=129, 597.73312pt x 845.40843pt>
-File: results/compl1.png Graphic file (type png)
-
-<use results/compl1.png>
-Package pdftex.def Info: results/compl1.png used on input line 456.
-(pdftex.def)             Requested size: 388.52193pt x 549.50896pt.
-
-<results/compl2.png, id=130, 597.73312pt x 845.40843pt>
-File: results/compl2.png Graphic file (type png)
-
-<use results/compl2.png>
-Package pdftex.def Info: results/compl2.png used on input line 460.
-(pdftex.def)             Requested size: 388.52193pt x 549.50896pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 460--462
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 468--470
-
- []
-
-[21] [22 <./results/compl1.png>] [23 <./results/compl2.png>]
-<results/curves1-2-2-1.png, id=142, 578.16pt x 433.62pt>
-File: results/curves1-2-2-1.png Graphic file (type png)
-
-<use results/curves1-2-2-1.png>
-Package pdftex.def Info: results/curves1-2-2-1.png used on input line 477.
-(pdftex.def)             Requested size: 173.44933pt x 130.087pt.
-
-<results/curves5-4-6-4.png, id=143, 578.16pt x 433.62pt>
-File: results/curves5-4-6-4.png Graphic file (type png)
-
-<use results/curves5-4-6-4.png>
-Package pdftex.def Info: results/curves5-4-6-4.png used on input line 478.
-(pdftex.def)             Requested size: 173.44933pt x 130.087pt.
-
-<results/curves-5-1.png, id=144, 578.16pt x 433.62pt>
-File: results/curves-5-1.png Graphic file (type png)
-
-<use results/curves-5-1.png>
-Package pdftex.def Info: results/curves-5-1.png used on input line 479.
-(pdftex.def)             Requested size: 173.44933pt x 130.087pt.
- [24 <./results/curves1-2-2-1.png> <./results/curves5-4-6-4.png> <./results/cur
-ves-5-1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 486--487
-
- []
-
-[25] <results/ratio_table2.png, id=154, 306.39468pt x 467.49657pt>
-File: results/ratio_table2.png Graphic file (type png)
-
-<use results/ratio_table2.png>
-Package pdftex.def Info: results/ratio_table2.png used on input line 516.
-(pdftex.def)             Requested size: 337.03519pt x 514.2478pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 534--535
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 534--535
-
- []
-
-[26] [27]
-Overfull \hbox (72.18874pt too wide) in paragraph at lines 553--554
+[28 <./results/site_stop.PNG> <./results/tools.PNG>]
+Overfull \hbox (72.18874pt too wide) in paragraph at lines 551--552
 \OT1/cmr/m/n/12 of miR-NAs and their co-expression. ?? www.ncbi.nlm.nih.gov/pmc
 /articles/PMC3692082/ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 553--554
+Underfull \hbox (badness 10000) in paragraph at lines 551--552
 
  []
 
 
-Overfull \hbox (47.09546pt too wide) in paragraph at lines 559--562
+Overfull \hbox (47.09546pt too wide) in paragraph at lines 557--560
 []\OT1/cmr/m/n/12 evtl noch zu beachten: newst one:http://www.ncbi.nlm.nih.gov/
 pubmed/27561079
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 569--571
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 567--569
 
  []
 
-[28] (bachelor.bbl
+[30] (./bachelor.bbl
 Underfull \hbox (badness 1189) in paragraph at lines 41--44
 []\OT1/cmr/m/n/12 Coronnello, C. and Benos, P. V. (2013).
  []
 
-[29] [30]) (bachelor.lof [31])
+[31] [32]) (./bachelor.lof [33])
 \tf@lof=\write4
 \openout4 = `bachelor.lof'.
 
- (bachelor.lot)
+ (./bachelor.lot)
 \tf@lot=\write5
 \openout5 = `bachelor.lot'.
 
 
-Overfull \hbox (163.44565pt too wide) in paragraph at lines 586--588
+Overfull \hbox (163.44565pt too wide) in paragraph at lines 584--586
 []\OT1/cmr/m/n/12 Figure 1.1[]: [[]] http://www.nature.com/nrurol/journal/v9/n7
 /images/nrurol.2012.104-
  []
 
 
-Overfull \hbox (47.25658pt too wide) in paragraph at lines 586--588
-\OT1/cmr/m/n/12 f1.jpg Fig-ure  2.4[]: http://journal.frontiersin.org/article/1
+Overfull \hbox (47.25658pt too wide) in paragraph at lines 584--586
+\OT1/cmr/m/n/12 f1.jpg Fig-ure  1.2[]: http://journal.frontiersin.org/article/1
 0.3389/fgene.2014.00023/full 
  []
 
-[32] [33 <./results/ratio_table2.png>] (bachelor.aux) ) 
+[34] (./bachelor.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4214 strings out of 493335
- 65712 string characters out of 3136669
- 137801 words of memory out of 3000000
- 7655 multiletter control sequences out of 15000+200000
- 9375 words of font info for 33 fonts, out of 3000000 for 9000
+ 4194 strings out of 493029
+ 65300 string characters out of 6136235
+ 137103 words of memory out of 5000000
+ 7644 multiletter control sequences out of 15000+600000
+ 9016 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,9n,39p,2042b,328s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on bachelor.pdf (38 pages, 1660671 bytes).
+ 38i,8n,39p,2040b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on bachelor.pdf (38 pages, 1737608 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
+ 206 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
