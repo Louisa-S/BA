@@ -1,11 +1,11 @@
 \contentsline {section}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {2}Methods and Data}{6}
+\contentsline {section}{\numberline {2}Data and Methodology}{6}
 \contentsline {subsection}{\numberline {2.1}Data}{6}
 \contentsline {subsubsection}{\numberline {2.1.1}miRTarBase}{6}
 \contentsline {subsubsection}{\numberline {2.1.2}miRBase}{7}
-\contentsline {subsubsection}{\numberline {2.1.3}UCSC Genome Bioinformatics Site}{7}
+\contentsline {subsubsection}{\numberline {2.1.3}UCSC Genome Bioinformatics Site}{8}
 \contentsline {subsubsection}{\numberline {2.1.4}ID converter}{8}
-\contentsline {subsection}{\numberline {2.2}Methodology}{8}
+\contentsline {subsection}{\numberline {2.2}Methodology}{9}
 \contentsline {section}{\numberline {3}Results}{11}
-\contentsline {section}{\numberline {4}Discussion}{21}
-\contentsline {section}{\numberline {5}Conclusion}{27}
+\contentsline {section}{\numberline {4}Discussion}{22}
+\contentsline {section}{\numberline {5}Conclusion}{28}
