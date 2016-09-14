@@ -4,6 +4,7 @@
 \usepackage{chngcntr}
 \usepackage{pdfpages}
 \usepackage{url}
+\usepackage{array}
 \usepackage[font=footnotesize]{caption}
 
 
@@ -14,9 +15,9 @@
 \def\supervisorIname{Advisor I}
 \def\supervisorIIname{Second Reviewer}
 
-	\def\university{Universit\"{a}t des Saarlandes}
+	\def\university{Saarland Universitiy}
 	\def\institute{Center for Bioinformatics}
-	\def\chair{Bachelor-Studiengang Bioinformatik }
+	\def\chair{Bachelor's Program in Bioinformatics}
 	\def\projectname{MiRNA Target Analysis Using Sequence Alignment}
 	\vspace{.2em}  
 	\def\author{Louisa Schwed}
@@ -26,28 +27,28 @@
 
   \begin{minipage}{\textwidth}
     \begin{center}
-    { \large Universit\"{a}t des Saarlandes \\ Zentrum f\"{u}r Bioinformatik\\ Bachelor-Studiengang Bioinformatik \\}
+    { \large Saarland University \\ Center for Bioinformatics\\ Bachelor-Bachelor's Program in Bioinformatics \\}
 	\vspace{0.5cm}
     \includegraphics[width=4cm]{Logo-Universitaet_des_Saarlandes.pdf}\\
     \vspace{1.5cm}
-    { \large Bachelorarbeit\\}
+    { \large Bachelor's Thesis\\}
     \vspace{0.5cm}
     {\huge\textbf{\projectname}}\\
     \vspace{1.5cm}
-    { \large vorgelegt von}\\
+    { \large submitted by}\\
 	\vspace{0.5cm}
     {\large\textbf{\author}}\\
     \vspace{0.5cm}
-    {\large Am XX September, 2016}\\
+    {\large on September,XX , 2016}\\
     \vspace{1.5cm}
-    {\large angefertig unter der Leitung von}\\
+    {\large Supervisor}\\
     \vspace{0.5cm}
     {\large Prof. Dr. Andreas Keller}\\
     \vspace{1.5cm}
-    {\large begutachtet von}\\
+    {\large Reviewers}\\
     \vspace{0.5cm}
     {\large Prof. Dr. Andreas Keller}\\
-   	{\large ???}\\
+   	{\large Prof. Dr. rer. nat. Eckart Meese}\\
     \vspace{0.5cm}
     \end{center}
   \end{minipage}   
@@ -58,13 +59,12 @@
 
 
 
-\section*{Erkl\"{a}rung}
-Hiermit erkl\"{a}re ich, dass ich die vorliegende Arbeit selbst\"{a}ndig verfasst und alle 
-verwendeten Quellen angegeben habe.
+\section*{Declaration}
+I hereby confirm that this thesis is my own work and that I have documented all sources used. 
 
 \vspace{1cm}
 
-\noindent Saarbr\"ucken, XX September, 2016
+\noindent Saarbr\"ucken, September XX 2016
 \vspace{1.5cm}
 
 \noindent Louisa Schwed
@@ -206,7 +206,9 @@ The program for the analysis is implemented in Python. As input files the UCSC g
 For each data file, except the MTI file, an own dictionary is generated. Therefore the data files are parsed and each entry is stored into the respective dictionary that allows fast searching. For the miRNAs the dictionary is defined as follows: miRNA name as key and sequence as value. The two mature forms, in case there exist two, are stored separately. For the gene file, the NM number is the key and the value is a list of sequences of 5' UTR, coding region and 3' UTR. At last, for the conversion list, the Entrez id is stored as the key and the list of NM numbers as a value. More than one NM number for one gene Entrez id can exist because different transcripts can be obtained by alternative splicing. 
 Then for every MTI in the miRTarBase file the respective miRNA sequence is searched for in the miRBase dictionary and combined with the gene sequence of the corresponding target in the gene dictionary. The miRTarBase file contains data of 'Functional MTI', 'Functional MTI(Weak)' and 'Non-Functional MTI'. In this paper, I only consider the strong validated data of the Functional MTIs because they deliver strong evidence for the interaction. Hence, if an entry in the miRTarBase file contains something other than 'Functional MTI', it is skipped.
 
-After matching these two sequences, a local alignment is performed. An alignment is defined as the optimal positioning of the bases of one sequence, in this case the miRNA, to a region in the other sequence, the gene sequence. The result reveals functional or structural similarities. \cite{alignment}. In this case, the similarity can be interpreted as region where a binding site could be present. Therefore, if we take the reverse complement of the miRNA sequence and align it to the mRNA sequence, this will simulate the binding. More precisely, if the alignment score is high, the sequences (mRNA and reverse complement of miRNA) are more similar, implying the actual miRNA could possibly bind at this alignment position. Because the miRNA can bind at any region in the gene, a local, not a global, alignment is executed.\\
+After matching miRNA and gene, a local alignment is performed. Therefore, I took the whole gene sequence, meaning the concatenation of UTR and coding region. This will show whether the preferred binding will be within the 3' UTR, as known, or somewhere else.
+
+An alignment is defined as the optimal positioning of the bases of one sequence, in this case the miRNA, to a region in the other sequence, the gene sequence. The result reveals functional or structural similarities. \cite{alignment}. In this case, the similarity can be interpreted as region where a binding site could be present. Therefore, if we take the reverse complement of the miRNA sequence and align it to the mRNA sequence, this will simulate the binding. More precisely, if the alignment score is high, the sequences (mRNA and reverse complement of miRNA) are more similar, implying the actual miRNA could possibly bind at this alignment position. Because the miRNA can bind at any region in the gene, a local, not a global, alignment is executed.\\
 
 The Biopython library provides a module, pairwise2, for pairwise local alignments of two sequences. This tool is based on a dynamic programming algorithm. This function can be used either with default parameter or different scores and costs can be defined. The default parameters are as following: +1 for matching character, 0 for not matching ones and there are no gap penalties \cite{pairwise}. To get a more suitable alignment, own parameters can be selected. Table~\ref{table:parameter} shows the different parameters I used to analyse the data. Set no. 8 is similar to the parameters they used for the tool miRanda \cite{Enright}. The other parameters are logically selected to test which influence they have on the results.
 
@@ -253,11 +255,14 @@ For each parameter set the computed alignment score for every MTI is stored in a
 The standard deviation of the non-targets is slightly higher than that for the true targets but also not very significant. Hence, the scores of both cases are similarly spread from their means. 
 The p-value sheds light on whether the increase in the alignment score is significant when considering the population of scores. According to the low resulting p-values of the t-test, which were computed as described in section~\ref{sec:meth} Methodology, the increase in the alignment scores is significant. The parameters 5 -1 -8 -4 show the most significant difference with a p-value of 2.529E-61 whereas 2 -2 -5 -4 shows the least significant increase but also here the p-value is very low with 3.279E-36. So even though the average scores do not differ by much, the scores of the true targets seem to stem from the higher scores and the ones of the non-targets from the lower scores. Additionally, there are many more scores for the true targets than for the negative control. If the average score is about two points higher for this parameter set, the bigger data set of true targets has to include many more MTIs with higher alignment score to increase it by two. Taking this consideration into account, the amount of two is not that low. Hence, there must be many alignments with higher scores. 
 
+
+
 \begin{table}[h]
 \centering
 \footnotesize
 \caption{Table of alignment results}
 \vspace{0.3cm}
+{\setlength{\extrarowheight}{5pt}
 \begin{tabular}{c|c|c|c}
 & 3 -2 -4 -4 & 5 -1 -8 -4 & 5 -2 -8 -3 \\
 \hline\hline
@@ -267,9 +272,10 @@ Average	non-targets & 31.831 & 62.199 & 57.464 \\
 Standard deviation true targets & 4.058	& 5.758 & 6.304\\
 Standard deviation non-targets & 4.233 & 6.510 & 6.753 \\
 \hline
-t-test p-value & 5.934E-49 & 2.529E-61 & 1.040E-51 \\\hline
-\end{tabular}\vspace{0.5cm}
+t-test p-value & 5.934 10\textsuperscript{-49} & 2.529 10\textsuperscript{-61} & 1.040 10 \textsuperscript{-51} \\\hline
+\end{tabular}}\vspace{0.5cm}
 
+{\setlength{\extrarowheight}{5pt}
 \begin{tabular}{c|c|c|c}
 & 5 -3 -8 -2 & 5 -4 -6 -4 & -4 -4 \\
 \hline\hline
@@ -279,10 +285,11 @@ Average	non-targets & 54.269 & 53.294 & 13.362\\
 Standard deviation true targets & 6.633 & 6.806 & 1.078\\
 Standard deviation non-targets & 6.876 & 7.01 & 1.311\\
 \hline
-t-test p-value & 1.394E-51 & 1.744E-53 & 8.824E-50 \\\hline
-\end{tabular}\vspace{0.5cm}
+t-test p-value & 1.394 10\textsuperscript{-51} & 1.744 10\textsuperscript{-53} & 8.824 10\textsuperscript{-50} \\\hline
+\end{tabular}}\vspace{0.5cm}
 
 
+{\setlength{\extrarowheight}{5pt}
 \begin{tabular}{c|c|c|c}
  & -5 -1 & 1 -2 -2 -1 & 2 -2 -5 -4  \\
 \hline\hline
@@ -290,11 +297,11 @@ Average true targets & 13.710 & 8.593 & 18.351\\
 Average	non-targets  & 13.361 &	8.208 &	17.619 \\
 \hline
 Standard deviation true targets & 1.078	& 1.347	& 2.751\\
-Standard deviation non-targets & 1.309 & 1.385 & 2.868\\
+Standard deviation non-targets & 1.309 & 1.385 & 2.868\\ 
+\hline 
+t-test p-value & 1.13110\textsuperscript{-49} & 8.157 10\textsuperscript{-42} & 3.279 10\textsuperscript{-36} \\
 \hline
-t-test p-value & 1.131E-49 & 8.157E-42 & 3.279E-36 \\
-\hline
-\end{tabular}
+\end{tabular}}
 \label{table:results}
 \end{table}
 
@@ -321,12 +328,14 @@ As described in the Methodology, for each parameter set the complementarity of t
 
 \begin{figure}
 \vspace{-1cm}
-\includegraphics[scale=0.65]{results/compl1.png}
+\hspace{-0.8cm}
+\includegraphics[scale=0.7]{results/compl1.pdf}
 \end{figure}
 
 \begin{figure}
-\includegraphics[scale=0.65]{results/compl2.png}
-\vspace{-3cm}
+\hspace{-0.8cm}
+\includegraphics[scale=0.7]{results/compl2.pdf}
+\vspace{-4cm}
 \caption{Ratios of complementarity per parameter set (A-I): targets left, non-targets right}
 \label{ratios}
 \end{figure}
@@ -354,7 +363,8 @@ The last plot is slightly different from the two others. The blue and the red cu
 
 \begin{figure}
 \centering
-\includegraphics[scale=1.1]{results/ratio_table2.PNG}
+\includegraphics[scale=0.73]{results/ratio_table2.pdf}
+\vspace{-3.2cm}
 \caption{Table of ratios of complementarities}
 \label{table:ratios}
 \end{figure}
@@ -363,7 +373,7 @@ The last plot is slightly different from the two others. The blue and the red cu
 
 The table in figure~\ref{table:ratios} shows that the average of the complementarity ratios are similar when comparing true targets with non-targets. The nucleotides of the seed region are highlighted in blue and the ones of the additional 3' pairing in orange. Calculating the average complementarity ratios of these positions sheds light on the presence of these regions in validated interactions. For the first parameter set, the true targets show a small increase in the seed region but a decrease in the additional pairing. This feature of additional pairing can not be significantly observed. For the same set and its negative control, a constant average can be seen. Almost all true targets show an increase in the seed region and a decrease in the other region. For the non-targets there are different patterns. For example, for the third parameter set both regions increase compared to the standard average. For the other sets there is either no big difference or both increase but never decrease. Referring to the plots, the seed region in the true targets is slightly more visible than for the non-targets. All in all, the differences are not very big and significant. Both regions cannot be observed as clear as expected.  \\
 
-The analysis of the alignment starting positions was not particularly successful and significant. Table~\ref{tab:positions} shows the numbers of the own predicted positions that were also given in the miRTarBase. It can be seen that two sets deliver only half the number of the other (5 -2 -8 -3 and 5 -3 -8 -2). These two sets also use very similar parameters. That shows that the alignment positions strongly depend on the selected parameters. In comparison to the given number of about 3700 positions in the miRTarBase, the numbers of the respective own found ones are in general not very high. Only about 20\% were found. This can be due to the different sizes of the UTRs of the genes. In this research the UTRs are from the UCSC website whereas the miRTarBase might use another source. Therefore the sizes can be a bit different resulting in different defined positions, although the alignment would start at the same position. To eliminate these small deviations, I allowed a window of 10 positions where the starting position can be. So if the provided miRTarBase position is given, the own predicted position is classified as consistent with the provided one if the position lies in a window of +5 or -5 related to the miRTarBase position. 
+The analysis of the alignment starting positions was not particularly successful and significant. Table~\ref{tab:positions} shows the numbers of the own predicted positions that were also given in the miRTarBase. It can be seen that two sets deliver only half the number of the other (5 -2 -8 -3 and 5 -3 -8 -2). These two sets also use very similar parameters. That shows that the alignment positions strongly depend on the selected parameters. In comparison to the given number of about 3700 positions in the miRTarBase, the numbers of the respective own found ones are in general not very high. Only about 20\% were found. This can be due to the different sizes of the UTRs of the genes. In this research the UTRs are from the UCSC website whereas the miRTarBase might use another source. Therefore the sizes can be a bit different resulting in different defined positions, although the alignment would start at the same position. To eliminate these small deviations, I allowed a window of 10 positions where the starting position can be. So if the provided miRTarBase position is given, the own predicted position is classified as consistent with the provided one if the position lies in a window of +5 or -5 related to the miRTarBase position. Another point is the difference that I align the miRNA sequence to the whole gene sequence. The best alignment position can therefore lie within the other region whereas the positions of the miRTarBase are only in the 3' UTR. If I only allow the 3' UTR, the number of consistent ones would be higher.
 
 Another reason for the inconsistent positions might be, that the tools they used in miRTarBase use better and more specific alignment tools where more parameters can be defined. The tools can better be adapted to a biological background like seed region and additional 3' pairing. The pairwise2 module only has 4 scoring parameters to select and only delivers the alignment with the highest score and no ranking.  \\
 
@@ -398,7 +408,11 @@ Found number & 882 & 793 & 776 & 845  \\
 
 The main focus in this research was on sequence alignment of miRNA sequence and its target mRNA sequence for given validated miRNA target interactions. This alignment should simulate a binding between the two sequences. With this method, it was investigated how this approach can be used to predict new target sites for miRNAs without any other biological experiments.
 
-The results showed that with this alignment tool, the increase in the alignment score for true targets is significant. This means that if a certain threshold for the scoring is exceeded, with a certain error rate a considered mRNA is targeted by this miRNA. However, with this alignment tool different binding sites were found compared to binding sites predicted by some existing prediction tools like miRanda. Whether the positions I found with the alignment tool are the right ones is questionable. The alignment strongly depends on parameters which leads to the difference in results. Nevertheless the scores showed a significant increase for the true targets. Yet, it is questionable how reliable this prediction feature is if considered on its own. As can be observed for the existing tools, a much better prediction is achieved when considering more prediction features as described below.
+The results showed that with this alignment tool, the increase in the alignment score for true targets is significant. This means that if a certain threshold for the scoring is exceeded, with a certain error rate a considered mRNA is targeted by this miRNA. However, the p-values are extremely low, which is very surprising. Considering the existing tools, they always take many features into account to make the prediction more reliable. Therefore, regarding this one single feature can not be as significant as the p-value expresses.
+
+Additionally, the analysis of the complementarities did not show significant differences between true targets and non-targets. Considering this feature, no statement about the probability of a true target can be made. 
+
+However, with this alignment tool different binding sites were found compared to binding sites predicted by some existing prediction tools like miRanda. Whether the positions I found with the alignment tool are the right ones is questionable. The alignment strongly depends on parameters which leads to the difference in results. Nevertheless the scores showed a significant increase for the true targets. Yet, it is questionable how reliable this prediction feature is if considered on its own. As can be observed for the existing tools, a much better prediction is achieved when considering more prediction features as described below.
 
 A first step can be the improvement of the alignment process, especially the refinement of the alignment parameters. In some other tools, like miRanda, the parameters are adapted to the binding mechanism. For example, in the present seed region the complementarity should be nearly perfect, meaning mismatches in the first few nucleotides should be highly penalized or only a certain number of mismatches should be allowed. In addition, mismatches or gaps in the central nucleotides of the miRNA can be present and are therefore not much penalized. Adapting the parameters to some targeting rules can highly improve the target prediction. 
 
@@ -410,7 +424,7 @@ Because of their potential to function in treatment and detection of diseases, m
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.6]{results/site_3addi.png}
+\includegraphics[scale=0.7]{results/site_3addi.png}
 \caption{Effectiveness of different types of sites}
 \label{types}
 \end{figure}
@@ -426,28 +440,28 @@ Between the two complementary areas there is usually a part of non-pairing nucle
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.3]{results/additional_pairing.PNG}
+\includegraphics[scale=0.4]{results/additional_pairing.PNG}
 \caption{Additional 3' pairing}
 \label{addipairing}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.4]{results/sites_regulation.PNG} 
+\includegraphics[scale=0.6]{results/sites_regulation.PNG} 
 \caption{Relation between regulation and starting position of additional pairing}
 \label{siteregulation}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.5]{results/sites_conserved.PNG} 
+\includegraphics[scale=0.65]{results/sites_conserved.PNG} 
 \caption{Conservation of nucleotide positions of miRNA}
 \label{conserved}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.5]{results/site_efficacy.PNG} 
+\includegraphics[scale=0.7]{results/site_efficacy.PNG} 
 \caption{Efficacy of different combinations of seed region and additional 3' pairing}
 \label{efficacy}
 \end{figure}
@@ -461,30 +475,30 @@ Enright et al. (2003) and Doench et al. (2004) also found that the presence of m
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=1]{results/sites_8nt.PNG}  
+\includegraphics[scale=0.6]{results/sites_8nt.PNG}  
 \caption{Cooperative repression with different site spacings}
 \label{sitespacing}
 \end{figure}
 
 \begin{figure}[h]
 \centering
-\includegraphics[scale=0.7]{results/sites_distance.PNG}
+\includegraphics[scale=0.65]{results/sites_distance.PNG}
 \caption{Effect of multiple sites}
 \label{sitedistance}
 \end{figure}
 
 Another indicator is the position of the binding site relative to the stop codon and the center of the UTR. Generally sites in the 3'UTR are investigated but Grimson et al. (2007) detected that sites in the Open reading frame (ORF) are slightly effective, sites in the 5'UTR not at all. \\
 
-\begin{figure}[h]
+\begin{figure}
 \centering
-\includegraphics[scale=0.6]{results/sites_orf.PNG}
+\includegraphics[scale=0.74]{results/sites_orf.PNG}
 \caption{Efficacy of different site locations}
 \label{siteorf}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}
 \centering
-\includegraphics[scale=0.5]{results/site_stop.PNG} 
+\includegraphics[scale=0.6]{results/site_stop.PNG} 
 \caption{Efficacy of sites located relative to the stop codon}
 \label{sitestop}
 \end{figure}
@@ -495,9 +509,9 @@ The sites were present at least 15 nucleotides from the stop codon and not prese
 Considering all these different common and less common features, new targets for miRNAs can be predicted more reliably. Figure~\ref{fig:tools} shows known prediction tools and the features they consider. As mentioned above the most common feature that nearly all of them consider are seed matching, conservation and free energy. 
 
 
-\begin{figure}[h]
+\begin{figure}
 \centering
-\includegraphics[scale=0.5]{results/tools.PNG}
+\includegraphics[scale=0.6]{results/tools.PNG}
 \caption{Prediction tools and their features}
 \label{fig:tools}
 \end{figure}
@@ -514,7 +528,13 @@ Relying on just a few features will for sure lead to many errors, either false p
 
 Additionally not every tool is frequently updated which is a big problem and does not lead to improvements in target prediction. Some tools do not use the current data or innovations in target interactions. According to Peterson et al. (2014) the following tools are outstanding because of maintenance, newest input data and they are the easiest once to use: DIANA-microT-CDS, miRanda-mirSVR and Targetscan \cite{Peterson}. All three are somehow unique but all for example use looser thresholds for conservation allowing less conserved regions to balance irregularities and refuse less true targets.
 
-The early miRanda tool is also still widely used. The class of tools that use machine-learning are getting more accurate the more positive and negative target data is verified and features are found. Because of a lack of this data, these tools are not significantly better than the three other tools mentioned above \cite{Peterson}.
+The early miRanda tool is also still widely used. Its strengths are the optimization of the sequence complementarity. This is due to the specific rules and requirements for example regarding the sequeunce alignment and conservation. However, the tool permits imperfect bindings. Additionally, it emphasizes the presence of multiple binding sites in the 3' UTR, either of the same miRNA or of others. This might result in refusing miRNAs with only one site leading to many false positives \cite{John}. 
+
+In contrast, TargetScan places emphasis on the seed region with its many different seed types and context scores. Having binding sites with less perfect seed regions even though they are functional, the tool would ignore them \cite{Lewis}.
+
+The last favoured tool, DIANA-microT-CDS, predicts only single binding sites, which can be conserved and non-conserved \cite{Kiriakidou}. Certainly, the presence of multiple binding sizes might result in weaker interactions that are therefore underestimated by this tool. However, with its signal to noise ratio, which evaluates the specificity, and the resulting prediction score, which correlates with the amount of produced protein, DIANA-microT-CDS is an innovative, successful prediction tool \cite{Maragkakis}.  
+
+The class of tools, like miRSVR, learn how to weight the different features they consider with support vector regression \cite{Betel}. These machine-learning based approaches are getting more accurate the more positive and negative target data is verified and the more features are identified. Consequently, because of the lack of this data, these tools are not significantly better than other tools mentioned above \cite{Peterson}.
 The future consists of elimination of the limits of some tools and finding more useful features for the prediction.
 
 Fujiwara and Yada (2013) followed a new approach by considering other characteristics than binding sites for the prediction, such as the transcriptional regulation. In their research they searched for common cis-elements in the miRNA as well as in the target gene. Compared to conventional methods, their method is almost as good as the standard binding site based ones but combining the two different methods decreases the accuracy a lot. The advantages of this novel approach are independence of conservation of binding sites and the amount of available training data \cite{Fuji}. 
