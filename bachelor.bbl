@@ -106,6 +106,10 @@ Karolchik, D., Hinrichs, A., Furey, T., Roskin, K., Sugnet, C., Haussler, D.,
 \newblock The ucsc table browser data retrieval tool.
 \newblock URl \url{https://genome.ucsc.edu/}.
 
+\bibitem[Keller, 2016]{Keller}
+Keller, A. (2016).
+\newblock Special lecture: Algorithms and applications for microrna research.
+
 \bibitem[Kertesz et~al., 2007]{Kertesz}
 Kertesz, M., Iovino, N., Unnerstall, U., Gaul, U., and Segal, E. (2007).
 \newblock {{T}he role of site accessibility in micro{R}{N}{A} target
@@ -131,6 +135,12 @@ Kozomara, A. and Griffiths-Jones, S. (2011).
   deep-sequencing data}.
 \newblock {\em Nucleic Acids Res.}, 39(Database issue):D152--157.
 \newblock URL \url{http://mirbase.org/}.
+
+\bibitem[Lee et~al., 2002]{Lee}
+Lee, Y., Jeon, K., Lee, J.~T., Kim, S., and Kim, V.~N. (2002).
+\newblock {{M}icro{R}{N}{A} maturation: stepwise processing and subcellular
+  localization}.
+\newblock {\em EMBO J.}, 21(17):4663--4670.
 
 \bibitem[Lewis et~al., 2005]{Lewis}
 Lewis, B.~P., Burge, C.~B., and Bartel, D.~P. (2005).
