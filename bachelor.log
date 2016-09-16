@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.23)  15 SEP 2016 17:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.23)  16 SEP 2016 14:13
 entering extended mode
 **./bachelor.tex
 (bachelor.tex
@@ -6,8 +6,8 @@ LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size11.clo"
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -253,15 +253,15 @@ File: Logo-Universitaet_des_Saarlandes.pdf Graphic file (type pdf)
 <use Logo-Universitaet_des_Saarlandes.pdf>
 Package pdftex.def Info: Logo-Universitaet_des_Saarlandes.pdf used on input lin
 e 32.
-(pdftex.def)             Requested size: 113.81102pt x 45.9604pt.
+(pdftex.def)             Requested size: 142.26378pt x 57.4518pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 54.
+(Font)              <12> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 54.
 
-Overfull \hbox (17.0pt too wide) in paragraph at lines 28--55
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 28--55
 []$[]$ 
  []
 
@@ -277,15 +277,9 @@ aarlandes.pdf>] [1] [2] [3] (bachelor.toc)
 ]
 Chapter 1.
 
-Overfull \hbox (5.0309pt too wide) in paragraph at lines 109--110
-\OT1/cmr/m/n/10.95 miRNAs are small, non-coding RNAs that func-tion in the post
--transcriptional
- []
-
-
-Overfull \hbox (1.3695pt too wide) in paragraph at lines 109--110
-\OT1/cmr/m/n/10.95 reg-u-la-tion of gene ex-pres-sion, es-pe-cially con-cern-in
-g gene si-lenc-ing. A miRNA
+Overfull \hbox (1.5765pt too wide) in paragraph at lines 109--110
+\OT1/cmr/m/n/12 miRNAs are small, non-coding RNAs that func-tion in the post-tr
+anscriptional
  []
 
 
@@ -294,8 +288,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--110
  []
 
 
-Overfull \hbox (11.01282pt too wide) in paragraph at lines 111--112
-\OT1/cmr/m/n/10.95 [[]]. Af-ter pro-cess-ing of the ini-tial dou-ble stranded
+Overfull \hbox (20.14862pt too wide) in paragraph at lines 111--112
+\OT1/cmr/m/n/12 and needs to be un-wound to be a ma-ture miRNA [[]].
  []
 
 
@@ -305,7 +299,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
 [1
 
-] <results/biogenesis.png, id=30, 501.875pt x 414.54875pt>
+] <results/biogenesis.png, id=28, 501.875pt x 414.54875pt>
 File: results/biogenesis.png Graphic file (type png)
 
 <use results/biogenesis.png>
@@ -326,19 +320,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 125--126
 
  []
 
-<results/seedmatching.png, id=36, 90.8193pt x 24.69225pt>
+<results/seedmatching.png, id=34, 90.8193pt x 24.69225pt>
 File: results/seedmatching.png Graphic file (type png)
 
 <use results/seedmatching.png>
 Package pdftex.def Info: results/seedmatching.png used on input line 130.
 (pdftex.def)             Requested size: 254.29369pt x 69.13814pt.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
-[3 <./results/seedmatching.png>]
-<results/canonical_sites.png, id=40, 246.9225pt x 356.0803pt>
+[3] <results/canonical_sites.png, id=38, 246.9225pt x 356.0803pt>
 File: results/canonical_sites.png Graphic file (type png)
 
 <use results/canonical_sites.png>
@@ -349,10 +346,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
-[4 <./results/canonical_sites.png>]
-Overfull \hbox (5.09166pt too wide) in paragraph at lines 150--152
-\OT1/cmr/m/n/10.95 align-ment and se-quence com-ple-men-tar-ity play a role in 
-this pro-cess, databases
+[4 <./results/seedmatching.png> <./results/canonical_sites.png>]
+Overfull \hbox (1.6626pt too wide) in paragraph at lines 150--152
+\OT1/cmr/m/n/12 align-ment and se-quence com-ple-men-tar-ity play a role in thi
+s pro-cess, databases
  []
 
 [5]
@@ -367,22 +364,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
+[6
 
+]
 Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
-[6
-
-] <results/mirtarbase_scrot.png, id=53, 981.6675pt x 180.675pt>
+<results/mirtarbase_scrot.png, id=51, 981.6675pt x 180.675pt>
 File: results/mirtarbase_scrot.png Graphic file (type png)
 
 <use results/mirtarbase_scrot.png>
 Package pdftex.def Info: results/mirtarbase_scrot.png used on input line 170.
-(pdftex.def)             Requested size: 360.0pt x 66.25597pt.
+(pdftex.def)             Requested size: 390.0pt x 71.77798pt.
 
-Overfull \hbox (23.23521pt too wide) in paragraph at lines 178--179
-\OT1/cmr/m/n/10.95 quences to align those to the gene se-quence [[]].
+Overfull \hbox (21.15686pt too wide) in paragraph at lines 178--179
+\OT1/cmr/m/n/12 quences to align those to the gene se-quence [[]].
  []
 
 
@@ -390,29 +387,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
 
-<results/mirbase.png, id=54, 1005.00468pt x 179.92218pt>
+<results/mirbase.png, id=52, 1005.00468pt x 179.92218pt>
 File: results/mirbase.png Graphic file (type png)
 
 <use results/mirbase.png>
 Package pdftex.def Info: results/mirbase.png used on input line 183.
-(pdftex.def)             Requested size: 360.0pt x 64.44797pt.
-
+(pdftex.def)             Requested size: 390.0pt x 69.81795pt.
+ [7 <./results/mirtarbase_scrot.png> <./results/mirbase.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
-[7 <./results/mirtarbase_scrot.png> <./results/mirbase.png>]
-<results/ucsc.png, id=60, 612.78937pt x 112.92188pt>
+<results/ucsc.png, id=58, 612.78937pt x 112.92188pt>
 File: results/ucsc.png Graphic file (type png)
  <use results/ucsc.png>
 Package pdftex.def Info: results/ucsc.png used on input line 198.
-(pdftex.def)             Requested size: 360.0pt x 66.339pt.
-
-Overfull \hbox (2.65715pt too wide) in paragraph at lines 207--208
-\OT1/cmr/m/n/10.95 For the align-ment of miRNA to the cor-re-spond-ing gene the
- re-spec-tive miRNA
- []
-
+(pdftex.def)             Requested size: 390.0pt x 71.86655pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 218--220
 
@@ -433,17 +423,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
-
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 250--251
 
  []
 
-[9]
+
 Underfull \hbox (badness 10000) in paragraph at lines 252--254
 
  []
 
-
+[10]
 Underfull \hbox (badness 10000) in paragraph at lines 255--256
 
  []
@@ -453,7 +443,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
-[10] [11]
+[11]
 Chapter 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 270--271
@@ -469,7 +459,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 280.
+(Font)              <7> on input line 280.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 280.
 
@@ -477,7 +467,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 324--326
 
  []
 
-[13] <results/plot_scores-4-4_thresh.png, id=83, 602.25pt x 451.6875pt>
+[13] <results/plot_scores-4-4_thresh.png, id=81, 602.25pt x 451.6875pt>
 File: results/plot_scores-4-4_thresh.png Graphic file (type png)
 
 <use results/plot_scores-4-4_thresh.png>
@@ -485,7 +475,7 @@ Package pdftex.def Info: results/plot_scores-4-4_thresh.png used on input line
 330.
 (pdftex.def)             Requested size: 168.62885pt x 126.47163pt.
 
-<results/plot_scores5-3-8-2_thresh.png, id=84, 602.25pt x 451.6875pt>
+<results/plot_scores5-3-8-2_thresh.png, id=82, 602.25pt x 451.6875pt>
 File: results/plot_scores5-3-8-2_thresh.png Graphic file (type png)
 
 <use results/plot_scores5-3-8-2_thresh.png>
@@ -508,26 +498,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
  []
 
-<results/compl1.pdf, id=91, 597.23125pt x 845.1575pt>
+<results/compl1.pdf, id=89, 597.23125pt x 845.1575pt>
 File: results/compl1.pdf Graphic file (type pdf)
  <use results/compl1.pdf>
 Package pdftex.def Info: results/compl1.pdf used on input line 346.
 (pdftex.def)             Requested size: 447.92233pt x 633.86658pt.
 
-Overfull \hbox (33.45016pt too wide) in paragraph at lines 345--347
+Overfull \hbox (32.08067pt too wide) in paragraph at lines 345--347
 []  [] 
  []
 
 
-LaTeX Warning: Float too large for page by 9.61357pt on input line 347.
+LaTeX Warning: Float too large for page by 13.41383pt on input line 347.
 
-<results/compl2.pdf, id=92, 597.23125pt x 845.1575pt>
+<results/compl2.pdf, id=90, 597.23125pt x 845.1575pt>
 File: results/compl2.pdf Graphic file (type pdf)
  <use results/compl2.pdf>
 Package pdftex.def Info: results/compl2.pdf used on input line 351.
 (pdftex.def)             Requested size: 447.92233pt x 633.86658pt.
 
-Overfull \hbox (33.45016pt too wide) in paragraph at lines 350--353
+Overfull \hbox (32.08067pt too wide) in paragraph at lines 350--353
 []  []
  []
 
@@ -536,12 +526,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
-
+[15] [16 <./results/compl1.pdf>] [17 <./results/compl2.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
-[15] [16 <./results/compl1.pdf>] [17 <./results/compl2.pdf>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 362--363
 
  []
@@ -556,40 +546,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 366--367
 
  []
 
-[18] <results/curves1-2-2-1_new.png, id=191, 578.16pt x 433.62pt>
+[18] <results/curves1-2-2-1_new.png, id=189, 578.16pt x 433.62pt>
 File: results/curves1-2-2-1_new.png Graphic file (type png)
 
 <use results/curves1-2-2-1_new.png>
 Package pdftex.def Info: results/curves1-2-2-1_new.png used on input line 370.
 (pdftex.def)             Requested size: 173.44933pt x 130.087pt.
 
-<results/curves5-4-6-4_new.png, id=192, 578.16pt x 433.62pt>
+<results/curves5-4-6-4_new.png, id=190, 578.16pt x 433.62pt>
 File: results/curves5-4-6-4_new.png Graphic file (type png)
 
 <use results/curves5-4-6-4_new.png>
 Package pdftex.def Info: results/curves5-4-6-4_new.png used on input line 371.
 (pdftex.def)             Requested size: 173.44933pt x 130.087pt.
 
-<results/curves-5-1_new.png, id=193, 578.16pt x 433.62pt>
+<results/curves-5-1_new.png, id=191, 578.16pt x 433.62pt>
 File: results/curves-5-1_new.png Graphic file (type png)
 
 <use results/curves-5-1_new.png>
 Package pdftex.def Info: results/curves-5-1_new.png used on input line 372.
 (pdftex.def)             Requested size: 173.44933pt x 130.087pt.
 
-<results/ratio_table2.pdf, id=194, 597.23125pt x 845.1575pt>
+<results/ratio_table2.pdf, id=192, 597.23125pt x 845.1575pt>
 File: results/ratio_table2.pdf Graphic file (type pdf)
 
 <use results/ratio_table2.pdf>
 Package pdftex.def Info: results/ratio_table2.pdf used on input line 380.
 (pdftex.def)             Requested size: 465.8385pt x 659.2202pt.
 
-Overfull \hbox (65.59271pt too wide) in paragraph at lines 379--382
+Overfull \hbox (49.99684pt too wide) in paragraph at lines 379--382
 []  []
  []
 
 
-LaTeX Warning: Float too large for page by 12.66168pt on input line 384.
+LaTeX Warning: Float too large for page by 15.5165pt on input line 384.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 388--389
@@ -603,11 +593,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 390--391
  []
 
 
-Overfull \hbox (5.23662pt too wide) in paragraph at lines 397--404
-[][]
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21]
+[21] [22]
 Chapter 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 422--423
@@ -624,14 +612,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 426--427
 
  []
 
+[23
 
+]
 Underfull \hbox (badness 10000) in paragraph at lines 428--429
 
  []
 
-[22
 
-]
 Underfull \hbox (badness 10000) in paragraph at lines 430--431
 
  []
@@ -646,12 +634,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
  []
 
-
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 436--437
 
  []
 
-[23] <results/site_3addi.png, id=226, 277.78781pt x 193.47281pt>
+<results/site_3addi.png, id=227, 277.78781pt x 193.47281pt>
 File: results/site_3addi.png Graphic file (type png)
 
 <use results/site_3addi.png>
@@ -667,17 +655,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 448--449
 
  []
 
-
+[25 <./results/site_3addi.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 450--451
 
  []
 
-[24 <./results/site_3addi.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 452--453
 
  []
 
-<results/additional_pairing.PNG, id=231, 972.63374pt x 201.00093pt>
+<results/additional_pairing.PNG, id=232, 972.63374pt x 201.00093pt>
 File: results/additional_pairing.PNG Graphic file (type png)
 
 <use results/additional_pairing.PNG>
@@ -685,11 +673,10 @@ Package pdftex.def Info: results/additional_pairing.PNG used on input line 456.
 
 (pdftex.def)             Requested size: 389.0466pt x 80.39894pt.
 
-Overfull \hbox (29.0466pt too wide) in paragraph at lines 456--457
- [][] 
- []
 
-<results/sites_regulation.PNG, id=232, 262.73157pt x 248.42813pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<results/sites_regulation.PNG, id=233, 262.73157pt x 248.42813pt>
 File: results/sites_regulation.PNG Graphic file (type png)
 
 <use results/sites_regulation.PNG>
@@ -699,7 +686,7 @@ Package pdftex.def Info: results/sites_regulation.PNG used on input line 463.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<results/sites_conserved.PNG, id=233, 243.15843pt x 199.49532pt>
+<results/sites_conserved.PNG, id=234, 243.15843pt x 199.49532pt>
 File: results/sites_conserved.PNG Graphic file (type png)
 
 <use results/sites_conserved.PNG>
@@ -709,7 +696,7 @@ Package pdftex.def Info: results/sites_conserved.PNG used on input line 470.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<results/site_efficacy.PNG, id=234, 450.18187pt x 182.93344pt>
+<results/site_efficacy.PNG, id=235, 450.18187pt x 182.93344pt>
 File: results/site_efficacy.PNG Graphic file (type png)
 
 <use results/site_efficacy.PNG>
@@ -724,12 +711,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 484--485
 
  []
 
-[25 <./results/additional_pairing.PNG>]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 486--487
 
  []
 
-<results/sites_8nt.PNG, id=239, 202.50656pt x 286.82156pt>
+[27 <./results/additional_pairing.PNG> <./results/sites_regulation.PNG>]
+<results/sites_8nt.PNG, id=245, 202.50656pt x 286.82156pt>
 File: results/sites_8nt.PNG Graphic file (type png)
 
 <use results/sites_8nt.PNG>
@@ -739,7 +727,7 @@ Package pdftex.def Info: results/sites_8nt.PNG used on input line 491.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<results/sites_distance.PNG, id=240, 501.37312pt x 194.22563pt>
+<results/sites_distance.PNG, id=246, 501.37312pt x 194.22563pt>
 File: results/sites_distance.PNG Graphic file (type png)
 
 <use results/sites_distance.PNG>
@@ -754,7 +742,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 503--504
 
  []
 
-[26 <./results/sites_regulation.PNG> <./results/sites_conserved.PNG>]
 <results/sites_orf.PNG, id=247, 453.19313pt x 188.95593pt>
 File: results/sites_orf.PNG Graphic file (type png)
 
@@ -773,19 +760,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 521--522
 
  []
 
-<results/tools.PNG, id=249, 702.37407pt x 350.05782pt>
+[28 <./results/sites_conserved.PNG> <./results/site_efficacy.PNG>]
+<results/tools.PNG, id=254, 702.37407pt x 350.05782pt>
 File: results/tools.PNG Graphic file (type png)
  <use results/tools.PNG>
 Package pdftex.def Info: results/tools.PNG used on input line 526.
 (pdftex.def)             Requested size: 421.42769pt x 210.0363pt.
 
-Overfull \hbox (61.42769pt too wide) in paragraph at lines 526--527
+Overfull \hbox (31.42769pt too wide) in paragraph at lines 526--527
  [][] 
  []
 
-[27 <./results/site_efficacy.PNG> <./results/sites_8nt.PNG>] [28 <./results/sit
-es_distance.PNG> <./results/sites_orf.PNG> <./results/site_stop.PNG>] [29 <./re
-sults/tools.PNG>]
+[29 <./results/sites_8nt.PNG> <./results/sites_distance.PNG>] [30 <./results/si
+tes_orf.PNG> <./results/site_stop.PNG> <./results/tools.PNG>]
 Chapter 5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 539--541
@@ -802,91 +789,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 544--545
 
  []
 
-[30
+[31
 
 ]
-Overfull \hbox (1.62416pt too wide) in paragraph at lines 550--551
-\OT1/cmr/m/n/10.95 ing sites, which can be con-served and non-conserved [[]].
- []
-
-
-Overfull \hbox (21.60677pt too wide) in paragraph at lines 550--551
-\OT1/cmr/m/n/10.95 microT-CDS is an in-no-va-tive, suc-cess-ful pre-dic-tion to
-ol [[]]. 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 552--553
+Underfull \hbox (badness 10000) in paragraph at lines 546--547
 
  []
 
 
-Overfull \hbox (4.11832pt too wide) in paragraph at lines 554--555
-\OT1/cmr/m/n/10.95 ing sites and the amount of avail-able train-ing data [[]]. 
+Underfull \hbox (badness 10000) in paragraph at lines 548--549
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 554--555
-
+(bachelor.bbl [32]
+Underfull \hbox (badness 1189) in paragraph at lines 36--39
+[]\OT1/cmr/m/n/12 Coronnello, C. and Benos, P. V. (2013).
  []
 
+[33
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--557
-
+] [34]
+Underfull \hbox (badness 1152) in paragraph at lines 126--131
+[]\OT1/cmr/m/n/12 Kiriakidou, M., Nel-son, P. T., Koura-nov, A.,
  []
 
-(bachelor.bbl [31] [32
-
-] [33]
-Underfull \hbox (badness 1210) in paragraph at lines 152--155
-[]\OT1/cmr/m/n/10.95 Macfarlane, L. A. and Mur-phy, P. R.
- []
-
-
-Underfull \hbox (badness 1838) in paragraph at lines 177--180
-\OT1/cmr/m/n/10.95 and Giegerich, R. (2004).  Fast and ef-fec-tive pre-dic-tion
- of mi-
- []
-
-[34]) [35] (bachelor.lof
-Overfull \hbox (2.79828pt too wide) detected at line 24
-\OT1/cmr/m/n/10.95 4.0.10 
- []
-
-)
+[35]) [36] (bachelor.lof)
 \tf@lof=\write4
 \openout4 = `bachelor.lof'.
 
- [36
+ [37
 
 ] (bachelor.lot)
 \tf@lot=\write5
 \openout5 = `bachelor.lot'.
 
- [37
+ [38
 
-] (bachelor.aux) ) 
+] (bachelor.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4281 strings out of 493335
- 66614 string characters out of 3136669
- 137004 words of memory out of 3000000
- 7720 multiletter control sequences out of 15000+200000
- 10535 words of font info for 37 fonts, out of 3000000 for 9000
+ 4273 strings out of 493335
+ 66509 string characters out of 3136669
+ 136968 words of memory out of 3000000
+ 7715 multiletter control sequences out of 15000+200000
+ 9016 words of font info for 32 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,12n,39p,2021b,328s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on bachelor.pdf (42 pages, 1984346 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on bachelor.pdf (43 pages, 1984361 bytes).
 PDF statistics:
- 322 PDF objects out of 1000 (max. 8388607)
+ 318 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
