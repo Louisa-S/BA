@@ -65,7 +65,7 @@ I hereby confirm that this thesis is my own work and that I have documented all 
 \vspace{1cm}
 
 \noindent Saarbr\"ucken, September 21, 2016
-\vspace{1.5cm}
+\vspace{2cm}
 
 \noindent Louisa Schwed
 
@@ -154,7 +154,7 @@ For these miRNA analyses, there are three main databases that provide the necess
   
 \vspace{1.5cm}
 
-
+\let\cleardoublepage\clearpage
 
 \chapter{Data and Methodology}
 \label{chapter:data and methodology}
@@ -347,16 +347,19 @@ Summing up, assuming the score as the only prediction feature and given a certai
 
 \begin{figure}
 \vspace{-1cm}
-\hspace{-2cm}
-\includegraphics[scale=0.75]{results/compl1.pdf}
-\end{figure}
-
-\begin{figure}
-\hspace{-2cm}
-\includegraphics[scale=0.75]{results/compl2.pdf}
-\vspace{-4cm}
+\hspace{-1.2cm}
+\includegraphics[scale=0.72]{results/compl1.pdf}
 \caption{Ratios of complementarity per parameter set (A-I): targets left, non-targets right}
 \label{ratios}
+\end{figure}
+
+
+
+\begin{figure}
+\hspace{-1.2cm}
+\includegraphics[scale=0.72]{results/compl2.pdf}
+\vspace{-4cm}
+\caption*{Figure~\ref{ratios} continued}
 \end{figure}
 
 
@@ -542,7 +545,7 @@ Considering all these different common and less common features, new targets for
 \chapter{Conclusion}
 \label{chapter:conlusion}
 
-In this research validated miRNA target interactions from the database miRTarBase were investigated. With the help of sequence alignment I analysed potential binding sites. The main focus was on the alignment scores for these sites and whether they are higher for true targets then for non-targets. The results surprisingly showed that, according to the low p-values, the consideration of the sequence alignment scores is already significant for a new target prediction. However, the analysis of the complementarities did not show big differences between the two groups. The significant seed region and additional 3' pairing could hardly be observed. Hence, the consideration of these features is still questionable and includes errors. To improve the prediction many other features should be take into account.
+In this research validated miRNA target interactions from the database miRTarBase were investigated. With the help of sequence alignments I analysed potential binding sites. The main focus was on the alignment scores for these sites and whether they are higher for true targets then for non-targets. The results surprisingly showed that, according to the low p-values of a t-test, the consideration of the sequence alignment scores is already significant for the prediction of new targets. However, the analysis of the complementarities did not show big differences between true targets and non-targets. The significant seed region and additional 3' pairing could hardly be observed. Hence, the consideration of these features is questionable and still includes many errors. To improve the prediction many other features should be take into account.
 As described above, there are a lot of features that can be incorporated as well as many different tools that already exist. They all differ from each other in the number and type of features they use and also in the weighting of the single features \cite{Peterson}. Concluding, each tool and feature has its advantages and strengths but also its limitations which makes none of the existing tools perfect and 100\% reliable. Relying on just a few features will for sure lead to many errors, either false positives or false negatives. There are many irregularities and some features like the free energy are not always very precise \cite{Peterson}. These problems have to be incorporated to lower the error rate.\\
 
 Additionally not every tool is frequently updated which is a big problem and does not lead to improvements in target prediction. Some tools do not use the current data or innovations in target interactions. According to Peterson et al. (2014) the following tools are outstanding because of maintenance, newest input data and they are the easiest ones to use: DIANA-microT-CDS, miRanda-mirSVR and Targetscan \cite{Peterson}. All three are somehow unique but all for example use looser thresholds for conservation allowing less conserved regions to balance irregularities and refuse less true targets.\\

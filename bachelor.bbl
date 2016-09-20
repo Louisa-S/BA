@@ -16,6 +16,11 @@ Betel, D., Koppal, A., Agius, P., Sander, C., and Leslie, C. (2010).
   functional non-conserved and non-canonical sites}.
 \newblock {\em Genome Biol.}, 11(8):R90.
 
+\bibitem[Bioinformatics.org, 2010]{alignment}
+Bioinformatics.org (2010).
+\newblock Definition of sequence alignment.
+\newblock URL \url{http://www.bioinformatics.org/wiki/sequence_alignment}.
+
 \bibitem[Biopython, 2016]{pairwise}
 Biopython (2016).
 \newblock Documentation of module pairwise2.
@@ -183,10 +188,5 @@ Rhoades, M.~W., Reinhart, B.~J., Lim, L.~P., Burge, C.~B., Bartel, B., and
   Bartel, D.~P. (2002).
 \newblock {{P}rediction of plant micro{R}{N}{A} targets}.
 \newblock {\em Cell}, 110(4):513--520.
-
-\bibitem[Wikipedia, 2016]{alignment}
-Wikipedia (2016).
-\newblock Definition of sequence alignment.
-\newblock URL \url{https://en.wikipedia.org/wiki/Sequence_alignment}.
 
 \end{thebibliography}
