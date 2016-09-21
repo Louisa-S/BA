@@ -1,12 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.23)  20 SEP 2016 17:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.6)  21 SEP 2016 09:39
 entering extended mode
-**./bachelor.tex
-(bachelor.tex
-LaTeX2e <2016/03/31>
-Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\book.cls"
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**bachelor.tex
+(./bachelor.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\bk11.clo"
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk11.clo
 File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -22,39 +24,39 @@ File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 96.
+Package graphics Info: Driver file: pdftex.def on input line 95.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen105
 \lightrulewidth=\dimen106
@@ -74,16 +76,16 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count92
 \@thisrulewidth=\dimen117
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\chngcntr\chngcntr.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
-Package: pdfpages 2016/04/19 v0.5f Insert pages of external PDF documents (AM)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2015/09/18 v0.5d Insert pages of external PDF documents (AM)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count93
 \calc@Bcount=\count94
@@ -96,61 +98,61 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count95
 \calc@Cskip=\skip45
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
-Package: atbegshi 2016/05/16 v1.17 At begin shipout hook (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 ))
 \AM@pagewidth=\dimen120
 \AM@pageheight=\dimen121
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
-File: pppdftex.def 2016/04/19 v0.5f Pdfpages driver for pdfTeX (AM)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2015/09/18 v0.5d Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box26
-\AM@global@opts=\toks15
-\AM@toc@title=\toks16
+\AM@toc@title=\toks15
 \c@AM@survey=\count96
 \AM@templatesizebox=\box27
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen122
 \extrarowheight=\dimen123
-\NC@list=\toks17
+\NC@list=\toks16
 \extratabsurround=\skip46
 \backup@length=\skip47
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen124
 \captionmargin@=\dimen125
@@ -161,8 +163,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@hangindent=\dimen130
 )
 \c@ContinuedFloat=\count97
-)
-(bachelor.aux)
+) (./bachelor.aux)
 \openout1 = `bachelor.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -177,26 +178,25 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count98
 \scratchdimen=\dimen131
 \scratchbox=\box28
 \nofMPsegments=\count99
 \nofMParguments=\count100
-\everyMPshowfont=\toks18
+\everyMPshowfont=\toks17
 \MPscratchCnt=\count101
 \MPscratchDim=\dimen132
 \MPnumerator=\count102
 \makeMPintoPDFobject=\count103
-\everyMPtoPDFconversion=\toks19
-) ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+\everyMPtoPDFconversion=\toks18
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
@@ -204,23 +204,23 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
@@ -229,19 +229,23 @@ Package etexcmds Info: Could not find \expanded.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 \AtBeginShipoutBox=\box29
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\pdflscape.sty"
-Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ))
 Package caption Info: Begin \AtBeginDocument code.
@@ -268,14 +272,12 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 28--55
 [1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./Logo-Universitaet_des_S
-aarlandes.pdf>] [2] [3] [4] [5] [6] [7] [8] (bachelor.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Logo-Universitaet_des_Sa
+arlandes.pdf>] [1] [2] [3] [4] (./bachelor.toc)
 \tf@toc=\write3
 \openout3 = `bachelor.toc'.
 
- [9
-
-] [10
+ [5
 
 ]
 Chapter 1.
@@ -301,11 +303,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
+[1
 
-Underfull \vbox (badness 2564) has occurred while \output is active []
-
- [1]
-<results/biogenesis.png, id=46, 501.875pt x 414.54875pt>
+] <results/biogenesis.png, id=35, 501.875pt x 414.54875pt>
 File: results/biogenesis.png Graphic file (type png)
 
 <use results/biogenesis.png>
@@ -331,7 +331,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 127--128
 
  []
 
-<results/seedmatching.png, id=51, 90.8193pt x 24.69225pt>
+<results/seedmatching.png, id=40, 90.8193pt x 24.69225pt>
 File: results/seedmatching.png Graphic file (type png)
 
 <use results/seedmatching.png>
@@ -343,7 +343,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--138
  []
 
 [3 <./results/seedmatching.png>]
-<results/canonical_sites.png, id=56, 246.9225pt x 356.0803pt>
+<results/canonical_sites.png, id=44, 246.9225pt x 356.0803pt>
 File: results/canonical_sites.png Graphic file (type png)
 
 <use results/canonical_sites.png>
@@ -384,7 +384,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
 [6
 
-] <results/mirtarbase_scrot.png, id=69, 981.6675pt x 180.675pt>
+] <results/mirtarbase_scrot.png, id=57, 981.6675pt x 180.675pt>
 File: results/mirtarbase_scrot.png Graphic file (type png)
 
 <use results/mirtarbase_scrot.png>
@@ -395,7 +395,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
-<results/mirbase.png, id=70, 1005.00468pt x 179.92218pt>
+<results/mirbase.png, id=58, 1005.00468pt x 179.92218pt>
 File: results/mirbase.png Graphic file (type png)
 
 <use results/mirbase.png>
@@ -407,7 +407,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--197
  []
 
 [7 <./results/mirtarbase_scrot.png> <./results/mirbase.png>]
-<results/ucsc.png, id=76, 612.78937pt x 112.92188pt>
+<results/ucsc.png, id=65, 612.78937pt x 112.92188pt>
 File: results/ucsc.png Graphic file (type png)
  <use results/ucsc.png>
 Package pdftex.def Info: results/ucsc.png used on input line 201.
@@ -475,10 +475,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 275--276
 
  []
 
-
-Underfull \vbox (badness 2564) has occurred while \output is active []
-
- [12
+[12
 
 ]
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -490,7 +487,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 327--329
 
  []
 
-[13] <results/plot_scores-4-4_thresh.png, id=99, 602.25pt x 451.6875pt>
+[13] <results/plot_scores-4-4_thresh.png, id=88, 602.25pt x 451.6875pt>
 File: results/plot_scores-4-4_thresh.png Graphic file (type png)
 
 <use results/plot_scores-4-4_thresh.png>
@@ -498,7 +495,7 @@ Package pdftex.def Info: results/plot_scores-4-4_thresh.png used on input line
 333.
 (pdftex.def)             Requested size: 168.62885pt x 126.47163pt.
 
-<results/plot_scores5-3-8-2_thresh.png, id=100, 602.25pt x 451.6875pt>
+<results/plot_scores5-3-8-2_thresh.png, id=89, 602.25pt x 451.6875pt>
 File: results/plot_scores5-3-8-2_thresh.png Graphic file (type png)
 
 <use results/plot_scores5-3-8-2_thresh.png>
@@ -510,11 +507,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 341--342
 
  []
 
-
-Underfull \vbox (badness 1264) has occurred while \output is active []
-
- [14 <./results/plot_scores-4-4_thresh.png> <./results/plot_scores5-3-8-2_thres
-h.png>]
+[14 <./results/plot_scores-4-4_thresh.png> <./results/plot_scores5-3-8-2_thresh
+.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
@@ -524,10 +518,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 345--346
 
  []
 
-<results/compl1.pdf, id=106, 597.23125pt x 845.1575pt>
+<results/compl1.pdf, id=95, 597.23125pt x 845.1575pt>
 File: results/compl1.pdf Graphic file (type pdf)
-
-<use results/compl1.pdf>
+ <use results/compl1.pdf>
 Package pdftex.def Info: results/compl1.pdf used on input line 351.
 (pdftex.def)             Requested size: 430.00616pt x 608.51294pt.
 
@@ -538,10 +531,9 @@ Overfull \hbox (38.29628pt too wide) in paragraph at lines 350--352
 
 LaTeX Warning: Float too large for page by 16.25993pt on input line 354.
 
-<results/compl2.pdf, id=107, 597.23125pt x 845.1575pt>
+<results/compl2.pdf, id=96, 597.23125pt x 845.1575pt>
 File: results/compl2.pdf Graphic file (type pdf)
-
-<use results/compl2.pdf>
+ <use results/compl2.pdf>
 Package pdftex.def Info: results/compl2.pdf used on input line 360.
 (pdftex.def)             Requested size: 430.00616pt x 608.51294pt.
 
@@ -579,28 +571,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 374--375
 
  []
 
-[18] <results/curves1-2-2-1_new.png, id=207, 578.16pt x 433.62pt>
+[18] <results/curves1-2-2-1_new.png, id=195, 578.16pt x 433.62pt>
 File: results/curves1-2-2-1_new.png Graphic file (type png)
 
 <use results/curves1-2-2-1_new.png>
 Package pdftex.def Info: results/curves1-2-2-1_new.png used on input line 378.
 (pdftex.def)             Requested size: 173.44933pt x 130.087pt.
 
-<results/curves5-4-6-4_new.png, id=208, 578.16pt x 433.62pt>
+<results/curves5-4-6-4_new.png, id=196, 578.16pt x 433.62pt>
 File: results/curves5-4-6-4_new.png Graphic file (type png)
 
 <use results/curves5-4-6-4_new.png>
 Package pdftex.def Info: results/curves5-4-6-4_new.png used on input line 379.
 (pdftex.def)             Requested size: 173.44933pt x 130.087pt.
 
-<results/curves-5-1_new.png, id=209, 578.16pt x 433.62pt>
+<results/curves-5-1_new.png, id=197, 578.16pt x 433.62pt>
 File: results/curves-5-1_new.png Graphic file (type png)
 
 <use results/curves-5-1_new.png>
 Package pdftex.def Info: results/curves-5-1_new.png used on input line 380.
 (pdftex.def)             Requested size: 173.44933pt x 130.087pt.
 
-<results/ratio_table2.pdf, id=210, 597.23125pt x 845.1575pt>
+<results/ratio_table2.pdf, id=198, 597.23125pt x 845.1575pt>
 File: results/ratio_table2.pdf Graphic file (type pdf)
 
 <use results/ratio_table2.pdf>
@@ -619,11 +611,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 396--397
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [19 <./results/curves1-2-2-1_new.png> <./results/curves5-4-6-4_new.png> <./res
-ults/curves-5-1_new.png>] [20 <./results/ratio_table2.pdf>]
+[19 <./results/curves1-2-2-1_new.png> <./results/curves5-4-6-4_new.png> <./resu
+lts/curves-5-1_new.png>] [20 <./results/ratio_table2.pdf>]
 Overfull \hbox (5.23662pt too wide) in paragraph at lines 406--413
 [][]
  []
@@ -645,10 +634,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 435--436
 
  []
 
-
-Underfull \vbox (badness 1308) has occurred while \output is active []
-
- [22
+[22
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 437--438
@@ -675,7 +661,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 445--446
 
  []
 
-<results/site_3addi.png, id=242, 277.78781pt x 193.47281pt>
+<results/site_3addi.png, id=231, 277.78781pt x 193.47281pt>
 File: results/site_3addi.png Graphic file (type png)
 
 <use results/site_3addi.png>
@@ -701,7 +687,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 461--462
 
  []
 
-<results/additional_pairing.PNG, id=247, 972.63374pt x 201.00093pt>
+<results/additional_pairing.PNG, id=236, 972.63374pt x 201.00093pt>
 File: results/additional_pairing.PNG Graphic file (type png)
 
 <use results/additional_pairing.PNG>
@@ -709,21 +695,21 @@ Package pdftex.def Info: results/additional_pairing.PNG used on input line 465.
 
 (pdftex.def)             Requested size: 360.0pt x 74.3937pt.
 
-<results/sites_regulation.PNG, id=248, 262.73157pt x 248.42813pt>
+<results/sites_regulation.PNG, id=237, 262.73157pt x 248.42813pt>
 File: results/sites_regulation.PNG Graphic file (type png)
 
 <use results/sites_regulation.PNG>
 Package pdftex.def Info: results/sites_regulation.PNG used on input line 472.
 (pdftex.def)             Requested size: 157.64014pt x 149.05801pt.
 
-<results/sites_conserved.PNG, id=249, 243.15843pt x 199.49532pt>
+<results/sites_conserved.PNG, id=238, 243.15843pt x 199.49532pt>
 File: results/sites_conserved.PNG Graphic file (type png)
 
 <use results/sites_conserved.PNG>
 Package pdftex.def Info: results/sites_conserved.PNG used on input line 479.
 (pdftex.def)             Requested size: 158.0511pt x 129.67041pt.
 
-<results/site_efficacy.PNG, id=250, 450.18187pt x 182.93344pt>
+<results/site_efficacy.PNG, id=239, 450.18187pt x 182.93344pt>
 File: results/site_efficacy.PNG Graphic file (type png)
 
 <use results/site_efficacy.PNG>
@@ -736,14 +722,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 493--494
 
 [25 <./results/additional_pairing.PNG>] [26 <./results/sites_regulation.PNG> <.
 /results/sites_conserved.PNG> <./results/site_efficacy.PNG>]
-<results/sites_distance.PNG, id=261, 501.37312pt x 194.22563pt>
+<results/sites_distance.PNG, id=251, 501.37312pt x 194.22563pt>
 File: results/sites_distance.PNG Graphic file (type png)
 
 <use results/sites_distance.PNG>
 Package pdftex.def Info: results/sites_distance.PNG used on input line 498.
 (pdftex.def)             Requested size: 325.88866pt x 126.24515pt.
 
-<results/sites_8nt.PNG, id=262, 202.50656pt x 286.82156pt>
+<results/sites_8nt.PNG, id=252, 202.50656pt x 286.82156pt>
 File: results/sites_8nt.PNG Graphic file (type png)
 
 <use results/sites_8nt.PNG>
@@ -759,14 +745,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 512--513
 
  []
 
-<results/sites_orf.PNG, id=269, 453.19313pt x 188.95593pt>
+<results/sites_orf.PNG, id=258, 453.19313pt x 188.95593pt>
 File: results/sites_orf.PNG Graphic file (type png)
 
 <use results/sites_orf.PNG>
 Package pdftex.def Info: results/sites_orf.PNG used on input line 516.
 (pdftex.def)             Requested size: 335.36458pt x 139.82806pt.
 
-<results/site_stop.PNG, id=270, 264.99pt x 212.29312pt>
+<results/site_stop.PNG, id=259, 264.99pt x 212.29312pt>
 File: results/site_stop.PNG Graphic file (type png)
 
 <use results/site_stop.PNG>
@@ -777,11 +763,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 530--531
 
  []
 
-
-Underfull \vbox (badness 1521) has occurred while \output is active []
-
- [28 <./results/sites_orf.PNG> <./results/site_stop.PNG>]
-<results/tools.PNG, id=276, 702.37407pt x 350.05782pt>
+[28 <./results/sites_orf.PNG> <./results/site_stop.PNG>]
+<results/tools.PNG, id=265, 702.37407pt x 350.05782pt>
 File: results/tools.PNG Graphic file (type png)
  <use results/tools.PNG>
 Package pdftex.def Info: results/tools.PNG used on input line 535.
@@ -799,10 +782,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 551--552
 
  []
 
-
-Underfull \vbox (badness 2564) has occurred while \output is active []
-
- [30
+[30
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 553--554
@@ -830,7 +810,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 557--558
 
  []
 
-[31] (bachelor.bbl [32] [33
+[31] (./bachelor.bbl [32] [33
 
 ] [34]
 Underfull \hbox (badness 1210) in paragraph at lines 157--160
@@ -843,39 +823,40 @@ Underfull \hbox (badness 1838) in paragraph at lines 182--185
  of mi-
  []
 
-[35]) [36] (bachelor.lof)
+[35]) [36] (./bachelor.lof)
 \tf@lof=\write4
 \openout4 = `bachelor.lof'.
 
  [37
 
-] (bachelor.lot)
+] (./bachelor.lot)
 \tf@lot=\write5
 \openout5 = `bachelor.lot'.
 
  [38
 
-] (bachelor.aux) ) 
+] (./bachelor.aux) ) 
 Here is how much of TeX's memory you used:
- 4287 strings out of 493335
- 66676 string characters out of 3136669
- 137075 words of memory out of 3000000
- 7725 multiletter control sequences out of 15000+200000
- 10888 words of font info for 38 fonts, out of 3000000 for 9000
+ 4274 strings out of 493029
+ 66269 string characters out of 6136235
+ 137333 words of memory out of 5000000
+ 7718 multiletter control sequences out of 15000+600000
+ 10888 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,39p,2008b,328s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmbx10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.
-pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on bachelor.pdf (48 pages, 1985191 bytes).
+ 38i,12n,39p,2006b,328s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on bachelor.pdf (44 pages, 2209494 bytes).
 PDF statistics:
- 341 PDF objects out of 1000 (max. 8388607)
+ 332 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
